@@ -18,7 +18,7 @@ COPY server/go.sum .
 RUN go mod download
 COPY server .
 # Embed the static files generated above
-COPY --from=frontend /frontend/dist/browser ./src/interfaces/assets/ui
+COPY --from=frontend /frontend/dist ./src/ui
 # Build the Go application
 RUN go build -o /octavian github.com/geniot/octavian/src
 # =========================================
