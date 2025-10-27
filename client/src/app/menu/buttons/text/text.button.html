@@ -1,0 +1,17 @@
+<div fxFlex="0 0 {{100}}px" fxLayoutAlign="center center" fxLayout="column"
+     style="border: 0px solid black">
+  <div>
+    <img
+      alt="Text"
+      title="Text"
+      style="cursor: pointer;"
+      [ngStyle]="{height:'100px','max-width.px':100, 'max-height.px':100}"
+      (click)="onTextClick()"
+      (mouseover)="textSrcSuffix='_over'"
+      (mouseout)="textSrcSuffix=''"
+      (mouseup)="textSrcSuffix='_over'"
+      (mousedown)="textSrcSuffix='_down'"
+      [src]="getTextSrc()"
+    /></div>
+  <div [ngStyle]="{'font-size.pt':10}" class="knob-label">TEXT</div>
+</div>

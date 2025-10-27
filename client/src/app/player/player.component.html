@@ -1,0 +1,35 @@
+<div style="padding:0;border: 0px solid black;width:100%;height:100%;overflow: hidden"
+     fxLayout="column nowrap"
+     fxLayoutAlign="center center">
+
+  <div
+    *ngIf="!isFingering"
+    fxFlex="0 0 50px" style="padding:5px;border: 0 solid black;width:100%;height:100%;">
+    <app-player-controls></app-player-controls>
+  </div>
+
+
+  <div fxFlex="1 1 auto" style="padding:0;border: 0px solid red;height:100%;width:100%;overflow: hidden;">
+    <div id="container"
+         #containerDiv
+         style="height:100%;width:100%;"
+         (onResize)="onResized($event)"></div>
+  </div>
+
+  <div fxFlex="0 0 35px"
+       style="padding:15px;border: 0px solid black;width:100%;height:100%;">
+    <app-player-slider></app-player-slider>
+  </div>
+  <div fxFlex="0 0 25px"
+       style="padding-left:5px;padding-right:5px;border: 0 solid black;width:100%;height:100%;">
+    <measure-selector></measure-selector>
+  </div>
+  <div
+    *ngIf="tuneService.tuneModel.value.tune.selectionRanges!=null || infoService.settings.mode == PlayerMode.FINGERING"
+    fxFlex="0 0 20px"
+    style="padding-left:5px;padding-right:5px;border: 0 solid black;width:100%;height:100%;">
+    <range-selector></range-selector>
+  </div>
+  <div style="padding:3px;"></div>
+
+</div>

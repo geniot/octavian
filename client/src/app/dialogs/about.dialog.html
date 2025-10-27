@@ -1,0 +1,49 @@
+<p-dialog header="About" [(visible)]="infoService.dialogsHandler.isShowAboutDialog" [modal]="true"
+          [draggable]="true" [resizable]="false">
+  <p>Octavian is a learning application for three instruments:</p>
+
+  <ul>
+    <li>{{INSTRUMENTS_NAMES_MAP.get(Instrument.PIANO)}}</li>
+    <li>{{INSTRUMENTS_NAMES_MAP.get(Instrument.BUTTON_ACCORDION)}}</li>
+    <li>{{INSTRUMENTS_NAMES_MAP.get(Instrument.PIANO_ACCORDION)}}</li>
+  </ul>
+
+  <p>We currently support
+    <img style="vertical-align: center" height="15"
+         src="assets/roland_logo.svg" role="img">
+    <a class="contentLink" target="_blank"
+       href="https://www.roland.com/us/categories/keyboards/v-accordion/">
+      V-accordions</a>
+    and <b>any</b> digital piano or keyboard with MIDI interface.</p>
+
+  <p>Just connect your instrument to the computer and start learning the tune you like.</p>
+
+
+  <p>Octavian will only work in
+    <a
+      target="_blank" class="contentLink"
+      href="https://www.google.com/chrome/"><img style="vertical-align: bottom;padding-right:1px;" width="22" height="22"
+                                                 src="assets/chrome-logo.svg" role="img"
+                                                 data-img-fallback="assets/chrome-logo.png">Chrome</a> on
+    a screen large enough to fit the player.</p>
+
+
+  <p>Visit the
+    <a
+      target="_blank" class="contentLink"
+      href="https://octavian.app">Octavian Website<img style="padding-left:3px;margin-bottom:1px;vertical-align: text-bottom" width="18" height="18"
+                                                           src="assets/new_window.svg" role="img"></a> to learn more.</p>
+
+  <p>For any suggestions, bug reports, payment issues contact us at <a class="contentLink" target="_blank"
+                                                                       href="mailto:playoctavianapp@gmail.com">playoctavianapp&#64;gmail.com</a>
+  </p>
+
+
+  <p>We wish you a pleasant learning experience.</p>
+
+
+  <ng-template pTemplate="footer">
+    <p-button icon="pi pi-check" (click)="infoService.dialogsHandler.isShowAboutDialog=false" label="Ok"
+              styleClass="p-button-text"></p-button>
+  </ng-template>
+</p-dialog>

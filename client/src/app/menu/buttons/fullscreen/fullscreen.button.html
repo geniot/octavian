@@ -1,0 +1,19 @@
+<div
+  *ngIf="this.infoService.isIconsLoaded()"
+  fxFlex="0 0 {{maxSize}}px" fxLayoutAlign="center center" fxLayout="column"
+  style="border: 0px solid black">
+  <div>
+    <img
+      alt="Fullscreen"
+      style="cursor: pointer;"
+      [title]="!this.infoService.fullScreenHandler.isFullscreen() ? '[F11] Enter Full Screen' : '[F11] Exit Full Screen'"
+      [ngStyle]="{height:maxSize+'px','max-width.px':maxSize, 'max-height.px':maxSize}"
+      (mouseover)="fullscreenSrcSuffix='_over'"
+      (mouseout)="fullscreenSrcSuffix=''"
+      (mousedown)="fullscreenSrcSuffix='_down'"
+      (click)="this.infoService.fullScreenHandler.toggleFullscreen(this.elem,this.document)"
+      [src]="getFullscreenSrc()"
+    />
+  </div>
+  <div *ngIf="showSubtitle" [ngStyle]="{'font-size.pt':10}" class="knob-label">FULLSCREEN</div>
+</div>

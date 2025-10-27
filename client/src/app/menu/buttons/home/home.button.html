@@ -1,0 +1,16 @@
+<div fxFlex="0 0 {{100}}px" fxLayoutAlign="center center" fxLayout="column"
+     style="padding:0;border: 0px solid black">
+  <div>
+    <img
+      alt="Home"
+      title="Home"
+      style="cursor: pointer;"
+      [ngStyle]="{height:'100px','max-width.px':100, 'max-height.px':100}"
+      (click)="onHomeClick()"
+      (mouseover)="homeSrcSuffix='_over'"
+      (mouseout)="homeSrcSuffix=''"
+      (mousedown)="homeSrcSuffix='_down'"
+      [src]="getHomeSrc()"
+    /></div>
+  <div [ngStyle]="{'font-size.pt':10}" class="knob-label">HOME</div>
+</div>

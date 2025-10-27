@@ -1,0 +1,26 @@
+<div fxFlex="0 0 {{100}}px" fxLayoutAlign="center center" fxLayout="column"
+     style="padding:0;margin-left:0px;border: 0px solid black">
+  <div>
+    <img
+      alt="Stats"
+      title="Stats"
+      style="cursor: pointer;"
+      [ngStyle]="{
+                cursor:this.userService.isUserLoggedIn()?'pointer':'default',
+                opacity:this.userService.isUserLoggedIn()?'100%':'30%',
+                height:'100px',
+                'max-width.px':100,
+                'max-height.px':100
+              }"
+      (click)="onStatsClick()"
+      (mouseover)="statsSrcSuffix='_over'"
+      (mouseout)="statsSrcSuffix=''"
+      (mousedown)="statsSrcSuffix='_down'"
+      [src]="getStatsSrc()"
+    /></div>
+  <div [ngStyle]="{
+    opacity:this.userService.isUserLoggedIn()?'100%':'50%',
+    'font-size.pt':10
+    }" class="knob-label">STATS
+  </div>
+</div>

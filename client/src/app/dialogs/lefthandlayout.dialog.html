@@ -1,0 +1,15 @@
+<p-dialog header="Left Hand Layout" [(visible)]="infoService.dialogsHandler.isShowLeftHandLayoutDialog" [modal]="true"
+          [draggable]="true" [resizable]="false">
+  <div class="p-field-radiobutton" *ngFor="let option of leftHandLayoutOptions">
+    <p-radioButton [inputId]="option.key"
+                   name="griffType"
+                   [value]="option.key"
+                   (onClick)="onLeftHandLayoutChange()"
+                   [(ngModel)]="selectedLeftHandLayoutOption"></p-radioButton>
+    <label [for]="option.key">{{option.value}}</label>
+  </div>
+  <ng-template pTemplate="footer">
+    <p-button icon="pi pi-check" (click)="infoService.dialogsHandler.isShowLeftHandLayoutDialog=false" label="Ok"
+              styleClass="p-button-text"></p-button>
+  </ng-template>
+</p-dialog>

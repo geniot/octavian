@@ -1,0 +1,96 @@
+<p-dialog header="{{this.infoService.isNewDialogState?'New Tune':'Edit Tune'}}"
+          (onShow)="onShow()"
+          (onHide)="onHide()"
+          [(visible)]="infoService.dialogsHandler.isShowUploadDialog"
+          [modal]="true"
+          [draggable]="true"
+          [resizable]="false">
+  <!--  [style]="{width: '90vw', height: '90vh'}"-->
+  <div style="width:100%;height:100%;" fxLayout="column nowrap">
+
+    <div
+      *ngIf="hasError && message!=null"
+      class="flash"
+      [style]="{backgroundColor:'pink'}">
+      <div>
+        <button (click)="onErrorClose()" class="flash-close" type="button" aria-label="Dismiss this message">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16" data-view-component="true">
+            <path fill-rule="evenodd"
+                  d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+          </svg>
+        </button>
+        <div (click)="onSignIn($event)"
+             [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(message==null?'':message)">
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex="1 1 auto">
+
+      <p style="margin-block-start: 0; display: flex;flex-direction: column;">
+        <label style="padding-bottom:5px;">Title*</label>
+        <input
+          (keydown)="onFieldChange(this.title, $event)"
+          (keydown.enter)="onSubmit()"
+          [disabled]="userService.isLoading"
+          #titleInput id="title" style="padding:5px 12px" [(ngModel)]="this.title"/>
+        <span style="font-size: 10pt">Characters left: {{ 30 - this.title.length }}</span>
+      </p>
+
+      <p style="margin-block-start: 0; display: flex;flex-direction: column;">
+        <label style="padding-bottom:5px;">Author*</label>
+        <input
+          (keydown)="onFieldChange(this.author, $event)"
+          (keydown.enter)="onSubmit()"
+          [disabled]="userService.isLoading"
+          #authorInput id="author" style="padding:5px 12px" [(ngModel)]="this.author"/>
+        <span style="font-size: 10pt">Characters left: {{ 30 - this.author.length }}</span>
+      </p>
+
+      <div style="margin-block-start: 0; padding-bottom: 30px; display: flex;flex-direction: column;">
+        <table style="background-color: #E8E8E8;padding:5px;border:1px solid lightgray;">
+          <tbody>
+          <tr>
+            <td><label style="padding-bottom:15px;margin-bottom: 5px;">MuseScore
+              (.mscx){{ this.infoService.isNewDialogState ? '*' : '' }}</label></td>
+            <td><label style="padding-bottom:5px;">Cover
+              (.png)</label></td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">
+              <input
+                #museInput
+                [disabled]="userService.isLoading"
+                accept=".mscx"
+                (change)="onMuseSelected($event)" type="file" class="choose"/>
+            </td>
+            <td style="text-align: center;">
+              <input
+                #coverInput
+                [disabled]="userService.isLoading"
+                (change)="onCoverSelected($event)"
+                accept=".png"
+                type="file" class="choose"/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: left"><a
+              style="color:blue;margin-left: auto;align-self: flex-end;font-size:12px;padding-bottom: 7px;"
+              href="https://github.com/geniot/octavian-docs/wiki/Data-Files" target="_blank">What files can be
+              uploaded?</a></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div fxFlex="0 0 auto">
+      <p style="margin-block-start: 0; display: flex;flex-direction: column;">
+        <button
+          [disabled]="tuneService.isLoading"
+          pButton (click)="onSubmit()" type="button"
+          label="{{this.infoService.isNewDialogState?'Create':'Update'}}" class="p-button-raised"></button>
+      </p>
+    </div>
+
+  </div>
+</p-dialog>

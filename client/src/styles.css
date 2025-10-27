@@ -1,0 +1,262 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#playBackSettingsToolbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#playBackSettingsToolbar .p-toolbar {
+  border: 0 !important;
+}
+
+#playBackToolbar {
+  /*position: absolute;*/
+  /*bottom: 375px;*/
+  /*width: 100%;*/
+}
+
+#playBackToolbar .p-toolbar {
+  border: 0 !important;
+  justify-content: center !important;
+  gap: 0;
+}
+
+#playBackToolbar .p-toolbar .p-button {
+  margin-right: 5px !important;
+  margin-left: 5px !important;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.knob-label {
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.contentLink {
+  color: blue !important;
+}
+
+.title {
+  margin-top: 5px;
+  font-size: 16pt;
+}
+
+.author {
+  color: gray;
+  font-size: 14pt;
+}
+
+.itemContainerDisabled {
+  border: 1px solid lightgray;
+  padding: 0;
+  margin: 5px;
+  cursor: default;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+.itemContainer {
+  border: 1px solid lightgray;
+  padding: 0;
+  margin: 5px;
+  cursor: pointer;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+.itemContainer:hover {
+  border: 1px solid black;
+}
+
+.itemContainer:active {
+  border: 1px solid lightgray;
+}
+
+.p-field-checkbox, .p-field-radiobutton {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center
+}
+
+.p-field-checkbox > label, .p-field-radiobutton > label {
+  margin-left: .5rem;
+  line-height: 1
+}
+
+.p-dialog-content {
+  padding-bottom: 0 !important;
+  padding-top: 5px !important;
+}
+
+.p-toolbar {
+  padding: 0 !important;
+}
+
+.p-dialog .p-dialog-footer button {
+  margin: 0 !important;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.flash {
+  padding: 15px 20px;
+  margin: 0 auto 10px;
+  font-size: 13px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  color: black;
+  width: 100%;
+}
+
+.flash-close {
+  float: right;
+  padding-right: 10px;
+  padding-left: 16px;
+  padding-top: 16px;
+  margin: -16px;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+
+#progressBar .p-progressbar-value-animate {
+  /*transition: none;*/
+  transition: width 100ms linear;
+}
+
+.deleteCheckbox {
+  color: blue;
+  cursor: pointer;
+}
+
+.p-listbox {
+  height: 100% !important;
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.table {
+  display: table;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.body-content-outer-wrapper {
+  height: 100%;
+  padding: 0;
+}
+
+.body-content-inner-wrapper {
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+.body-content {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+::-webkit-scrollbar {
+  height: 13px;
+  width: 13px
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .2);
+  border: 3px solid #f9f9f9;
+  border-radius: 10px;
+  cursor: pointer
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, .3)
+}
+
+.p-listbox .p-listbox-list {
+  padding: 0;
+}
+
+.choose::-webkit-file-upload-button {
+  color: white;
+  display: inline-block;
+  background: #2196F3;
+  border: none;
+  padding: 12px 15px;
+  font-weight: 700;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 10pt;
+}
+
+.round-button {
+  opacity: 0.8;
+  background-color: darkgray;
+  border-color: white;
+  height:30px;
+  width:30px !important;
+}
+
+.p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0;
+  border: 2px solid #ced4da;
+}
+
+.pi-play:before{
+  padding-left: 3px;
+}

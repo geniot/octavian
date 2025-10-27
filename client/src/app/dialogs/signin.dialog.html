@@ -1,0 +1,62 @@
+<p-dialog
+  header="Sign in to Octavian"
+  [(visible)]="this.infoService.dialogsHandler.isShowSignInDialog"
+  [modal]="true"
+  (onShow)="onShow()"
+  (onHide)="onHide()"
+  [draggable]="true"
+  [resizable]="false"
+>
+
+  <div
+    *ngIf="message!=null"
+    class="flash"
+    [style]="{backgroundColor:hasError?'pink':'lightgreen'}">
+    <div>
+      <button (click)="onErrorClose()" class="flash-close" type="button" aria-label="Dismiss this message">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true">
+          <path fill-rule="evenodd"
+                d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+        </svg>
+      </button>
+      <div (click)="onResend($event)"
+           [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(message==null?'':message)">
+      </div>
+    </div>
+  </div>
+
+  <p style="margin-block-start: 0; display: flex;flex-direction: column;">
+    <label for="email" style="padding-bottom:5px;">Email address</label>
+    <input
+      (keydown.enter)="onSubmit()"
+      [disabled]="userService.isLoading"
+      #emailInput id="email" style="padding:5px 12px" [(ngModel)]="email"/>
+  </p>
+
+  <div style="margin-block-end: 1em; display: flex;flex-direction: column;">
+    <div style="margin-block-start: 0; display: flex;flex-direction: row;">
+      <label for="password" style="padding-bottom:5px;">Password</label>
+      <a (click)="onForgotPassword()"
+         style="cursor: pointer; color:blue;margin-left: auto;align-self: flex-end;font-size:12px;padding-bottom: 7px;">Forgot
+        password?</a>
+    </div>
+    <input
+      [disabled]="userService.isLoading"
+      (keydown.enter)="onSubmit()"
+      id="password" #passwordInput type="password" style="padding:5px 12px" [(ngModel)]="password"/>
+  </div>
+
+  <p style="margin-block-start: 0; display: flex;flex-direction: column;">
+    <button
+      [disabled]="userService.isLoading"
+      pButton pRipple (click)="onSubmit()" type="button"
+      label="{{this.userService.isLoading?'Signing in...':'Sign in'}}" class="p-button-raised"></button>
+  </p>
+
+  <div class="flash" style="margin-block-end: 2em;">
+    <div>
+      New to Octavian? <a (click)="onSignUp()" style="cursor: pointer; color:blue;">Create an
+      account</a>.
+    </div>
+  </div>
+</p-dialog>

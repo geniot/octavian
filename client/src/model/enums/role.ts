@@ -1,0 +1,6 @@
+export enum Role {
+  ADMIN = "ADMIN",
+  REGISTERED = "REGISTERED",
+  CONFIRMED = "CONFIRMED",
+  SUBSCRIBER = "SUBSCRIBER"
+}

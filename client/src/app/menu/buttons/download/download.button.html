@@ -1,0 +1,17 @@
+<div fxFlex="0 0 {{100}}px" fxLayoutAlign="center center" fxLayout="column"
+     style="border: 0px solid black">
+  <div>
+    <img
+      alt="Download"
+      title="Download"
+      style="cursor: pointer;"
+      [ngStyle]="{height:'100px','max-width.px':100, 'max-height.px':100}"
+      (click)="onDownload()"
+      (mouseover)="downloadSrcSuffix='_over'"
+      (mouseout)="downloadSrcSuffix=''"
+      (mouseup)="downloadSrcSuffix='_over'"
+      (mousedown)="downloadSrcSuffix='_down'"
+      [src]="getDownloadSrc()"
+    /></div>
+  <div [ngStyle]="{'font-size.pt':10}" class="knob-label">DOWNLOAD</div>
+</div>

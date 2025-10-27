@@ -1,0 +1,2 @@
+DROP TYPE IF EXISTS tune_instrument;
+DROP TABLE IF EXISTS tunes;

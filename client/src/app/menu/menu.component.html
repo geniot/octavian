@@ -1,0 +1,189 @@
+<div style="width:100%;height:100%;" fxLayout="row nowrap">
+
+  <div class="table container">
+    <div style="height: 80px;width:100%;" class="table-row header">
+
+      <div
+        fxFlex="0 1 auto" fxLayoutAlign="end center"
+        style="width:100%;height:100%;border: 0px solid black;background-color: lightgrey;vertical-align: middle;">
+
+        <div fxFlex="0 1 auto"
+             style="border: 0px solid black;padding-right:40px"
+             fxLayoutAlign="start center">
+          <img
+            alt="Octavian"
+            [ngStyle]="{'max-width':100+'%'}"
+            src="{{OCTAVIAN_LOGO}}"/>
+        </div>
+
+        <levels-component *ngIf="this.infoService.isIconsLoaded()"></levels-component>
+
+        <div fxFlex="1 1 auto" fxLayoutAlign="center center" fxLayout="column nowrap"
+             style="padding:0;border: 0 solid black">
+        </div>
+
+        <div
+          *ngIf="this.userService.isUserLoggedIn() &&
+          this.infoService.isIconsLoaded()"
+          style="padding-left: 5px;">
+          <img
+            alt="Add New Tune"
+            title="Add New Tune"
+            style="cursor: pointer;display: block;"
+            [ngStyle]="{ 'height':'64px','max-width':100+'%'}"
+            (click)="onAddClick()"
+            (mouseover)="addSrcSuffix='_over'"
+            (mouseout)="addSrcSuffix=''"
+            (mousedown)="addSrcSuffix='_down'"
+            [src]="getAddSrc()"
+          /></div>
+
+        <div
+          *ngIf="this.infoService.isIconsLoaded()"
+          style="padding-left: 5px;">
+          <img
+            alt="About Octavian"
+            title="About Octavian"
+            style="cursor: pointer;display: block;"
+            [ngStyle]="{ 'height':'64px','max-width':100+'%'}"
+            (click)="this.infoService.dialogsHandler.isShowAboutDialog = true"
+            (mouseover)="aboutSrcSuffix='_over'"
+            (mouseout)="aboutSrcSuffix=''"
+            (mousedown)="aboutSrcSuffix='_down'"
+            [src]="getAboutSrc()"
+          /></div>
+
+        <div
+          *ngIf="this.infoService.isIconsLoaded()"
+          style="padding-left: 5px;padding-right: 0;">
+          <img
+            alt="View Profile"
+            title="View Profile"
+            style="cursor: pointer;display: block;"
+            [ngStyle]="{ 'height':'64px','max-width':100+'%'}"
+            (click)="infoService.onProfileClick()"
+            (mouseover)="userSrcSuffix='_over'"
+            (mouseout)="userSrcSuffix=''"
+            (mousedown)="userSrcSuffix='_down'"
+            [src]="getUserSrc()"
+          /></div>
+
+        <div
+          *ngIf="this.infoService.isIconsLoaded()"
+          style="padding-left: 5px;padding-right: 8px;">
+          <img
+            alt="Fullscreen"
+            style="cursor: pointer;display: block;"
+            [title]="!this.infoService.fullScreenHandler.isFullscreen() ? '[F11] Enter Full Screen' : '[F11] Exit Full Screen'"
+            [ngStyle]="{ 'height':'64px','max-width':100+'%'}"
+            (mouseover)="fullscreenSrcSuffix='_over'"
+            (mouseout)="fullscreenSrcSuffix=''"
+            (mousedown)="fullscreenSrcSuffix='_down'"
+            (click)="this.infoService.fullScreenHandler.toggleFullscreen(this.elem,this.document)"
+            [src]="getFullscreenSrc()"
+          /></div>
+
+      </div>
+
+    </div>
+    <div class="table-row body">
+      <div class="table-cell body-content-outer-wrapper">
+        <div class="body-content-inner-wrapper">
+          <div style="width:100%;height:100%;" fxLayout="row nowrap">
+            <div
+              *ngIf="this.userService.isUserLoggedIn()"
+              style="border: 0 solid black;background-color: lightgrey;vertical-align: middle;"
+              fxFlex="0 1 275px" fxLayoutAlign="start start">
+              <div
+                fxLayout="column" fxLayoutAlign="top center"
+              >
+                <div
+                  fxFlex="0 1 auto"
+                  [ngStyle]="{'padding':5+'%'}"
+                  class="instrument"
+                  fxLayoutAlign="center center"
+                  [class.active]="router.isActive('/'+ClientAction.PIANO, false)"
+                ><a routerLink="/{{ClientAction.PIANO}}" routerLinkActive="active">
+                  <img
+                    alt="Piano"
+                    [ngStyle]="{'max-width':100+'%','max-height':100+'%'}"
+                    src="{{PIANO_IMG}}"/>
+                </a></div>
+
+                <div
+                  fxFlex="0 1 auto"
+                  [ngStyle]="{'padding':5+'%'}"
+                  class="instrument"
+                  [class.active]="router.isActive('/'+ClientAction.ACCORDION_BUTTON_TYPE, false)">
+                  <a routerLink="/{{ClientAction.ACCORDION_BUTTON_TYPE}}" routerLinkActive="active">
+                    <img
+                      alt="Button Accordion"
+                      [ngStyle]="{'max-width':100+'%','max-height':100+'%'}"
+                      src="{{ACCORDION_BUTTON_IMG}}"/></a>
+                </div>
+
+                <div
+                  fxFlex="0 1 auto"
+                  [ngStyle]="{'padding':5+'%'}"
+                  class="instrument"
+                  fxLayoutAlign="center center"
+                  [class.active]="router.isActive('/'+ClientAction.ACCORDION_PIANO_TYPE, false)"
+                ><a routerLink="/{{ClientAction.ACCORDION_PIANO_TYPE}}" routerLinkActive="active">
+                  <img
+                    alt="Piano Accordion"
+                    [ngStyle]="{'max-width':100+'%','max-height':100+'%'}"
+                    src="{{ACCORDION_PIANO_IMG}}"/>
+                </a></div>
+              </div>
+            </div>
+            <div
+              style="width:100%;height:100%;border: 0 solid red;background-color: lightgrey;vertical-align: middle;"
+              fxFlex="0 1 auto" fxLayoutAlign="start center">
+              <div class="table container">
+                <div class="table-row body">
+                  <div class="table-cell body-content-outer-wrapper">
+                    <div class="body-content-inner-wrapper">
+                      <div class="body-content">
+                        <div style="width:100%;height:100%;background-color: #f9f9f9;"
+                             *ngIf="this.userService.isUserLoggedIn();else elseWelcomeBlock">
+                          <app-browser></app-browser>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<ng-template #elseWelcomeBlock>
+  <div style="width:100%;height:100%;overflow:auto;background-color: white;"
+       fxFlex="0 0 auto"
+       fxLayout="column wrap"
+       fxLayoutAlign="center center">
+    <h1 style="font-size:48px;font-weight: 300;letter-spacing: -0.5px;margin:0">Let's play from here</h1>
+
+    <p>
+      <button
+        pButton pRipple type="button"
+        style="min-width: 100px"
+        (click)="infoService.onProfileClick()"
+        label="Sign in" class="p-button-raised"></button>
+    </p>
+    <hr style="min-width: 450px;"/>
+    <p>Don't have an account?</p>
+    <p>
+      <button
+        pButton type="button"
+        style="min-width: 100px"
+        (click)="this.router.navigate(['/' + ClientAction.SIGNUP], {state: {data: this.router.url}})"
+        label="Register" class="p-button-outlined"></button>
+    </p>
+  </div>
+</ng-template>

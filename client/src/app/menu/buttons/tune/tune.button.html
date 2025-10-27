@@ -1,0 +1,18 @@
+<div
+  *ngIf="shouldShowFingering()"
+  fxFlex="0 0 {{100}}px" fxLayoutAlign="center center" fxLayout="column"
+  style="padding:0;margin-left:0px;border: 0px solid black">
+  <div>
+    <img
+      alt="Tune"
+      title="Tune"
+      style="cursor: pointer;"
+      [ngStyle]="{height:'100px','max-width.px':100, 'max-height.px':100}"
+      (mouseover)="tuneSrcSuffix= '_over'"
+      (mouseout)="tuneSrcSuffix=''"
+      (mousedown)="tuneSrcSuffix='_down'"
+      (mouseup)="tuneSrcSuffix='_over';onTune()"
+      [src]="getTuneSrc()"
+    /></div>
+  <div [ngStyle]="{'font-size.pt':10}" class="knob-label">TUNE</div>
+</div>

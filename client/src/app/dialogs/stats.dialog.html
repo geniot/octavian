@@ -1,0 +1,95 @@
+<p-dialog header="Stats"
+          [(visible)]="infoService.dialogsHandler.isShowStatsDialog"
+          [modal]="true"
+          (onShow)="onShow()"
+          (onHide)="onHide()"
+          [draggable]="true"
+          [resizable]="false"
+          [style]="{width: '75vw'}"
+          [contentStyle]="{height: '75vw'}"
+>
+
+  <p-table [value]="stats" [scrollable]="true" styleClass="p-datatable-gridlines p-datatable-striped"
+           scrollHeight="flex">
+    <ng-template pTemplate="header">
+      <tr>
+        <th [style]="{maxWidth:columnWidthCounter+'px'}">#</th>
+        <th [style]="{maxWidth:columnWidthDate+'px'}">Date</th>
+        <th [style]="{maxWidth:columnWidthTimeScore+'px'}">Time</th>
+        <th style="width:100%">Measures</th>
+        <th [style]="{maxWidth:columnWidthTimeScore+'px'}">Score</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-record>
+      <tr>
+        <td [style]="{maxWidth:columnWidthCounter+'px'}">{{ getIndex(record) }}</td>
+        <td [style]="{maxWidth:columnWidthDate+'px',textWrap:'nowrap'}">{{ getDate(record.date) }}</td>
+        <td [style]="{maxWidth:columnWidthTimeScore+'px'}">{{ getTime(record.date) }}</td>
+        <td style="width:100%;height:100%">
+
+          <div style="resize: none; margin: 0;padding: 0;width: 100%;height:100%;overflow: hidden;">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 500 20"
+              preserveAspectRatio="xMinYMin meet"
+            >
+              <foreignObject width="100%" height="100%" xmlns="http://www.w3.org/1999/xhtml">
+                <div xmlns="http://www.w3.org/1999/xhtml">
+
+                  <div *ngFor="let char of record.rh.split('');let i = index">
+                    <div
+                      [style]="{
+                      width:100/record.rh.length+'%',
+                      backgroundColor:getColorByChar(char),
+                      borderLeft:i==0?'1px solid lightgray':0,
+                      borderRight:'1px solid lightgray',
+                      borderTop:'1px solid lightgray'
+                      }"
+                      title="{{i+1}}"
+                      style="float: left;height:10px;"></div>
+                  </div>
+                  <div *ngFor="let char of record.lh.split('');let i = index">
+                    <div
+                      [style]="{
+                      borderRight:'1px solid lightgray',
+                      borderLeft:i==0?'1px solid lightgray':0,
+                      borderBottom:'1px solid lightgray',
+                      borderTop:'1px solid lightgray',
+                      width:100/record.lh.length+'%',
+                      backgroundColor:getColorByChar(char)
+                      }"
+                      title="{{i+1}}"
+                      style="float: left;height:10px;"></div>
+                  </div>
+
+                </div>
+              </foreignObject>
+            </svg>
+          </div>
+
+        </td>
+        <td [style]="{maxWidth:columnWidthTimeScore+'px',textAlign:'center'}">{{ getScore(record) }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  <ng-template pTemplate="footer">
+    <div style="padding:5px;border: 0px solid black;width:100%;height:100%;overflow: hidden"
+         fxLayout="row nowrap"
+         fxLayoutAlign="space-between center">
+      <div style="margin-top:10px;">
+        <p-button icon="pi pi-trash"
+                  (click)="confirm($event)"
+                  label="Clear"
+                  styleClass="p-button-text"></p-button>
+      </div>
+      <div style="padding:0;border: 0px solid red;height:100%;width:100%;overflow: hidden;">
+      </div>
+      <div style="margin-top:10px;">
+        <p-button icon="pi pi-check" (click)="this.infoService.dialogsHandler.isShowStatsDialog=false" label="Ok"
+                  styleClass="p-button-text"></p-button>
+      </div>
+    </div>
+  </ng-template>
+</p-dialog>

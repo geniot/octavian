@@ -1,0 +1,141 @@
+<!--ACCORDION-->
+<div *ngIf="tuneService.tuneLoadedTrigger.value &&
+            (infoService.settings.instrument==Instrument.BUTTON_ACCORDION || infoService.settings.instrument==Instrument.PIANO_ACCORDION)"
+     style="width:100%;height:100%;" fxLayout="row nowrap">
+
+  <as-split direction="horizontal" (dragEnd)="onDragEnd($event, [0,1,2])">
+
+    <as-split-area *ngIf="config.columns[0].visible" [size]="config.columns[0].size">
+      <app-left-button-keyboard containerId="keyboardLeftContainerId"
+                                [fingeringComponent]="this"
+                                [handType]="HandType.LEFT_HAND"></app-left-button-keyboard>
+    </as-split-area>
+
+    <as-split-area *ngIf="config.columns[1].visible" [size]="config.columns[1].size">
+      <as-split direction="vertical" (dragEnd)="onDragEnd($event,[3,4])">
+        <as-split-area *ngIf="config.columns[0].visible" [size]="config.columns[3].size">
+          <div #centerDiv (onResize)="onCenterResized($event)" style="width:100%;height:100%;overflow:hidden"
+               fxLayout="column nowrap">
+            <ng-template [ngTemplateOutlet]="ToolbarTemplate"></ng-template>
+            <div fxFlex="1 1 50%"
+                 fxLayoutAlign="center center"
+                 fxLayout="column nowrap"
+                 style="border: 0px solid black; width:100%;height:100%;">
+              <ng-template [ngTemplateOutlet]="SplashTemplate"></ng-template>
+            </div>
+          </div>
+        </as-split-area>
+        <as-split-area *ngIf="config.columns[0].visible" [size]="config.columns[4].size">
+          <app-player [isFingering]="true" id="playerContainerId"></app-player>
+        </as-split-area>
+      </as-split>
+    </as-split-area>
+
+    <as-split-area *ngIf="config.columns[2].visible" [size]="config.columns[2].size">
+      <app-right-button-keyboard containerId="keyboardRightContainerId"
+                                 [fingeringComponent]="this"
+                                 [handType]="HandType.RIGHT_HAND"></app-right-button-keyboard>
+    </as-split-area>
+  </as-split>
+
+</div>
+
+<!--PIANO-->
+<div *ngIf="tuneService.tuneLoadedTrigger.value &&
+            infoService.settings.instrument==Instrument.PIANO"
+     style="width:100%;height:100%;" fxLayout="row nowrap">
+  <as-split direction="vertical" (dragEnd)="onPianoDragEnd($event)">
+    <as-split-area *ngIf="pianoConfig.columns[0].visible" [size]="pianoConfig.columns[0].size">
+      <div #centerDiv (onResize)="onCenterResized($event)" style="width:100%;height:100%;overflow:hidden"
+           fxLayout="column nowrap">
+        <ng-template [ngTemplateOutlet]="ToolbarTemplate"></ng-template>
+        <div fxFlex="1 1 50%"
+             fxLayoutAlign="center center"
+             fxLayout="column nowrap"
+             style="border: 0px solid black; width:100%;height:100%;">
+          <ng-template [ngTemplateOutlet]="SplashTemplate"></ng-template>
+        </div>
+      </div>
+    </as-split-area>
+    <as-split-area *ngIf="pianoConfig.columns[1].visible" [size]="pianoConfig.columns[1].size">
+      <app-piano-keyboard
+        [fingeringComponent]="this"
+        [handType]="HandType.ANY_HAND"
+        containerId="pianoKeyboardContainerId"></app-piano-keyboard>
+    </as-split-area>
+    <as-split-area *ngIf="pianoConfig.columns[2].visible" [size]="pianoConfig.columns[2].size">
+      <app-player [isFingering]="true" id="pianoPlayerContainerId"></app-player>
+    </as-split-area>
+  </as-split>
+</div>
+
+<!--LOADING SPINNER-->
+<div *ngIf="!tuneService.tuneLoadedTrigger.value && !tuneService.tuneModel.value.hasError"
+     style="width:100%;height:100%;"
+     fxLayoutAlign="center center"
+     fxLayout="column">
+  <p-progressSpinner></p-progressSpinner>
+  <div style="text-transform: uppercase;">{{ infoService.loadingProgressMessage.value }}</div>
+</div>
+
+<!--ERROR-->
+<div
+  *ngIf="tuneService.tuneModel.value.hasError && tuneService.tuneModel.value.message!=null"
+  style="width:100%;height:100%;" fxLayout="row nowrap">
+  <div fxFlex="1 1 auto"
+       style="padding:0;border-right: 0px solid black;background-color: lightgrey">
+  </div>
+  <div fxFlex="0 1 500px" fxLayoutAlign="center center" style="padding:10px;border: 0px solid black"
+       fxLayout="column nowrap">
+    <div
+      class="flash"
+      [style]="{backgroundColor:'pink'}"
+      (click)="onSignIn($event)"
+      [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(tuneService.tuneModel.value.message==null?'':tuneService.tuneModel.value.message)">
+    </div>
+
+    <p style="margin-block-start: 0;width:100%">
+      <a (click)="this.infoService.onHomeClick()" style="cursor: pointer"><img style="vertical-align: top" height="15"
+                                                                               src="assets/back_arrow.svg" role="img">
+        BACK</a>
+    </p>
+  </div>
+  <div fxFlex="1 1 auto"
+       style="padding:0;border-right: 0px solid black;background-color: lightgrey">
+  </div>
+</div>
+
+<!--TEMPLATES-->
+<ng-template #SplashTemplate>
+  <div fxFlex="1 1 auto">
+    <div
+      [style.zoom]="toolbarZoom"
+      style="text-align: center;height:100%;width:100%;">
+      <p style="font-size: 3em;margin:0">{{ tuneService.tuneModel.value.tune.title }}</p>
+      <p style="font-size: 2em;line-height: 0;color: gray;">{{ tuneService.tuneModel.value.tune.author }}</p>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #ToolbarTemplate>
+  <div fxFlex="0 0 50%"
+       fxLayout="row nowrap"
+       fxLayoutAlign="start start"
+       [style.zoom]="toolbarZoom"
+       style="padding:5px;border: 0px solid black; width:100%;height:100%;">
+    <home-button></home-button>
+    <tune-button [isSelected]="false"></tune-button>
+    <fingering-button [isSelected]="true"></fingering-button>
+    <!--SPACER-->
+    <div fxFlex="1 1 auto" fxLayoutAlign="center center" fxLayout="column nowrap"
+         style="padding:0;border: 0px solid black">
+    </div>
+    <text-button></text-button>
+    <save-button></save-button>
+    <settings-button></settings-button>
+    <download-button *ngIf="userService.getUserRole()==Role.ADMIN || infoService.settings.level==0"></download-button>
+    <fullscreen-button [maxSize]="100" [showSubtitle]="true"></fullscreen-button>
+  </div>
+</ng-template>
+
+
