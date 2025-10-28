@@ -117,7 +117,7 @@ func main() {
 	}))
 	engine.Use(echoMw.Gzip())
 	engine.Use(echoMw.StaticWithConfig(echoMw.StaticConfig{
-		Root:       "res/ui",
+		Root:       "ui",
 		Index:      "index.html",
 		Browse:     false,
 		HTML5:      true,

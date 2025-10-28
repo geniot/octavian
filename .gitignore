@@ -1,7 +1,7 @@
 .idea
 _dist
-server/src/interfaces/assets/ui
-server/src/interfaces/assets/docs
+server/src/ui
+server/src/docs
 
 # System files
 .DS_Store
