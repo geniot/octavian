@@ -77,7 +77,7 @@ func syncCatalogue() (err error) {
 		Debug().
 		Select("id", "owner_id", "last_updated_on", "owner_id", "title", "author", "instrument", "cover", "level_num", "position_num").
 		Table("tunes").
-		Where("last_updated_on >= ?", lastUpdatedOn).
+		//Where("last_updated_on >= ?", lastUpdatedOn).
 		Find(&allTunes).Error; err != nil {
 		return err
 	}
