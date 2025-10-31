@@ -9,6 +9,7 @@ import (
 	"mime/multipart"
 	"net/http"
 	"strconv"
+	"time"
 
 	"github.com/labstack/echo/v4"
 )
@@ -56,7 +57,7 @@ func saveTune(c echo.Context) error {
 		tune                   = Tune{}
 		dbTune                 = Tune{}
 		playerTune             = Tune{}
-		tuneStr                = c.Request().Form.Get("tune")
+		tuneStr                = c.FormValue("tune")
 		jsonStrBbs             []byte
 		coverBytes             *[]byte
 		museBytes              *[]byte
@@ -121,6 +122,7 @@ func saveTune(c echo.Context) error {
 	//PERSISTENCE
 	//CREATE
 	if tune.Id == nil {
+		tune.LastUpdatedOn = ptr(time.Now().Unix())
 		if err = gormDB.
 			Table("tunes").
 			Create(&tune).

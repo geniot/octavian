@@ -17,7 +17,7 @@ type Config struct {
 	DatabaseUrl                string `default:"postgres://octavian_test:octavian_test@localhost:9876/octavian_test" validate:"required" envvar:"DATABASE_URL"`
 	BaseApiUrl                 string `default:"http://localhost:8222/api" validate:"required" envvar:"BASE_API_URL"`
 	BaseUiUrl                  string `default:"http://localhost:8222" validate:"required" envvar:"BASE_UI_URL"`
-	ConvertUrl                 string `default:"http://localhost:8333/convert" validate:"required" envvar:"CONVERT_URL"`
+	ConvertUrl                 string `default:"http://localhost:8002/convert" validate:"required" envvar:"CONVERT_URL"`
 	Mail                       Mail   `default:{}`
 	LoginTokenDuration         int64  `default:"2592000000" envvar:"LOGIN_TOKEN_DURATION"`
 	ResetPasswordTokenDuration int64  `default:"1200000" envvar:"RESET_PASSWORD_TOKEN_DURATION"`
