@@ -99,4 +99,5 @@ export class MenuComponent extends DestroyableComponent implements OnInit {
   protected readonly PIANO_IMG = PIANO_IMG;
   protected readonly OCTAVIAN_LOGO = OCTAVIAN_LOGO;
   protected readonly ACCORDION_PIANO_IMG = ACCORDION_PIANO_IMG;
+  protected readonly window = window;
 }

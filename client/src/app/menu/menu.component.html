@@ -185,5 +185,17 @@
         (click)="this.router.navigate(['/' + ClientAction.SIGNUP], {state: {data: this.router.url}})"
         label="Register" class="p-button-outlined"></button>
     </p>
+    <!--    <div *ngIf="window.location.href.startsWith('http://localhost')" style="text-align: center">-->
+    <div *ngIf="window.location.href.startsWith('https://demo.octavian.app')" style="text-align: center">
+      <p>OR</p>
+      <p>
+        <button
+          pButton pRipple type="button"
+          style="min-width: 100px"
+          (click)="userService.signIn('demo@octavian.app','demo')"
+          label="Access demo account" class="p-button-raised"></button>
+      </p>
+    </div>
+
   </div>
 </ng-template>
