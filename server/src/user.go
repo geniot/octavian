@@ -217,7 +217,7 @@ func resetPassword(c echo.Context) error {
 		successMessage     = messageProperties.GetString("account.password_reset", "")
 		err                error
 	)
-	if newPasswordHashStr, err = base64ToHash(c.Request().Header.Get(X_PASS)); err != nil {
+	if newPasswordHashStr, err = toHash(c.Request().Header.Get(X_PASS)); err != nil {
 		err = errors.New(messageProperties.GetString("account.incorrect_password", ""))
 		goto END
 	}
@@ -291,7 +291,7 @@ func signUp(c echo.Context) error {
 		err             error
 	)
 	//retrieving password, hashing
-	if passwordHashStr, err = base64ToHash(c.Request().Header.Get(X_PASS)); err != nil {
+	if passwordHashStr, err = toHash(c.Request().Header.Get(X_PASS)); err != nil {
 		err = errors.New(messageProperties.GetString("account.incorrect_password", ""))
 		goto END
 	}

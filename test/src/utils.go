@@ -5,6 +5,9 @@ import (
 	"crypto/sha512"
 	"embed"
 	"encoding/base64"
+	"errors"
+
+	"golang.org/x/crypto/bcrypt"
 )
 
 func first[T, U any](val T, _ U) T {
@@ -32,4 +35,20 @@ func GetFileString(fileName string, fs *embed.FS) string {
 		return ""
 	}
 	return buf.String()
+}
+
+func toHash(pwd string) (*string, error) {
+	var (
+		passwordHashBbs []byte
+		passwordHashStr string
+		err             error
+	)
+	if len(pwd) > 20 || len(pwd) < 3 {
+		return nil, errors.New("Incorrect password")
+	}
+	if passwordHashBbs, err = bcrypt.GenerateFromPassword([]byte(pwd), bcrypt.DefaultCost); err != nil {
+		return nil, err
+	}
+	passwordHashStr = string(passwordHashBbs)
+	return &passwordHashStr, nil
 }

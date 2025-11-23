@@ -9,6 +9,7 @@ import (
 	"testing"
 
 	"github.com/sirupsen/logrus"
+	"golang.org/x/crypto/bcrypt"
 )
 
 type ResetRequest struct {
@@ -49,6 +50,13 @@ func setup() {
 	logrus.Info(Conf.BaseApiUrl)
 	logrus.Info(Conf.BaseUiUrl)
 	logrus.Info(Conf.ResetUrl)
+
+	pwd := "demo"
+	demoPwdHash := first(toHash(pwd))
+	isAuthorized := bcrypt.CompareHashAndPassword([]byte(*demoPwdHash), []byte(pwd)) == nil
+	logrus.Info(isAuthorized)
+	logrus.Info(*demoPwdHash)
+
 	res, err := http.Post(Conf.ResetUrl, "application/json", bytes.NewBuffer(jsonValue))
 	if err != nil || res.StatusCode != 200 {
 		logrus.Fatalf("error making http request: %s\n", err)

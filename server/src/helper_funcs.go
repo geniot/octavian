@@ -2,7 +2,6 @@ package main
 
 import (
 	"bytes"
-	"encoding/base64"
 	"errors"
 	"fmt"
 	"image"
@@ -77,22 +76,16 @@ func isEmail(email string) bool {
 	return err == nil
 }
 
-func base64ToHash(pwd string) (*string, error) {
+func toHash(pwd string) (*string, error) {
 	var (
-		password        string
-		passwordBbs     []byte
 		passwordHashBbs []byte
 		passwordHashStr string
 		err             error
 	)
 	if len(pwd) > 20 || len(pwd) < 3 {
-		return nil, errors.New(messageProperties.GetString("account.incorrect_password", ""))
+		return nil, errors.New("Incorrect password")
 	}
-	if passwordBbs, err = base64.StdEncoding.DecodeString(pwd); err != nil {
-		return nil, err
-	}
-	password = string(passwordBbs)
-	if passwordHashBbs, err = bcrypt.GenerateFromPassword([]byte(password), bcrypt.DefaultCost); err != nil {
+	if passwordHashBbs, err = bcrypt.GenerateFromPassword([]byte(pwd), bcrypt.DefaultCost); err != nil {
 		return nil, err
 	}
 	passwordHashStr = string(passwordHashBbs)

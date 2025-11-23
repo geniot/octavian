@@ -77,7 +77,7 @@ export class UserService {
     this.http.post<LoginModel>(
       this.baseApiUrl + '/user/login',
       JSON.stringify(loginModel),
-      {headers: new HttpHeaders().append(XHeader.X_PASS, btoa(password))}
+      {headers: new HttpHeaders().append(XHeader.X_PASS, password)}
     )
       .subscribe(model => {
           this.isLoading = false;
@@ -159,7 +159,7 @@ export class UserService {
     this.http.post<ResetPasswordModel>(
       this.baseApiUrl + '/user/password/reset',
       JSON.stringify(resetModel),
-      {headers: new HttpHeaders().append(XHeader.X_PASS, btoa(password))}
+      {headers: new HttpHeaders().append(XHeader.X_PASS, password)}
     )
       .subscribe(model => {
           this.isLoading = false;
@@ -182,7 +182,7 @@ export class UserService {
     this.http.post<SignupModel>(
       this.baseApiUrl + '/user/signup',
       JSON.stringify(signupModel),
-      {headers: new HttpHeaders().append(XHeader.X_PASS, btoa(signUpPassword))}
+      {headers: new HttpHeaders().append(XHeader.X_PASS, signUpPassword)}
     )
       .subscribe(model => {
           this.isLoading = false;
