@@ -1,7 +1,6 @@
 package main
 
 import (
-	"encoding/base64"
 	"errors"
 	"log"
 	"net/http"
@@ -64,7 +63,6 @@ func login(c echo.Context) error {
 		password           = c.Request().Header.Get(X_PASS)
 		user               User
 		isAuthorized       = false
-		passwordBytes      []byte
 		defaultErrorMsg    = messageProperties.GetString("account.incorrect_email_or_password", "")
 		accNotActivatedMsg = messageProperties.GetString("account.not_activated", "")
 		err                error
@@ -91,10 +89,7 @@ func login(c echo.Context) error {
 	}
 
 	if isPassword(password) {
-		if passwordBytes, err = base64.StdEncoding.DecodeString(password); err != nil {
-			goto END
-		}
-		isAuthorized = bcrypt.CompareHashAndPassword([]byte(*user.PasswordHash), passwordBytes) == nil
+		isAuthorized = bcrypt.CompareHashAndPassword([]byte(*user.PasswordHash), []byte(password)) == nil
 	} else if _, err = authenticate(loginModel.Jwt); err != nil {
 		goto END
 	} else {
