@@ -4,12 +4,10 @@ import {Instrument} from "../model/enums/instrument";
 import {messages} from "../environments/messages";
 import {instrument, Player} from "soundfont-player";
 import {HttpClient, HttpHeaders, HttpParams} from "@angular/common/http";
-import {ActivatedRoute, Router} from "@angular/router";
 import {InfoService} from "./infoservice";
 import {TuneModel} from "../model/mds/tunemodel";
 import {BehaviorSubject} from "rxjs";
-import {ClientAction} from "../model/enums/clientaction";
-import {INSTRUMENTS_ROUTES_MAP, tunify} from "../model/constants";
+import {tunify} from "../model/constants";
 import {plainToClass} from "class-transformer";
 import {UserService} from "./userservice";
 import {XHeader} from "../model/enums/xheader";
@@ -183,7 +181,7 @@ export class TuneService {
 
     this.isLoading = true;
     this.http.get<ScoreMetaModel>(
-      this.baseApiUrl + '/' + instrument + '/' + tune + "/meta.json"
+      this.baseApiUrl + instrument + '/' + tune + "/meta.json"
     ).subscribe(model => {
         _this.isLoading = false;
         scoreMetaModel = plainToClass(ScoreMetaModel, model);
