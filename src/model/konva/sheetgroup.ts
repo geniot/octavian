@@ -10,7 +10,6 @@ import {PlayerMode} from "../enums/playermode";
 import {TuneService} from "../../services/tuneservice";
 import {Tune} from "../tune";
 import {StatsService} from "../../services/statsservice";
-import {UserService} from "../../services/userservice";
 import {ScoreImageGroup} from "./scoreimagegroup";
 
 export class SheetGroup extends DestroyableComponent {
@@ -24,8 +23,7 @@ export class SheetGroup extends DestroyableComponent {
   constructor(public playerComponent: PlayerComponent,
               public infoService: InfoService,
               public tuneService: TuneService,
-              public statsService: StatsService,
-              public userService: UserService
+              public statsService: StatsService
   ) {
     super({
         draggable: true
@@ -90,7 +88,7 @@ export class SheetGroup extends DestroyableComponent {
 
     this.playHeadGroup = new PlayHeadGroup(playerComponent, this.infoService, this.tuneService);
     this.scoreImageGroup = new ScoreImageGroup(playerComponent, this.infoService, this.tuneService);
-    this.noteChecker = new NoteChecker(this.infoService, this.tuneService, this.statsService, this.userService);
+    this.noteChecker = new NoteChecker(this.infoService, this.tuneService, this.statsService);
 
     this.add(this.scoreImageGroup);
     this.add(this.noteChecker);

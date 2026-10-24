@@ -1,8 +1,6 @@
 import {Component} from "@angular/core";
 import {InfoService} from "../../../../services/infoservice";
-import {Router} from "@angular/router";
 import {ICONS_MAP} from "../../../../model/constants";
-import {UserService} from "../../../../services/userservice";
 
 @Component({
   selector: 'stats-button',
@@ -12,16 +10,12 @@ export class StatsButton {
   statsSrcSuffix = '';
 
   constructor(
-    public infoService: InfoService,
-    public userService: UserService,
-    public router: Router
+    public infoService: InfoService
   ) {
   }
 
   onStatsClick(): void {
-    if (this.userService.isUserLoggedIn()) {
-      this.infoService.dialogsHandler.isShowStatsDialog = true;
-    }
+    this.infoService.dialogsHandler.isShowStatsDialog = true;
   }
 
   getStatsSrc(): string {

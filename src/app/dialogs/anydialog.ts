@@ -7,7 +7,6 @@ import {DOCUMENT} from "@angular/common";
 import {ClientAction} from "../../model/enums/clientaction";
 import {CatalogueService} from "../../services/catalogueservice";
 import {TuneService} from "../../services/tuneservice";
-import {UserService} from "../../services/userservice";
 import {StatsService} from "../../services/statsservice";
 import {ConfirmationService} from "primeng/api";
 
@@ -21,13 +20,12 @@ export class AnyDialog extends DestroyableComponent {
               public infoService: InfoService,
               public tuneService: TuneService,
               public catalogueService: CatalogueService,
-              public userService: UserService,
               public statsService: StatsService,
               public sanitizer: DomSanitizer,
               public cdr: ChangeDetectorRef,
               public router: Router,
               public confirmationService: ConfirmationService
-              ) {
+  ) {
     super();
     this.elem = document.documentElement;
   }

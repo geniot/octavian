@@ -9,7 +9,6 @@ import {BarColor} from "../barcolor";
 import {PlayerMode} from "../enums/playermode";
 import {TuneService} from "../../services/tuneservice";
 import {StatsService} from "../../services/statsservice";
-import {UserService} from "../../services/userservice";
 
 export class NoteChecker extends DestroyableComponent {
   barMap: Map<number, Bar> = new Map<number, Bar>();
@@ -19,8 +18,7 @@ export class NoteChecker extends DestroyableComponent {
 
   constructor(public infoService: InfoService,
               public tuneService: TuneService,
-              public statsService: StatsService,
-              public userService: UserService
+              public statsService: StatsService
   ) {
     super();
     this.subscriptions.push(this.infoService.trashTrigger.asObservable().subscribe(
@@ -112,7 +110,7 @@ export class NoteChecker extends DestroyableComponent {
    * @private
    */
   public submitStats(): void {
-    if (this.lastBarReached && this.hundredPercentPlayed && this.userService.isUserLoggedIn()) {
+    if (this.lastBarReached && this.hundredPercentPlayed) {
       this.lastBarReached = false;
       this.hundredPercentPlayed = false;
       this.infoService.dialogsHandler.isShowResultDialog = true;

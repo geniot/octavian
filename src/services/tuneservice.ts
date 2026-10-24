@@ -3,16 +3,12 @@ import {environment} from "../environments/environment";
 import {Instrument} from "../model/enums/instrument";
 import {messages} from "../environments/messages";
 import {instrument, Player} from "soundfont-player";
-import {HttpClient, HttpHeaders, HttpParams} from "@angular/common/http";
+import {HttpClient, HttpParams} from "@angular/common/http";
 import {InfoService} from "./infoservice";
 import {TuneModel} from "../model/mds/tunemodel";
 import {BehaviorSubject} from "rxjs";
 import {tunify} from "../model/constants";
 import {plainToClass} from "class-transformer";
-import {UserService} from "./userservice";
-import {XHeader} from "../model/enums/xheader";
-import {Tune} from "../model/tune";
-import {CatalogueService} from "./catalogueservice";
 import {ScoreMetaModel} from "../model/mds/scoremetamodel";
 
 @Injectable({providedIn: 'root'})

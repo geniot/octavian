@@ -1,7 +1,6 @@
 import {ChangeDetectorRef, Component, HostListener} from '@angular/core';
 import {InfoService} from "../services/infoservice";
 import {DestroyableComponent} from "../model/destroyablecomponent";
-import {UserService} from "../services/userservice";
 import {timer} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 import {Icon} from "../model/enums/icon";
@@ -18,19 +17,13 @@ export class AppComponent extends DestroyableComponent {
 
   constructor(private httpClient: HttpClient,
               public infoService: InfoService,
-              public userService: UserService,
               private cdr: ChangeDetectorRef) {
     super();
 
     let _this = this;
     timer(0, 1000).subscribe(() => {
       _this.infoService.saveSettings();
-      _this.userService.saveModel();
     });
-    this.subscriptions.push(this.userService.loginModel.asObservable().subscribe(
-      m => {
-        _this.userService.saveModel();
-      }));
 
     for (const key in Icon) {
       if (Icon.hasOwnProperty(key)) {

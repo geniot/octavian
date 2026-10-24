@@ -137,7 +137,7 @@
     <stats-button></stats-button>
     <ng-template [ngTemplateOutlet]="SpeedButtonTemplate"></ng-template>
     <settings-button></settings-button>
-    <download-button *ngIf="userService.getUserRole()==Role.ADMIN || infoService.settings.level==0"></download-button>
+    <download-button></download-button>
     <fullscreen-button [maxSize]="100" [showSubtitle]="true"></fullscreen-button>
   </div>
 </ng-template>

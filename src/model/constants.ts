@@ -41,7 +41,6 @@ import {PlayerComponent} from "../app/player/player.component";
 import Konva from "konva";
 import {BarColor} from "./barcolor";
 import {ClientAction} from "./enums/clientaction";
-import {Role} from "./enums/role";
 import {StatsRecord} from "./statsrecord";
 import {TuneService} from "../services/tuneservice";
 import {TuneModel} from "./mds/tunemodel";
@@ -807,14 +806,6 @@ export const BAR_COLORS_MAP: Map<string, BarColor> =
     [BarColor.RED.valueOf(), BarColor.RED],
     [BarColor.GREEN.valueOf(), BarColor.GREEN],
     [BarColor.YELLOW.valueOf(), BarColor.YELLOW],
-  ]);
-
-export const ROLES_MAP: Map<string, Role> =
-  new Map([
-    [Role.ADMIN.valueOf(), Role.ADMIN],
-    [Role.CONFIRMED.valueOf(), Role.CONFIRMED],
-    [Role.REGISTERED.valueOf(), Role.REGISTERED],
-    [Role.SUBSCRIBER.valueOf(), Role.SUBSCRIBER],
   ]);
 
 export const selectLayout = (handType: HandType,

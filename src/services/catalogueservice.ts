@@ -1,14 +1,11 @@
 import {Injectable, Injector} from "@angular/core";
 import {BehaviorSubject} from "rxjs";
-import {HttpClient, HttpHeaders, HttpStatusCode} from "@angular/common/http";
-import {ActivatedRoute, Router} from "@angular/router";
+import {HttpClient} from "@angular/common/http";
 import {environment} from "../environments/environment";
 import {CatalogueModel} from "../model/mds/cataloguemodel";
 import {plainToClass} from "class-transformer";
 import {InfoService} from "./infoservice";
 import {messages} from "../environments/messages";
-import {UserService} from "./userservice";
-import {XHeader} from "../model/enums/xheader";
 import {Instrument} from "../model/enums/instrument";
 import {Tune} from "../model/tune";
 import {compareTunesFunc} from "../model/constants";
@@ -26,13 +23,11 @@ export class CatalogueService {
 
   loadCatalogue(): void {
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
-    const userService: UserService = this.injector.get<UserService>(UserService);
     const instrument: Instrument = infoService.settings.instrument;
     this.catalogueModel.value.requestedTunes = new Map();
     infoService.loadingProgressMessage.next(messages.message_loading_catalogue);
     this.isLoading = true;
-    this.http.get<CatalogueModel>(this.baseApiUrl + '/catalogue/' + instrument + '/' + infoService.settings.level,
-      {headers: new HttpHeaders().append(XHeader.X_JWT, userService.loginModel.value.jwt!)}
+    this.http.get<CatalogueModel>(this.baseApiUrl + '/catalogue/' + instrument + '/' + infoService.settings.level
     )
       .subscribe(model => {
           this.isLoading = false;
@@ -45,12 +40,6 @@ export class CatalogueService {
           this.catalogueModel.value.message = error.message;
           this.catalogueModel.value.hasError = true;
           this.catalogueModel.next(this.catalogueModel.value);
-
-          if (error.status == HttpStatusCode.Unauthorized) {
-            let loginModel = userService.loginModel.getValue();
-            loginModel.jwt = null;
-            userService.loginModel.next(loginModel);
-          }
         });
   }
 

@@ -7,10 +7,8 @@ import {SplitLayoutHandler} from "../../model/splitlayouthandler";
 import {PlayerMode} from "../../model/enums/playermode";
 import {CatalogueService} from "../../services/catalogueservice";
 import {TuneService} from "../../services/tuneservice";
-import {UserService} from "../../services/userservice";
 import {StatsService} from "../../services/statsservice";
 import {ConfirmationService} from "primeng/api";
-import {Role} from "../../model/enums/role";
 
 @Component({
   selector: 'app-player-wrapper',
@@ -26,7 +24,6 @@ export class PlayerWrapperComponent extends SplitLayoutHandler implements OnInit
               public override infoService: InfoService,
               public override tuneService: TuneService,
               public override catalogueService: CatalogueService,
-              public override userService: UserService,
               public override statsService: StatsService,
               public override sanitizer: DomSanitizer,
               public override cdr: ChangeDetectorRef,
@@ -34,7 +31,7 @@ export class PlayerWrapperComponent extends SplitLayoutHandler implements OnInit
               public override confirmationService: ConfirmationService
   ) {
 
-    super(document, infoService, tuneService, catalogueService, userService, statsService, sanitizer, cdr, router, confirmationService);
+    super(document, infoService, tuneService, catalogueService, statsService, sanitizer, cdr, router, confirmationService);
 
     this.tuneService.tuneLoadedTrigger.next(false);
     this.infoService.settings.routerUrl = router.url;
@@ -67,5 +64,4 @@ export class PlayerWrapperComponent extends SplitLayoutHandler implements OnInit
     });
   }
 
-  protected readonly Role = Role;
 }

@@ -46,7 +46,6 @@ import {SplitterModule} from "primeng/splitter";
 import {ListboxModule} from "primeng/listbox";
 import {CatalogueService} from "../services/catalogueservice";
 import {TuneService} from "../services/tuneservice";
-import {UserService} from "../services/userservice";
 import {StatsService} from "../services/statsservice";
 import {ResultDialog} from "./dialogs/result.dialog";
 import {ConfirmDialogModule} from "primeng/confirmdialog";
@@ -122,7 +121,7 @@ import {FullscreenButton} from "./menu/buttons/fullscreen/fullscreen.button";
   ],
   providers: [
     ConfirmationService,
-    InfoService, CatalogueService, TuneService, UserService, StatsService,
+    InfoService, CatalogueService, TuneService, StatsService,
     {provide: HTTP_INTERCEPTORS, useClass: ResponseInterceptor, multi: true}
   ],
   bootstrap: [AppComponent]

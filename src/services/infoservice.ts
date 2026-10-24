@@ -15,7 +15,6 @@ import {DialogsHandler} from "../model/handlers/dialogshandler";
 import {PlayerMode} from "../model/enums/playermode";
 import {Settings} from "../model/settings";
 import {TuneService} from "./tuneservice";
-import {UserService} from "./userservice";
 import {Icon} from "../model/enums/icon";
 
 @Injectable({providedIn: 'root'})
@@ -135,15 +134,6 @@ export class InfoService {
     }
   }
 
-  onProfileClick() {
-    const userService: UserService = this.injector.get<UserService>(UserService);
-    if (userService.isUserLoggedIn()) {
-      this.dialogsHandler.isShowUserProfileDialog = true;
-    } else {
-      this.dialogsHandler.isShowSignInDialog = true;
-    }
-  }
-
   onDragEnd(): void {
     this.progressValue.next(0);
     this.playerComponent!.updatePointer();
@@ -154,9 +144,7 @@ export class InfoService {
   }
 
   onLogoClick() {
-    const userService: UserService = this.injector.get<UserService>(UserService);
     this.saveSettings();
-    userService.saveModel();
     window.onbeforeunload = null;
     window.open("https://octavian.app", "_blank");
   }

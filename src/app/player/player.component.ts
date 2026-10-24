@@ -12,7 +12,6 @@ import {PlayerMode} from "../../model/enums/playermode";
 import {TuneService} from "../../services/tuneservice";
 import {Tune} from "../../model/tune";
 import {StatsService} from "../../services/statsservice";
-import {UserService} from "../../services/userservice";
 import Layer = Konva.Layer;
 
 @Component({
@@ -40,8 +39,7 @@ export class PlayerComponent extends DestroyableComponent implements AfterViewIn
 
   constructor(public infoService: InfoService,
               public tuneService: TuneService,
-              public statsService: StatsService,
-              public userService: UserService
+              public statsService: StatsService
   ) {
     super();
 
@@ -105,7 +103,7 @@ export class PlayerComponent extends DestroyableComponent implements AfterViewIn
 
   initSheetLayer(): Layer {
     let sheetLayer = new Konva.Layer();
-    this.sheetGroup = new SheetGroup(this, this.infoService, this.tuneService, this.statsService, this.userService);
+    this.sheetGroup = new SheetGroup(this, this.infoService, this.tuneService, this.statsService);
     this.containers.push(this.sheetGroup);
     sheetLayer.add(this.sheetGroup);
     return sheetLayer;
