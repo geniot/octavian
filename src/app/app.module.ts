@@ -35,11 +35,6 @@ import {AboutDialog} from "./dialogs/about.dialog";
 import {SettingsDialog} from "./dialogs/settings.dialog";
 import {LeftHandLayoutDialog} from "./dialogs/lefthandlayout.dialog";
 import {RightHandLayoutDialog} from "./dialogs/righthandlayout.dialog";
-import {RequestPasswordResetComponent} from './account/requestpasswordreset/request-password-reset.component';
-import {SignupComponent} from './account/signup/signup.component';
-import {ResendLinkComponent} from './account/resendlink/resend-link.component';
-import {CheckYourEmailComponent} from "./account/checkyouremail/check-your-email.component";
-import {ResetPasswordComponent} from './account/resetpassword/reset-password.component';
 import {TabViewModule} from "primeng/tabview";
 import {FileUploadModule} from "primeng/fileupload";
 import {TableModule} from "primeng/table";
@@ -93,11 +88,6 @@ import {RangeSelectorComponent} from "./rangeselector/range-selector.component";
     RightHandLayoutDialog,
     StatsDialog,
     ResultDialog,
-    RequestPasswordResetComponent,
-    SignupComponent,
-    ResendLinkComponent,
-    CheckYourEmailComponent,
-    ResetPasswordComponent,
     HomeButton,
     TuneButton,
     FingeringButton,
