@@ -31,32 +31,24 @@ import {PlayerSliderComponent} from './playerslider/player-slider.component';
 import {PlayerControlsComponent} from './playercontrols/player-controls.component';
 import {PasswordModule} from "primeng/password";
 import {RecaptchaModule} from "ng-recaptcha-2";
-import {SignInDialog} from "./dialogs/signin.dialog";
-import {CheckYourEmailDialog} from "./dialogs/checkyouremail.dialog";
 import {AboutDialog} from "./dialogs/about.dialog";
 import {SettingsDialog} from "./dialogs/settings.dialog";
 import {LeftHandLayoutDialog} from "./dialogs/lefthandlayout.dialog";
 import {RightHandLayoutDialog} from "./dialogs/righthandlayout.dialog";
-import {UserProfileDialog} from "./dialogs/userprofile.dialog";
 import {RequestPasswordResetComponent} from './account/requestpasswordreset/request-password-reset.component';
 import {SignupComponent} from './account/signup/signup.component';
 import {ResendLinkComponent} from './account/resendlink/resend-link.component';
 import {CheckYourEmailComponent} from "./account/checkyouremail/check-your-email.component";
 import {ResetPasswordComponent} from './account/resetpassword/reset-password.component';
-import {UploadDialog} from "./dialogs/upload.dialog";
 import {TabViewModule} from "primeng/tabview";
 import {FileUploadModule} from "primeng/fileupload";
 import {TableModule} from "primeng/table";
 import {ContextMenuModule} from "primeng/contextmenu";
-import {DeleteDialog} from "./dialogs/delete.dialog";
 import {ResponseInterceptor} from "../model/responseinterceptor";
-import {ProgressDialog} from "./dialogs/progress.dialog";
 import {CardModule} from "primeng/card";
-import {CopyDialog} from "./dialogs/copy.dialog";
 import {PlayerProgressbarComponent} from "./playerprogressbar/player-progressbar.component";
 import {StatsDialog} from "./dialogs/statsdialog";
 import {FingeringComponent} from './fingering/fingering.component';
-import {FingeringDialog} from "./dialogs/fingering.dialog";
 import {DropdownModule} from "primeng/dropdown";
 import {SplitterModule} from "primeng/splitter";
 import {ListboxModule} from "primeng/listbox";
@@ -96,19 +88,11 @@ import {RangeSelectorComponent} from "./rangeselector/range-selector.component";
     PlayerSliderComponent,
     PlayerProgressbarComponent,
     PlayerControlsComponent,
-    SignInDialog,
-    CheckYourEmailDialog,
     AboutDialog,
-    ProgressDialog,
     SettingsDialog,
     LeftHandLayoutDialog,
     RightHandLayoutDialog,
-    UserProfileDialog,
-    UploadDialog,
-    DeleteDialog,
-    CopyDialog,
     StatsDialog,
-    FingeringDialog,
     ResultDialog,
     RequestPasswordResetComponent,
     SignupComponent,

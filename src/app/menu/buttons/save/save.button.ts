@@ -27,7 +27,7 @@ export class SaveButton {
   }
 
   onSave() {
-    this.tuneService.saveFingering();
+    // this.tuneService.saveFingering();
   }
 
 }

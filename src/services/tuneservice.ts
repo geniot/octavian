@@ -39,86 +39,13 @@ export class TuneService {
 
   loadTune(instrument: string, tune: string): void {
     this.tuneLoadedTrigger.next(false);
-    this.http.get<TuneModel>(environment.BASE_API_URL + '/' + instrument + '/' + tune + '/' + tune + '.json' + '?rnd=' + Date.now())
+    this.http.get<TuneModel>(environment.BASE_API_URL + instrument + '/' + tune + '/' + tune + '.json' + '?rnd=' + Date.now())
       .subscribe(model => {
         this.tuneLoadedTrigger.next(true);
         model = plainToClass(TuneModel, model);
         tunify(model);
         this.tuneModel.next(model);
       });
-  }
-
-  deleteTune() {
-    this.isLoading = true;
-    const catalogueService: CatalogueService = this.injector.get<CatalogueService>(CatalogueService);
-    const infoService: InfoService = this.injector.get<InfoService>(InfoService);
-    const userService: UserService = this.injector.get<UserService>(UserService);
-    this.http.delete<TuneModel>(
-      this.baseApiUrl + '/tune/' + this.tuneModel.value.tune.id,
-      {headers: new HttpHeaders().append(XHeader.X_JWT, userService.loginModel.value.jwt!)}
-    )
-      .subscribe(model => {
-        this.isLoading = false;
-        infoService.dialogsHandler.isShowDeleteDialog = false;
-        catalogueService.loadCatalogue();
-      });
-  }
-
-  saveTune(tune: Tune): void {
-    this.isLoading = true;
-    const userService: UserService = this.injector.get<UserService>(UserService);
-    const catalogueService: CatalogueService = this.injector.get<CatalogueService>(CatalogueService);
-    const formData: FormData = new FormData();
-    if (this.museFile != null) {
-      formData.append("muse", this.museFile[0], this.museFile[0].name);
-    }
-    if (this.coverFile != null) {
-      formData.append("cover", this.coverFile[0], this.coverFile[0].name);
-    }
-    formData.append("tune", JSON.stringify(tune));
-    this.http.post<TuneModel>(
-      this.baseApiUrl + '/tune',
-      formData,
-      {headers: new HttpHeaders().append(XHeader.X_JWT, userService.loginModel.value.jwt!)}
-    )
-      .subscribe(model => {
-        this.isLoading = false;
-        model = plainToClass(TuneModel, model);
-        if (!model.hasError) {
-          catalogueService.loadCatalogue()
-        }
-        this.tuneModel.next(model);
-      });
-  }
-
-  saveFingering(): void {
-    this.isLoading = true;
-    const infoService: InfoService = this.injector.get<InfoService>(InfoService);
-    const tuneService: TuneService = this.injector.get<TuneService>(TuneService);
-    const userService: UserService = this.injector.get<UserService>(UserService);
-    this.http.post<TuneModel>(
-      this.baseApiUrl + '/tune/fingering/' + tuneService.tuneModel.value.tune.id,
-      JSON.stringify(this.tuneModel.value, this.replacer, 2),
-      {headers: new HttpHeaders().append(XHeader.X_JWT, userService.loginModel.value.jwt!)}
-    )
-      .subscribe(model => {
-        this.isLoading = false;
-        infoService.dialogsHandler.isShowFingeringDialog = false;
-        this.fingeringSavedTrigger.next(true);
-      });
-  }
-
-  replacer(key: any, value: any) {
-    if (value instanceof Map) {
-      const reducer = (obj: any, mapKey: any) => {
-        obj[mapKey] = value.get(mapKey);
-        return obj;
-      };
-      return [...value.keys()].sort().reduce(reducer, {});
-    } else if (value instanceof Set) {
-      return [...value].sort();
-    }
-    return value;
   }
 
   onFingering() {
@@ -169,11 +96,6 @@ export class TuneService {
     let scoreMetaModel = new ScoreMetaModel();
 
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
-    const userService: UserService = this.injector.get<UserService>(UserService);
-
-    // let routerSplits: string[] = infoService.settings.routerUrl.split('/');
-    // let requestedTuneId: string = routerSplits[routerSplits.length - 1];
-
     const instrument = this.getParamValueQueryString("instrument") || "piano";
     const tune = this.getParamValueQueryString("tune") || "greensleeves";
 
@@ -226,7 +148,7 @@ export class TuneService {
       // _this.router.navigate([INSTRUMENTS_ROUTES_MAP.get(infoService.settings.instrument)]);
     };
     infoService.loadingProgressMessage.next(messages.message_loading_score);
-    imageObj.src = environment.BASE_API_URL + '/' + instrument + '/' + tune + '/' + tune + '_' + part + '.png' + '?rnd=' + Date.now();
+    imageObj.src = environment.BASE_API_URL + instrument + '/' + tune + '/' + tune + '_' + part + '.png' + '?rnd=' + Date.now();
   }
 
   getAudioContext(): AudioContext {
