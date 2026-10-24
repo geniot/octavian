@@ -1,7 +1,6 @@
 import {Injectable, Injector} from "@angular/core";
 import {BehaviorSubject} from "rxjs";
 import {HttpClient} from "@angular/common/http";
-import {environment} from "../environments/environment";
 import {CatalogueModel} from "../model/mds/cataloguemodel";
 import {plainToClass} from "class-transformer";
 import {InfoService} from "./infoservice";
@@ -9,16 +8,16 @@ import {messages} from "../environments/messages";
 import {Instrument} from "../model/enums/instrument";
 import {Tune} from "../model/tune";
 import {compareTunesFunc} from "../model/constants";
+import {AnyService} from "./anyservice";
 
 
 @Injectable({providedIn: 'root'})
-export class CatalogueService {
-  readonly baseApiUrl = environment.BASE_API_URL;
-  isLoading: boolean = true;//true by default to turn off all rendering while i18n is in place
+export class CatalogueService extends AnyService {
   catalogueModel: BehaviorSubject<CatalogueModel> = new BehaviorSubject<CatalogueModel>(new CatalogueModel());
 
   constructor(public http: HttpClient,
               private injector: Injector) {
+    super();
   }
 
   loadCatalogue(): void {

@@ -86,7 +86,6 @@
     <div
       class="flash"
       [style]="{backgroundColor:'pink'}"
-      (click)="onSignIn($event)"
       [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(tuneService.tuneModel.value.message==null?'':tuneService.tuneModel.value.message)">
     </div>
 

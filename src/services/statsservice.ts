@@ -1,66 +1,59 @@
 import {Injectable, Injector} from "@angular/core";
 import {BehaviorSubject} from "rxjs";
 import {HttpClient} from "@angular/common/http";
-import {environment} from "../environments/environment";
 import {StatsModel} from "../model/mds/statsmodel";
 import {plainToClass} from "class-transformer";
-import {TuneService} from "./tuneservice";
 import {InfoService} from "./infoservice";
+import {StatsRecord} from "../model/statsrecord";
+import {AnyService} from "./anyservice";
+import {getParamValueQueryString} from "../model/constants";
 
 
 @Injectable({providedIn: 'root'})
-export class StatsService {
-  readonly baseApiUrl = environment.BASE_API_URL;
+export class StatsService extends AnyService {
   statsModel: BehaviorSubject<StatsModel> = new BehaviorSubject<StatsModel>(new StatsModel());
-  isLoading: boolean = false;
+  readonly statsLocalStorageName: string = "octavian-statsLocalStorageName";
 
   constructor(public http: HttpClient,
               private injector: Injector) {
+    super();
+    if (localStorage.getItem(this.statsLocalStorageName)) {
+      let stats = JSON.parse(localStorage.getItem(this.statsLocalStorageName)!);
+      this.statsModel.next(plainToClass(StatsModel, stats));
+    } else {
+      this.statsModel.next(new StatsModel());
+    }
   }
 
   submitStats() {
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
-    const tuneService: TuneService = this.injector.get<TuneService>(TuneService);
-    let statsModel: StatsModel = new StatsModel();
-    statsModel.submittedStats = infoService.playerComponent.sheetGroup.noteChecker.getStatsRecord();
-    this.isLoading = true;
-    this.http.post<StatsModel>(
-      this.baseApiUrl + '/stats/' + tuneService.tuneModel.value.tune.id,
-      JSON.stringify(statsModel)
-    )
-      .subscribe(model => {
-          this.isLoading = false;
-          model = plainToClass(StatsModel, model);
-          this.statsModel.next(model);
-        }
-      );
+    const newStatsRecord: StatsRecord = infoService.playerComponent.sheetGroup.noteChecker.getStatsRecord();
+    const instrument = getParamValueQueryString("instrument");
+    const tune = getParamValueQueryString("tune");
+    if (instrument != null && tune != null) {
+      let records: StatsRecord[] = new Array<StatsRecord>();
+      if (this.statsModel.value.records.has(instrument + ":" + tune)) {
+        records = this.statsModel.value.records.get(instrument + ":" + tune)!;
+      }
+      records.push(newStatsRecord);
+      this.statsModel.value.submittedStats = newStatsRecord;
+      this.statsModel.value.records.set(instrument + ":" + tune, records);
+      this.statsModel.next(this.statsModel.value);
+      localStorage.setItem(this.statsLocalStorageName, JSON.stringify(this.statsModel.value));
+    }
   }
 
   loadStats(): void {
-    const tuneService: TuneService = this.injector.get<TuneService>(TuneService);
-    this.isLoading = true;
-    this.http.get<StatsModel>(this.baseApiUrl + '/stats/' + tuneService.tuneModel.value.tune.id)
-      .subscribe(model => {
-          this.isLoading = false;
-          model = plainToClass(StatsModel, model);
-          this.statsModel.next(model);
-        },
-        error => {
-          this.isLoading = false;
-          this.statsModel.value.message = error.message;
-          this.statsModel.value.hasError = true;
-          this.statsModel.next(this.statsModel.value);
-        });
+    this.statsModel.next(this.statsModel.value);
   }
 
   clearStats() {
-    const tuneService: TuneService = this.injector.get<TuneService>(TuneService);
-    this.isLoading = true;
-    this.http.delete<StatsModel>(this.baseApiUrl + '/stats/' + tuneService.tuneModel.value.tune.id)
-      .subscribe(model => {
-        this.isLoading = false;
-        model = plainToClass(StatsModel, model);
-        this.statsModel.next(model);
-      });
+    const instrument = getParamValueQueryString("instrument");
+    const tune = getParamValueQueryString("tune");
+    if (instrument != null && tune != null) {
+      this.statsModel.value.records.set(instrument + ":" + tune, new Array<StatsRecord>());
+      this.statsModel.next(this.statsModel.value);
+      localStorage.setItem(this.statsLocalStorageName, JSON.stringify(this.statsModel.value));
+    }
   }
 }

@@ -1,7 +1,6 @@
 import {Injectable, Injector} from "@angular/core";
 
 import {BehaviorSubject} from "rxjs";
-import {environment} from "../environments/environment";
 import {HttpClient} from "@angular/common/http";
 import {defaultize, ICONS_MAP} from "../model/constants";
 import {Note} from "../model/note";
@@ -16,11 +15,10 @@ import {PlayerMode} from "../model/enums/playermode";
 import {Settings} from "../model/settings";
 import {TuneService} from "./tuneservice";
 import {Icon} from "../model/enums/icon";
+import {AnyService} from "./anyservice";
 
 @Injectable({providedIn: 'root'})
-export class InfoService {
-
-  readonly baseApiUrl = environment.BASE_API_URL;
+export class InfoService extends AnyService {
   readonly settingsLocalStorageName = 'octavian-settings';
 
   settings: Settings = new Settings();
@@ -73,6 +71,7 @@ export class InfoService {
   constructor(public http: HttpClient,
               private injector: Injector) {
 
+    super();
     const tuneService: TuneService = this.injector.get<TuneService>(TuneService);
     this.midiHandler = new MidiHandler(this, tuneService);
 

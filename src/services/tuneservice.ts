@@ -3,21 +3,19 @@ import {environment} from "../environments/environment";
 import {Instrument} from "../model/enums/instrument";
 import {messages} from "../environments/messages";
 import {instrument, Player} from "soundfont-player";
-import {HttpClient, HttpParams} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
 import {InfoService} from "./infoservice";
 import {TuneModel} from "../model/mds/tunemodel";
 import {BehaviorSubject} from "rxjs";
-import {tunify} from "../model/constants";
+import {getParamValueQueryString, tunify} from "../model/constants";
 import {plainToClass} from "class-transformer";
 import {ScoreMetaModel} from "../model/mds/scoremetamodel";
+import {AnyService} from "./anyservice";
 
 @Injectable({providedIn: 'root'})
-export class TuneService {
-  readonly baseApiUrl = environment.BASE_API_URL;
-  isLoading: boolean = false;
+export class TuneService extends AnyService {
   tuneModel: BehaviorSubject<TuneModel> = new BehaviorSubject<TuneModel>(new TuneModel());
   scoreMetaModel: BehaviorSubject<ScoreMetaModel> = new BehaviorSubject<ScoreMetaModel>(new ScoreMetaModel());
-  fingeringSavedTrigger: BehaviorSubject<boolean> = new BehaviorSubject(true);
   tuneLoadedTrigger: BehaviorSubject<boolean> = new BehaviorSubject(false);
   selectionRemovedTrigger: BehaviorSubject<boolean> = new BehaviorSubject(false);
   audioContext!: AudioContext;
@@ -31,6 +29,7 @@ export class TuneService {
 
   constructor(public http: HttpClient,
               private injector: Injector) {
+    super();
   }
 
   loadTune(instrument: string, tune: string): void {
@@ -42,11 +41,6 @@ export class TuneService {
         tunify(model);
         this.tuneModel.next(model);
       });
-  }
-
-  onFingering() {
-    let id = this.tuneModel.value.tune.id;
-    // this.router.navigate(['/' + ClientAction.FINGERING, id], {state: {data: id}});
   }
 
   loadInstrument(onLoadedHandler: Function): void {
@@ -92,8 +86,8 @@ export class TuneService {
     let scoreMetaModel = new ScoreMetaModel();
 
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
-    const instrument = this.getParamValueQueryString("instrument") || "piano";
-    const tune = this.getParamValueQueryString("tune") || "greensleeves";
+    const instrument = getParamValueQueryString("instrument") || "piano";
+    const tune = getParamValueQueryString("tune") || "greensleeves";
 
     infoService.loadingProgressMessage.next(messages.message_loading_score);
 
@@ -116,16 +110,6 @@ export class TuneService {
         // this.router.navigate([INSTRUMENTS_ROUTES_MAP.get(infoService.settings.instrument)]);
       }
     );
-  }
-
-  getParamValueQueryString(paramName: string): string | null {
-    const url = window.location.href;
-    let paramValue = null;
-    if (url.includes('?')) {
-      const httpParams = new HttpParams({fromString: url.split('?')[1]});
-      paramValue = httpParams.get(paramName);
-    }
-    return paramValue;
   }
 
   loadImagePart(part: number, instrument: string, tune: string): void {

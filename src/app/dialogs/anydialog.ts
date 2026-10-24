@@ -4,7 +4,6 @@ import {DomSanitizer} from "@angular/platform-browser";
 import {Router} from "@angular/router";
 import {ChangeDetectorRef, Directive, Inject} from "@angular/core";
 import {DOCUMENT} from "@angular/common";
-import {ClientAction} from "../../model/enums/clientaction";
 import {CatalogueService} from "../../services/catalogueservice";
 import {TuneService} from "../../services/tuneservice";
 import {StatsService} from "../../services/statsservice";
@@ -30,23 +29,6 @@ export class AnyDialog extends DestroyableComponent {
     this.elem = document.documentElement;
   }
 
-  onSignIn(event: any) {
-    this.hasError = false;
-    this.message = null;
-    let dataLink: String = event.target.getAttribute('data-link');
-    if (dataLink != null && dataLink == "onSignIn") {
-      this.infoService.dialogsHandler.isShowSignInDialog = true;
-    }
-    if (dataLink != null && dataLink == "onSignUp") {
-      this.router.navigate(['/' + ClientAction.SIGNUP], {state: {data: this.router.url}});
-    }
-    if (dataLink != null && dataLink == "onSubscribe") {
-      this.infoService.dialogsHandler.hideAllDialogs();
-      this.infoService.onHomeClick();
-      this.infoService.dialogsHandler.isShowUserProfileDialog = true;
-    }
-  }
-
   onShow() {
     this.hasError = false;
     this.message = null;
@@ -55,7 +37,6 @@ export class AnyDialog extends DestroyableComponent {
   onHide() {
     this.hasError = false;
     this.message = null;
-    this.infoService.dialogsHandler.isShowSignInDialog = false;
   }
 
   onErrorClose() {

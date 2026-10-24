@@ -246,8 +246,8 @@ a:hover {
   opacity: 0.8;
   background-color: darkgray;
   border-color: white;
-  height:30px;
-  width:30px !important;
+  height: 30px;
+  width: 30px !important;
 }
 
 .p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus {
@@ -257,6 +257,11 @@ a:hover {
   border: 2px solid #ced4da;
 }
 
-.pi-play:before{
+.pi-play:before {
   padding-left: 3px;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
 }

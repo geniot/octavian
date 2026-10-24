@@ -47,6 +47,7 @@ import {TuneModel} from "./mds/tunemodel";
 import {Settings} from "./settings";
 import {PlayerMode} from "./enums/playermode";
 import {Tune} from "./tune";
+import {HttpParams} from "@angular/common/http";
 
 export const SELECTION_HANDLE_FILL_COLOR: string = '#ffffff';
 export const SELECTION_HANDLE_WIDTH: number = 20;
@@ -867,4 +868,15 @@ export const compareTunesFunc = (obj1: [string, Tune], obj2: [string, Tune]): nu
     return 0;
   }
   return obj1[1].positionNum - obj2[1].positionNum;
+}
+
+
+export const getParamValueQueryString = (paramName: string): string | null => {
+  const url = window.location.href;
+  let paramValue = null;
+  if (url.includes('?')) {
+    const httpParams = new HttpParams({fromString: url.split('?')[1]});
+    paramValue = httpParams.get(paramName);
+  }
+  return paramValue;
 }

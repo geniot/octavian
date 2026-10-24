@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 import {AnyDialog} from "./anydialog";
 import {StatsRecord} from "../../model/statsrecord";
-import {getScore} from "../../model/constants";
+import {getParamValueQueryString, getScore} from "../../model/constants";
 
 @Component({
   selector: 'stats-dialog',
@@ -20,7 +20,9 @@ export class StatsDialog extends AnyDialog {
   ngOnInit(): void {
     this.subscriptions.push(this.statsService.statsModel.asObservable().subscribe(
       m => {
-        this.stats = m.requestedStats;
+        const instrument = getParamValueQueryString("instrument");
+        const tune = getParamValueQueryString("tune");
+        this.stats = this.statsService.statsModel.value.records.get(instrument + ":" + tune)!;
       }));
     //for debugging
     // this.infoService.dialogsHandler.isShowStatsDialog = true;
@@ -39,7 +41,7 @@ export class StatsDialog extends AnyDialog {
 
   getDate(date: string): string {
     let splits = date.split("T")[0].split("-");
-    return splits[2]+"-"+splits[1]+"-"+splits[0];
+    return splits[2] + "-" + splits[1] + "-" + splits[0];
   }
 
   getTime(date: string): string {
@@ -71,22 +73,6 @@ export class StatsDialog extends AnyDialog {
   }
 
   confirm(event: Event) {
-    let _this = this;
-    this.confirmationService.confirm({
-      target: event.target as EventTarget,
-      message: 'Are you sure you want to clear all stats for this tune?',
-      header: 'Confirmation',
-      icon: 'pi pi-info-circle',
-      acceptButtonStyleClass:"p-button-danger p-button-text",
-      rejectButtonStyleClass:"p-button-text p-button-text",
-      acceptIcon:"none",
-      rejectIcon:"none",
-      defaultFocus:"none",
-      accept: () => {
-        _this.statsService.clearStats();
-      },
-      reject: () => {
-      }
-    });
+    this.statsService.clearStats();
   }
 }
