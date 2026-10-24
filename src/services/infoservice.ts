@@ -75,7 +75,6 @@ export class InfoService {
 
 
   constructor(public http: HttpClient,
-              public router: Router,
               private injector: Injector) {
 
     const tuneService: TuneService = this.injector.get<TuneService>(TuneService);
@@ -97,7 +96,7 @@ export class InfoService {
   }
 
   onHomeClick(): void {
-    this.router.navigate([INSTRUMENTS_ROUTES_MAP.get(this.settings.instrument)]);
+    // this.router.navigate([INSTRUMENTS_ROUTES_MAP.get(this.settings.instrument)]);
   }
 
   fastBackward(): void {

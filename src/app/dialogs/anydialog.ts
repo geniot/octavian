@@ -10,7 +10,6 @@ import {TuneService} from "../../services/tuneservice";
 import {UserService} from "../../services/userservice";
 import {StatsService} from "../../services/statsservice";
 import {ConfirmationService} from "primeng/api";
-import {UnlockService} from "../../services/unlockservice";
 
 @Directive()
 export class AnyDialog extends DestroyableComponent {
@@ -24,7 +23,6 @@ export class AnyDialog extends DestroyableComponent {
               public catalogueService: CatalogueService,
               public userService: UserService,
               public statsService: StatsService,
-              public unlockService: UnlockService,
               public sanitizer: DomSanitizer,
               public cdr: ChangeDetectorRef,
               public router: Router,

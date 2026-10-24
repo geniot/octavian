@@ -36,9 +36,7 @@ export class TuneService {
   playingTuneId!: number;
 
   constructor(public http: HttpClient,
-              public router: Router,
-              private injector: Injector,
-              public activatedRoute: ActivatedRoute) {
+              private injector: Injector) {
   }
 
   loadTune(instrument: string, tune: string): void {
@@ -127,7 +125,7 @@ export class TuneService {
 
   onFingering() {
     let id = this.tuneModel.value.tune.id;
-    this.router.navigate(['/' + ClientAction.FINGERING, id], {state: {data: id}});
+    // this.router.navigate(['/' + ClientAction.FINGERING, id], {state: {data: id}});
   }
 
   loadInstrument(onLoadedHandler: Function): void {

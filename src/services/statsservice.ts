@@ -18,9 +18,7 @@ export class StatsService {
   isLoading: boolean = false;
 
   constructor(public http: HttpClient,
-              public router: Router,
-              private injector: Injector,
-              private activatedRoute: ActivatedRoute) {
+              private injector: Injector) {
   }
 
   submitStats() {

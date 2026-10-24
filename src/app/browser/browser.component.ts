@@ -13,7 +13,6 @@ import {cloneDeep} from "lodash-es";
 import {CatalogueService} from "../../services/catalogueservice";
 import {TuneService} from "../../services/tuneservice";
 import {UserService} from "../../services/userservice";
-import {UnlockService} from "../../services/unlockservice";
 import {PLACEHOLDER_IMG, STAR_EMPTY_IMG, STAR_IMG} from "../../model/images";
 
 @Component({
@@ -37,7 +36,6 @@ export class BrowserComponent extends DestroyableComponent implements OnInit {
               public tuneService: TuneService,
               public catalogueService: CatalogueService,
               public userService: UserService,
-              public unlockService: UnlockService,
               public sanitizer: DomSanitizer) {
     super();
   }

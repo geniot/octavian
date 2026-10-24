@@ -18,7 +18,6 @@ import {TuneService} from "../../services/tuneservice";
 import {UserService} from "../../services/userservice";
 import {StatsService} from "../../services/statsservice";
 import {ConfirmationService} from "primeng/api";
-import {UnlockService} from "../../services/unlockservice";
 import {skip} from "rxjs/operators";
 import {Role} from "../../model/enums/role";
 
@@ -39,14 +38,13 @@ export class FingeringComponent extends SplitLayoutHandler implements OnInit, On
               public override catalogueService: CatalogueService,
               public override userService: UserService,
               public override statsService: StatsService,
-              public override unlockService: UnlockService,
               public override sanitizer: DomSanitizer,
               public override cdr: ChangeDetectorRef,
               public override router: Router,
               public override confirmationService: ConfirmationService
   ) {
 
-    super(document, infoService, tuneService, catalogueService, userService, statsService, unlockService, sanitizer, cdr, router, confirmationService);
+    super(document, infoService, tuneService, catalogueService, userService, statsService, sanitizer, cdr, router, confirmationService);
 
     this.infoService.fingeringComponent = this;
     this.tuneService.tuneLoadedTrigger.next(false);

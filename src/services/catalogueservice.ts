@@ -21,9 +21,7 @@ export class CatalogueService {
   catalogueModel: BehaviorSubject<CatalogueModel> = new BehaviorSubject<CatalogueModel>(new CatalogueModel());
 
   constructor(public http: HttpClient,
-              public router: Router,
-              private injector: Injector,
-              private activatedRoute: ActivatedRoute) {
+              private injector: Injector) {
   }
 
   loadCatalogue(): void {

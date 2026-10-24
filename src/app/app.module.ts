@@ -17,7 +17,6 @@ import {PlayerComponent} from './player/player.component';
 import {SelectButtonModule} from "primeng/selectbutton";
 import {ProgressSpinnerModule} from "primeng/progressspinner";
 import {PlayerWrapperComponent} from './playerwrapper/player-wrapper.component';
-import {AppRoutingModule} from "./app-routing.module";
 import {BrowserComponent} from "./browser/browser.component";
 import {MenuComponent} from "./menu/menu.component";
 import {ButtonKeyboardComponent} from './buttonkeyboard/button-keyboard.component';
@@ -68,7 +67,6 @@ import {StatsService} from "../services/statsservice";
 import {ResultDialog} from "./dialogs/result.dialog";
 import {ConfirmDialogModule} from "primeng/confirmdialog";
 import {ConfirmationService} from "primeng/api";
-import {UnlockService} from "../services/unlockservice";
 import {HomeButton} from "./menu/buttons/home/home.button";
 import {TuneButton} from "./menu/buttons/tune/tune.button";
 import {FingeringButton} from "./menu/buttons/fingering/fingering.button";
@@ -145,7 +143,6 @@ import {RangeSelectorComponent} from "./rangeselector/range-selector.component";
     FlexLayoutModule,
     SelectButtonModule,
     ProgressSpinnerModule,
-    AppRoutingModule,
     RadioButtonModule,
     DialogModule,
     CheckboxModule,
@@ -167,7 +164,7 @@ import {RangeSelectorComponent} from "./rangeselector/range-selector.component";
   ],
   providers: [
     ConfirmationService,
-    InfoService, CatalogueService, TuneService, UserService, StatsService, UnlockService,
+    InfoService, CatalogueService, TuneService, UserService, StatsService,
     {provide: HTTP_INTERCEPTORS, useClass: ResponseInterceptor, multi: true}
   ],
   bootstrap: [AppComponent]

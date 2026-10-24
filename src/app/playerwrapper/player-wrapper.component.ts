@@ -10,7 +10,6 @@ import {TuneService} from "../../services/tuneservice";
 import {UserService} from "../../services/userservice";
 import {StatsService} from "../../services/statsservice";
 import {ConfirmationService} from "primeng/api";
-import {UnlockService} from "../../services/unlockservice";
 import {Role} from "../../model/enums/role";
 
 @Component({
@@ -29,14 +28,13 @@ export class PlayerWrapperComponent extends SplitLayoutHandler implements OnInit
               public override catalogueService: CatalogueService,
               public override userService: UserService,
               public override statsService: StatsService,
-              public override unlockService: UnlockService,
               public override sanitizer: DomSanitizer,
               public override cdr: ChangeDetectorRef,
               public override router: Router,
               public override confirmationService: ConfirmationService
   ) {
 
-    super(document, infoService, tuneService, catalogueService, userService, statsService, unlockService, sanitizer, cdr, router, confirmationService);
+    super(document, infoService, tuneService, catalogueService, userService, statsService, sanitizer, cdr, router, confirmationService);
 
     this.tuneService.tuneLoadedTrigger.next(false);
     this.infoService.settings.routerUrl = router.url;

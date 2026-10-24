@@ -33,9 +33,7 @@ export class UserService {
   isLoading: boolean = false;
 
   constructor(public http: HttpClient,
-              public router: Router,
-              private injector: Injector,
-              private activatedRoute: ActivatedRoute) {
+              private injector: Injector) {
     let m: LoginModel = new LoginModel();
     if (localStorage.getItem(this.modelLocalStorageName)) {
       try {
