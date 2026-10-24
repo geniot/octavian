@@ -1,0 +1,106 @@
+<p-dialog
+  header="Fingering for '{{tuneService.tuneModel.value.tune == null?'':tuneService.tuneModel.value.tune.title}}'"
+  [(visible)]="infoService.dialogsHandler.isShowFingeringDialog"
+  [modal]="true"
+  [draggable]="true"
+  [resizable]="false"
+  (onHide)="onHide()"
+  (onShow)="onShow()"
+  [style]="{width: '75vw'}"
+  [contentStyle]="{height: '75vh'}"
+>
+
+  <div style="padding:0;border: 0px solid black;width:100%;height:100%;overflow: hidden"
+       fxLayout="column nowrap"
+       fxLayoutAlign="center center">
+
+    <div
+      *ngIf="hasError && message!=null"
+      class="flash"
+      [style]="{backgroundColor:'pink'}">
+      <div>
+        <button (click)="onErrorClose()" class="flash-close" type="button" aria-label="Dismiss this message">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16" data-view-component="true">
+            <path fill-rule="evenodd"
+                  d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+          </svg>
+        </button>
+        <div (click)="onSignIn($event)"
+             [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(message==null?'':message)">
+        </div>
+      </div>
+    </div>
+
+    <div style="padding:0;border: 0px solid black;width:100%;height:100%;overflow: hidden"
+         fxLayout="row nowrap"
+         fxLayoutGap="10px"
+         fxLayoutAlign="center center">
+      <div fxFlex="1 1 250px" style="padding:0;border: 0px solid red;height:100%;width:100%;overflow: hidden;">
+        <p-listbox [options]="layoutOptions" scrollHeight="auto" [(ngModel)]="selectedLayout" optionLabel="value"
+                   optionValue="value"></p-listbox>
+      </div>
+      <div style="width:100%;height:100%;border: 1px solid #ced4da;">
+        <p-table [value]="fingerings.get(selectedLayout)!"
+                 [scrollable]="true"
+                 styleClass="p-datatable-gridlines p-datatable-striped"
+                 scrollHeight="flex">
+
+          <ng-template pTemplate="header">
+            <tr>
+              <th style="width:3%;text-align: center;">
+                Measure
+              </th>
+              <th style="width:97%;text-align: center;">Fingers</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-record>
+            <tr>
+              <td style="text-align: center;">
+                <div>{{ record.index }}</div>
+              </td>
+              <td style="text-align: left;"><input style="width:100%;" type="text" pInputText
+                                                   [(ngModel)]="record.fingers"/></td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </div>
+
+  </div>
+
+
+  <ng-template pTemplate="footer">
+    <div style="padding:10px;border: 0px solid black;width:100%;height:100%;overflow: hidden"
+         fxLayout="row nowrap"
+         fxLayoutAlign="space-between center">
+      <div style="margin-top:0px;">
+        <p-button icon="pi pi-times" (click)="this.infoService.dialogsHandler.isShowFingeringDialog = false"
+                  label="Cancel"
+                  styleClass="p-button-text"></p-button>
+      </div>
+      <div style="margin-top:0px;background-color:lightgray;padding:5px 5px 5px 10px;" fxLayout="row nowrap"
+           fxLayoutAlign="space-between center">
+        <div>Copy measures from&nbsp;</div>
+        <div><input style="width:50px;height:30px;" type="text" pInputText
+                    [(ngModel)]="fromValue"/></div>
+        <div>&nbsp;to&nbsp;</div>
+        <div><input style="width:50px;height:30px;" type="text" pInputText
+                    [(ngModel)]="toValue"/></div>
+        <div>, paste at&nbsp;</div>
+        <div><input style="width:50px;height:30px;" type="text" pInputText
+                    [(ngModel)]="insertValue"/>.
+        </div>
+        <div>&nbsp;
+          <p-button icon="pi pi-copy" (click)="onPaste()"
+                    label="Paste"
+                    styleClass="p-button-text"></p-button>
+        </div>
+      </div>
+      <div style="margin-top:0px;">
+        <p-button icon="pi pi-check" (click)="onSave()"
+                  label="Save"
+                  styleClass="p-button-text"></p-button>
+      </div>
+    </div>
+  </ng-template>
+</p-dialog>

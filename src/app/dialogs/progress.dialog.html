@@ -1,0 +1,12 @@
+<p-dialog header=""
+          [style]="{width: '150px', height: '150px'}"
+          [showHeader]="false"
+          [closable]="false"
+          [(visible)]="infoService.dialogsHandler.isShowProgressDialog"
+          [modal]="true"
+          [draggable]="false"
+          [resizable]="false">
+  <div style="width:100%;height:100%;" fxLayoutAlign="center center" fxLayout="column nowrap">
+    <p-progressSpinner></p-progressSpinner>
+  </div>
+</p-dialog>

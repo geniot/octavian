@@ -1,0 +1,95 @@
+<div style="width:100%;height:100%;" fxLayout="row nowrap">
+
+  <div fxFlex="1 1 auto"
+       style="padding:0;border-right: 0px solid black;background-color: lightgrey">
+  </div>
+
+  <div fxFlex="0 1 500px" fxLayoutAlign="center center" style="padding:10px;border: 0px solid black"
+       fxLayout="column nowrap">
+    <a (click)="this.infoService.onHomeClick()">
+      <img
+        [ngStyle]="{'max-width.px':100, 'max-height.px':100}"
+        style="cursor: pointer" src="assets/back.png"/>
+    </a>
+    <a (click)="infoService.onLogoClick()" style="cursor:pointer"><img
+      [ngStyle]="{'max-width':100+'%'}"
+      src="{{OCTAVIAN_LOGO}}"/></a>
+
+    <div>
+      <h1 style="font-size:24px;font-weight: 300;letter-spacing: -0.5px;">Welcome to Octavian!</h1>
+      <p style="margin-block-start: 0;">Let’s begin the adventure</p>
+
+      <div
+        *ngIf="this.userService.signupModel.value.message!=null"
+        class="flash"
+        [style]="{backgroundColor:this.userService.signupModel.value.hasError?'pink':'lightgreen'}">
+        <div>
+          <button (click)="onErrorClose()" class="flash-close" type="button" aria-label="Dismiss this message">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true">
+              <path fill-rule="evenodd"
+                    d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+            </svg>
+          </button>
+          {{this.userService.signupModel.value.message}}
+        </div>
+      </div>
+
+
+      <p style="width:100%;margin-block-start: 0; display: flex;flex-direction: column;">
+        <label for="signUpEmail" style="padding-bottom:5px;">Enter your email</label>
+        <input
+          (keydown.enter)="onSubmit()"
+          [disabled]="userService.isLoading"
+          readonly
+          onfocus="this.removeAttribute('readonly');"
+          #emailInput
+          autocomplete="off"
+          id="signUpEmail"
+          style="padding:5px 12px"
+          [(ngModel)]="email"/>
+      </p>
+      <div style="width:100%;margin-block-end: 1em; display: flex;flex-direction: column;">
+        <div style="margin-block-start: 0; display: flex;flex-direction: row;">
+          <label for="signUpPassword" style="padding-bottom:5px;">Create a password</label>
+        </div>
+        <input
+          (keydown.enter)="onSubmit()"
+          [disabled]="userService.isLoading"
+          id="signUpPassword"
+          readonly
+          onfocus="this.removeAttribute('readonly');"
+          autocomplete="off"
+          #signUpPasswordInput
+          type="password"
+          style="width:100%;padding:5px 12px"
+          [(ngModel)]="signUpPassword"/>
+      </div>
+      <h2 style="font-weight: 600;font-size: 16px">Verify your account</h2>
+      <p style="height:80px">
+        <re-captcha
+          #captchaElem
+          (resolved)="resolved($event)"
+          siteKey="{{reCaptchaSiteKey}}"
+        ></re-captcha>
+      </p>
+      <p style="width:100%;margin-block-start: 0; display: flex;flex-direction: column;">
+        <button
+          [disabled]="isButtonDisabled()"
+          style="width:100%" pButton pRipple (click)="onContinue()" type="button" label="Continue"
+          class="p-button-raised"></button>
+      </p>
+      <div class="flash" style="width:100%;margin-block-end: 2em;">
+        <div>
+          Already have an account? <a (click)="onSignIn()" style="cursor: pointer; color:blue;">Sign
+          in</a>.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div fxFlex="1 1 auto"
+       style="padding:0;border-right: 0px solid black;background-color: lightgrey">
+  </div>
+
+</div>

@@ -1,0 +1,51 @@
+<p-toolbar
+  id="playBackToolbar">
+
+  <div
+    fxFlex="0 0 auto" fxLayoutAlign="end center" fxLayout="column"
+    style="width:120px;height:40px;border: 0px solid black">
+    <p-slider [style]="{'width.px':94}"
+              [disabled]="!infoService.settings.leftHand"
+              [(ngModel)]="this.infoService.settings.volumeLeft"></p-slider>
+    <div
+      [ngStyle]="{'font-size.pt':10,'margin-top.px':7, 'color':(!infoService.settings.leftHand)?'gray':'black'}"
+      class="knob-label">VOLUME LEFT
+    </div>
+  </div>
+
+  <div
+    style="white-space: nowrap;margin-left:0px;">
+    <img style="cursor: pointer; vertical-align:middle;height:40px;width:40px;"
+         (click)="onHandClick(HandType.LEFT_HAND)"
+         [src]="infoService.settings.leftHand?'assets/left_hand_selected.svg':'assets/left_hand.svg'">
+    <p-button (onClick)="infoService.fastBackward()"
+              [disabled]="!infoService.pausedTrigger.value && infoService.settings.mode == PlayerMode.PLAY"
+              icon="pi pi-fast-backward"></p-button>
+    <!--(onFocus)="$event.target.blur()"-->
+    <p-button
+      (onClick)="onPlayClick()"
+      [icon]="infoService.settings.mode == PlayerMode.WAIT ? 'pi pi-trash' : this.infoService.pausedTrigger.value?'pi pi-play':'pi pi-pause'"
+      [pTooltip]="infoService.settings.mode == PlayerMode.WAIT ?'Clear highlighting':''"
+    ></p-button>
+
+    <p-button (onClick)="infoService.fastForward()"
+              [disabled]="!infoService.pausedTrigger.value && infoService.settings.mode == PlayerMode.PLAY"
+              icon="pi pi-fast-forward"></p-button>
+    <img style="cursor: pointer; vertical-align:middle;height:40px;width:40px;"
+         (click)="onHandClick(HandType.RIGHT_HAND)"
+         [src]="infoService.settings.rightHand?'assets/right_hand_selected.svg':'assets/right_hand.svg'">
+  </div>
+
+  <div
+    fxFlex="0 0 auto" fxLayoutAlign="end center" fxLayout="column"
+    style="width:120px;height:40px;border: 0px solid black">
+    <p-slider [style]="{'width.px':94}"
+              [disabled]="!infoService.settings.rightHand"
+              [(ngModel)]="this.infoService.settings.volumeRight"></p-slider>
+    <div
+      [ngStyle]="{'font-size.pt':10,'margin-top.px':7, 'color':(!infoService.settings.rightHand)?'gray':'black'}"
+      class="knob-label">VOLUME RIGHT
+    </div>
+  </div>
+
+</p-toolbar>

@@ -1,0 +1,6 @@
+[general]
+
+#### Address & Root dir
+host = "::"
+port = 8787
+root = "./docs"

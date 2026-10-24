@@ -1,0 +1,15 @@
+.instrument {
+  vertical-align: center;
+  opacity: 30%;
+}
+
+.active {
+  opacity: 100%;
+  background-color: #f9f9f9;
+}
+
+.knob-label {
+  text-align: center;
+  font-size: 10pt;
+  white-space: nowrap;
+}

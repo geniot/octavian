@@ -1,0 +1,48 @@
+<p-dialog header="Profile"
+          [(visible)]="infoService.dialogsHandler.isShowUserProfileDialog"
+          [modal]="true"
+          (onShow)="refresh()"
+          [draggable]="true"
+          [resizable]="false">
+
+  <div
+    *ngIf="hasError && message!=null"
+    class="flash"
+    [style]="{backgroundColor:'pink'}">
+    <div>
+      <button (click)="onErrorClose()" class="flash-close" type="button" aria-label="Dismiss this message">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16" data-view-component="true">
+          <path fill-rule="evenodd"
+                d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+        </svg>
+      </button>
+      <div (click)="onSignIn($event)"
+           [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(message==null?'':message)">
+      </div>
+    </div>
+  </div>
+
+  <p>
+    <p-card>
+      <p>Email: {{ this.userService.loginModel.value.email }}</p>
+      <p>Status: {{ this.userService.getUserRole().toLowerCase() }}</p>
+<!--      <p style="margin-block-start: 0; margin-block-end: 0">Subscription: {{ this.userService.subscriptionModel.value.daysLeft }} days&nbsp;-->
+<!--        <a-->
+<!--          style="border:1px solid #006699;border-radius:5px;padding:2px 5px 2px 5px;color:blue;"-->
+<!--          target="_blank" href="https://buy.stripe.com/6oU5kDf859MA6Cd9DJgIo04">BUY</a>-->
+<!--        &nbsp;-->
+<!--        <a title="Refresh"-->
+<!--           (click)="refresh()"-->
+<!--           style="border:1px solid #006699;border-radius:5px;padding:2px 5px 2px 5px;color:blue;cursor:pointer"-->
+<!--        >↻</a>-->
+<!--      </p>-->
+    </p-card>
+  </p>
+
+  <p style="margin-block-start: 0; display: flex;flex-direction: column;">
+    <button
+      [disabled]="userService.isLoading"
+      pButton pRipple (click)="onSignOut()" type="button"
+      label="Sign out" class="p-button-raised"></button>
+  </p>
+</p-dialog>

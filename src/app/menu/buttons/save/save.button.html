@@ -1,0 +1,16 @@
+<div fxFlex="0 0 {{100}}px" fxLayoutAlign="center center" fxLayout="column"
+     style="border: 0px solid black">
+  <div>
+    <img
+      alt="Save"
+      title="Save"
+      style="cursor: pointer;"
+      [ngStyle]="{height:'100px','max-width.px':100, 'max-height.px':100}"
+      (mouseover)="saveSrcSuffix= '_over'"
+      (mouseout)="saveSrcSuffix=''"
+      (mousedown)="saveSrcSuffix='_down'"
+      (mouseup)="saveSrcSuffix='_over';onSave()"
+      [src]="getSaveSrc()"
+    /></div>
+  <div [ngStyle]="{'font-size.pt':10}" class="knob-label">SAVE</div>
+</div>

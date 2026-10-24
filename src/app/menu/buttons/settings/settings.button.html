@@ -1,0 +1,16 @@
+<div fxFlex="0 0 {{100}}px" fxLayoutAlign="center center" fxLayout="column"
+     style="border: 0px solid black">
+  <div>
+    <img
+      alt="Settings"
+      title="Settings"
+      style="cursor: pointer;"
+      [ngStyle]="{height:'100px','max-width.px':100, 'max-height.px':100}"
+      (click)="infoService.dialogsHandler.isShowSettingsDialog=true"
+      (mouseover)="settingsSrcSuffix='_over'"
+      (mouseout)="settingsSrcSuffix=''"
+      (mousedown)="settingsSrcSuffix='_down'"
+      [src]="getSettingsSrc()"
+    /></div>
+  <div [ngStyle]="{'font-size.pt':10}" class="knob-label">SETTINGS</div>
+</div>

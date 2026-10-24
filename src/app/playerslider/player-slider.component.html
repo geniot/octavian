@@ -1,0 +1,9 @@
+<p-slider
+  [disabled]="!infoService.pausedTrigger.value && infoService.settings.mode==PlayerMode.PLAY"
+  [ngModel]="infoService.sliderValue.value.value"
+  (onChange)="onSliderChange($event)"
+  (onSlideEnd)="onSlideEnd($event)"
+  [min]="infoService.sliderMin"
+  [max]="infoService.sliderMax"
+  [step]="1"
+></p-slider>

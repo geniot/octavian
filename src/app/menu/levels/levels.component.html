@@ -1,0 +1,96 @@
+<div
+  fxFlex="1 1 auto" fxLayoutAlign="start center" fxLayout="row nowrap"
+  *ngIf="this.userService.isUserLoggedIn()"
+>
+  <div style="padding-left: 5px;">
+    <img
+      alt="A"
+      title="A"
+      [ngStyle]="{ cursor: this.infoService.settings.level == 1 ? 'default':'pointer',display: 'block',height:'64px','max-width':100+'%'}"
+      (click)="updateLevel(1)"
+      (mouseover)="aSrcSuffix='_over'"
+      (mouseout)="aSrcSuffix=''"
+      (mousedown)="aSrcSuffix='_down'"
+      [src]="getLevelSrc('a', aSrcSuffix)"
+    /></div>
+
+  <div style="padding-left: 5px;">
+    <img
+      alt="B"
+      title="B"
+      [ngStyle]="{ cursor: this.infoService.settings.level == 2 ? 'default':'pointer',display: 'block',height:'64px','max-width':100+'%'}"
+      (click)="updateLevel(2)"
+      (mouseover)="bSrcSuffix='_over'"
+      (mouseout)="bSrcSuffix=''"
+      (mousedown)="bSrcSuffix='_down'"
+      [src]="getLevelSrc('b', bSrcSuffix)"
+    /></div>
+
+  <div style="padding-left: 5px;">
+    <img
+      alt="C"
+      title="C"
+      [ngStyle]="{ cursor: this.infoService.settings.level == 3 ? 'default':'pointer',display: 'block',height:'64px','max-width':100+'%'}"
+      (click)="updateLevel(3)"
+      (mouseover)="cSrcSuffix='_over'"
+      (mouseout)="cSrcSuffix=''"
+      (mousedown)="cSrcSuffix='_down'"
+      [src]="getLevelSrc('c', cSrcSuffix)"
+    /></div>
+
+  <div style="padding-left: 5px;">
+    <img
+      alt="D"
+      title="D"
+      [ngStyle]="{ cursor: this.infoService.settings.level == 4 ? 'default':'pointer',display: 'block',height:'64px','max-width':100+'%'}"
+      (click)="updateLevel(4)"
+      (mouseover)="dSrcSuffix='_over'"
+      (mouseout)="dSrcSuffix=''"
+      (mousedown)="dSrcSuffix='_down'"
+      [src]="getLevelSrc('d', dSrcSuffix)"
+    /></div>
+  <div style="padding-left: 5px;">
+    <img
+      alt="E"
+      title="E"
+      [ngStyle]="{ cursor: this.infoService.settings.level == 5 ? 'default':'pointer',display: 'block',height:'64px','max-width':100+'%'}"
+      (click)="updateLevel(5)"
+      (mouseover)="eSrcSuffix='_over'"
+      (mouseout)="eSrcSuffix=''"
+      (mousedown)="eSrcSuffix='_down'"
+      [src]="getLevelSrc('e', eSrcSuffix)"
+    /></div>
+  <div style="padding-left: 5px;">
+    <img
+      alt="F"
+      title="F"
+      [ngStyle]="{ cursor: this.infoService.settings.level == 6 ? 'default':'pointer',display: 'block',height:'64px','max-width':100+'%'}"
+      (click)="updateLevel(6)"
+      (mouseover)="fSrcSuffix='_over'"
+      (mouseout)="fSrcSuffix=''"
+      (mousedown)="fSrcSuffix='_down'"
+      [src]="getLevelSrc('f', fSrcSuffix)"
+    /></div>
+  <div style="padding-left: 5px;">
+    <img
+      alt="G"
+      title="G"
+      [ngStyle]="{ cursor: this.infoService.settings.level == 7 ? 'default':'pointer',display: 'block',height:'64px','max-width':100+'%'}"
+      (click)="updateLevel(7)"
+      (mouseover)="gSrcSuffix='_over'"
+      (mouseout)="gSrcSuffix=''"
+      (mousedown)="gSrcSuffix='_down'"
+      [src]="getLevelSrc('g', gSrcSuffix)"
+    /></div>
+  <div style="padding-left: 5px;">
+    <img
+      alt="My Uploads"
+      title="My Uploads"
+      [ngStyle]="{ cursor: this.infoService.settings.level == 0 ? 'default':'pointer',display: 'block',height:'64px','max-width':100+'%'}"
+      (click)="updateLevel(0)"
+      (mouseover)="privateSuffix='_over'"
+      (mouseout)="privateSuffix=''"
+      (mousedown)="privateSuffix='_down'"
+      [src]="getLevelSrc('private', privateSuffix)"
+    /></div>
+</div>

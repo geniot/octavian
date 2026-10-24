@@ -1,0 +1,5 @@
+export enum Instrument {
+  BUTTON_ACCORDION = "BUTTON_ACCORDION",
+  PIANO_ACCORDION = "PIANO_ACCORDION",
+  PIANO = "PIANO"
+}

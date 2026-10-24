@@ -1,0 +1,5 @@
+export enum RangeSelectionMode {
+  GOTO_MEASURE = "GOTO_MEASURE",
+  TOGGLE_SELECT = "TOGGLE_SELECT",
+  NO_ACTION = "NO_ACTION"
+}

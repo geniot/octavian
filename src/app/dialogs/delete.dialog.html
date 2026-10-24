@@ -1,0 +1,53 @@
+<p-dialog header="Delete"
+          *ngIf="this.tuneService.tuneModel.value.tune!=null"
+          (onShow)="onShow()"
+          (onHide)="onHide()"
+          [(visible)]="infoService.dialogsHandler.isShowDeleteDialog"
+          [modal]="true"
+          [draggable]="true"
+          [resizable]="false">
+
+  <div
+    *ngIf="this.hasError && this.message!=null"
+    class="flash"
+    [style]="{backgroundColor:'pink'}">
+    <div>
+      <button (click)="onErrorClose()" class="flash-close" type="button" aria-label="Dismiss this message">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true">
+          <path fill-rule="evenodd"
+                d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+        </svg>
+      </button>
+      <div (click)="onSignIn($event)"
+           [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(message==null?'':message)">
+      </div>
+    </div>
+  </div>
+
+  <p>
+    Are you sure you want to delete '{{ this.tuneService.tuneModel.value.tune.title }}'?
+  </p>
+
+  <p
+    style="white-space: nowrap;text-transform: uppercase; font-size: 10pt; padding-left:15px;margin-block-start: 0; display: flex;flex-direction: column;">
+    <p-checkbox [(ngModel)]="allowDelete"
+                [disabled]="tuneService.isLoading"
+                [binary]="true"
+                labelStyleClass="deleteCheckbox"
+                label="Yes, I want to delete '{{this.tuneService.tuneModel.value.tune.title}}' from my account"
+                [inputId]="allowDeleteId"></p-checkbox>
+  </p>
+
+  <ng-template pTemplate="footer">
+    <p-button icon="pi pi-check-circle"
+              [disabled]="!allowDelete || tuneService.isLoading"
+              (onClick)="onDelete()"
+              label="Delete"
+              styleClass="p-button-text"></p-button>
+    <p-button icon="pi pi-times-circle"
+              [disabled]="tuneService.isLoading"
+              (onClick)="infoService.dialogsHandler.isShowDeleteDialog=false"
+              label="Cancel"
+              styleClass="p-button-text"></p-button>
+  </ng-template>
+</p-dialog>
