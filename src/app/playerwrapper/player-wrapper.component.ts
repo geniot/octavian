@@ -38,9 +38,6 @@ export class PlayerWrapperComponent extends SplitLayoutHandler implements OnInit
 
     this.tuneService.tuneLoadedTrigger.next(false);
     this.infoService.settings.routerUrl = router.url;
-    if (this.infoService.settings.mode == PlayerMode.FINGERING) {
-      this.infoService.settings.mode = PlayerMode.PLAY;
-    }
     this.tuneService.loadScore();//launches a chain of load actions
   }
 

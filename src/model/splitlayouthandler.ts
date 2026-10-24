@@ -111,7 +111,7 @@ export abstract class SplitLayoutHandler extends AnyDialog implements OnInit {
   @HostListener('document:keydown.ArrowRight', ['$event'])
   @HostListener('document:keydown.ArrowLeft', ['$event'])
   handleLeftRightArrowKeyboardEvent(event: KeyboardEvent) {
-    if ((this.infoService.settings.mode == PlayerMode.WAIT || this.infoService.settings.mode == PlayerMode.FINGERING)
+    if ((this.infoService.settings.mode == PlayerMode.WAIT)
       && !this.infoService.dialogsHandler.isAnyDialogOpen()) {
       let isNext: boolean = event.key == 'ArrowRight';
       let nextPointer: number = getNextPointer(

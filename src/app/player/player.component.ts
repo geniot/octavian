@@ -94,7 +94,7 @@ export class PlayerComponent extends DestroyableComponent implements AfterViewIn
 
   init(): void {
     if (isTuneLoaded(this.tuneService.tuneModel.value)) {
-      if (this.infoService.settings.mode == PlayerMode.WAIT || this.infoService.settings.mode == PlayerMode.FINGERING) {
+      if (this.infoService.settings.mode == PlayerMode.WAIT) {
         this.updatePointer();
         this.loopHandler.play();
       } else {

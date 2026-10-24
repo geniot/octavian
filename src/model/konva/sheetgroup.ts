@@ -105,7 +105,6 @@ export class SheetGroup extends DestroyableComponent {
     this.subscriptions.push(infoService.pausedTrigger.asObservable().subscribe(
       pausedTrigger => {
         this.draggable(
-          infoService.settings.mode == PlayerMode.FINGERING ||
           infoService.settings.mode == PlayerMode.WAIT ||
           pausedTrigger.valueOf());
       }));

@@ -77,15 +77,9 @@ export class LoopHandler {
       //   moveDuration = moveDuration / pointsDelta;
       // }
 
-      if ((this.infoService.settings.mode == PlayerMode.WAIT || this.infoService.settings.mode == PlayerMode.FINGERING)
+      if ((this.infoService.settings.mode == PlayerMode.WAIT)
         && this.playerComponent.playPointer == this.playerComponent.waitPointer) {
         soundPoint(thisPoint, false, this.infoService, this.tuneService);
-        if (this.infoService.settings.mode == PlayerMode.FINGERING) {
-          let _this = this;
-          setTimeout(function () {
-            _this.infoService.fingeringComponent.initInput();
-          }, 0);
-        }
         return;
       } else {
         if (this.playerComponent.sheetGroup.x() != nextSheetOffset) {
@@ -134,7 +128,7 @@ export class LoopHandler {
     let tune: Tune = this.tuneService.tuneModel.value.tune;
     let offset: number = this.playerComponent.absoluteToRelative(this.playerComponent.sheetGroup.x());
     this.infoService.sliderValue.next(new ChangeEvent(offset, this));
-    if (this.infoService.settings.mode == PlayerMode.WAIT || this.infoService.settings.mode == PlayerMode.FINGERING) {
+    if (this.infoService.settings.mode == PlayerMode.WAIT) {
       let sheetOffsetLimit = tune.sheetWidth - tune.points[0].offsetX - tune.playHeadWidth / 2;
       let percent: number = (offset - tune.points[0].offsetX) * 100 / sheetOffsetLimit;
       this.infoService.progressValue.next(percent);

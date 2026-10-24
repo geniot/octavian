@@ -19,9 +19,6 @@ export class PianoKeyboardComponent extends ButtonKeyboardComponent implements O
   }
 
   ngOnInit() {
-    if (this.fingeringComponent != null) {
-      this.fingeringComponent.pianoButtonKeyboardComponent = this;
-    }
   }
 
   override ngAfterViewInit(): void {

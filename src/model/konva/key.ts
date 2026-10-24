@@ -3,7 +3,6 @@ import {DestroyableComponent} from "../destroyablecomponent";
 import Konva from "konva";
 import {InfoService} from "../../services/infoservice";
 import {HandType} from "../enums/handtype";
-import {PlayerMode} from "../enums/playermode";
 import {NoteType} from "../enums/notetype";
 
 export abstract class Key extends DestroyableComponent {
@@ -85,11 +84,7 @@ export abstract class Key extends DestroyableComponent {
       } else {
         this.inputContourShape.visible(false);
       }
-      if (this.infoService.settings.mode == PlayerMode.FINGERING) {
-        this.keyShape.fill(this.isActive ? 'yellow' : 'pink');
-      } else {
-        this.keyShape.fill(this.noteType == NoteType.RIGHT_HAND_NOTE ? 'gold' : 'yellow');
-      }
+      this.keyShape.fill(this.noteType == NoteType.RIGHT_HAND_NOTE ? 'gold' : 'yellow');
       this.finger.fill('black');
       return;
     }

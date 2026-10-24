@@ -3,16 +3,14 @@ import {Injectable, Injector} from "@angular/core";
 import {BehaviorSubject} from "rxjs";
 import {environment} from "../environments/environment";
 import {HttpClient} from "@angular/common/http";
-import {defaultize, ICONS_MAP, INSTRUMENTS_ROUTES_MAP} from "../model/constants";
+import {defaultize, ICONS_MAP} from "../model/constants";
 import {Note} from "../model/note";
 import {MidiHandler} from "../model/handlers/midihandler";
 import {PlayerComponent} from "../app/player/player.component";
-import {Router} from "@angular/router";
 import {FullScreenHandler} from "../model/handlers/fullscreenhandler";
 import {ChangeEvent} from "../model/changeevent";
 import {plainToClass} from 'class-transformer';
 import {Key} from "../model/konva/key";
-import {FingeringComponent} from "../app/fingering/fingering.component";
 import {DialogsHandler} from "../model/handlers/dialogshandler";
 import {PlayerMode} from "../model/enums/playermode";
 import {Settings} from "../model/settings";
@@ -67,7 +65,6 @@ export class InfoService {
   dialogsHandler: DialogsHandler = new DialogsHandler(this);
 
   playerComponent!: PlayerComponent;
-  fingeringComponent!: FingeringComponent;
 
   // isSending: boolean = false;
   isNewDialogState: boolean = true;
@@ -151,7 +148,7 @@ export class InfoService {
     this.progressValue.next(0);
     this.playerComponent!.updatePointer();
     this.unsetKeysTrigger.next(true);
-    if (this.settings.mode == PlayerMode.WAIT || this.settings.mode == PlayerMode.FINGERING) {
+    if (this.settings.mode == PlayerMode.WAIT) {
       this.playerComponent!.loopHandler.playLoop(false);
     }
   }

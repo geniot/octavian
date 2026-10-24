@@ -23,8 +23,6 @@ import {PianoKey} from "../../model/konva/pianokey";
 import {Key} from "../../model/konva/key";
 import {Finger} from "../../model/finger";
 import {DestroyableComponent} from "../../model/destroyablecomponent";
-import {FingeringComponent} from "../fingering/fingering.component";
-import {PlayerMode} from "../../model/enums/playermode";
 
 @Component({
   selector: 'app-button-keyboard',
@@ -36,7 +34,6 @@ export class ButtonKeyboardComponent extends DestroyableComponent implements Aft
 
   @Input() containerId!: string;
   @Input() handType!: HandType;
-  @Input() fingeringComponent!: FingeringComponent;
 
   @ViewChild('containerDiv') containerDiv!: ElementRef;
 
@@ -257,25 +254,21 @@ export class ButtonKeyboardComponent extends DestroyableComponent implements Aft
       let map: Map<number, ButtonKey> = this.getButtonKeysMap(note);
       if (map != null) {
         if (note.isTune) {
-          if (this.infoService.settings.mode == PlayerMode.FINGERING) {//fingering
-            this.processFingering(map, finger, note, isOn, false);
-          } else {//player
-            if (isOn) {
-              if (finger != null) {
-                let key: Key = map.get(Number(finger.button))!;
-                if (key != null) {
-                  key.process(note, isOn);
-                } else {
-                  let buttonKey: Key | null = this.findInMap(map, 0, 54);
-                  buttonKey!.process(note, isOn);
-                }
+          if (isOn) {
+            if (finger != null) {
+              let key: Key = map.get(Number(finger.button))!;
+              if (key != null) {
+                key.process(note, isOn);
               } else {
                 let buttonKey: Key | null = this.findInMap(map, 0, 54);
                 buttonKey!.process(note, isOn);
               }
             } else {
-              this.processAll(map, note, isOn);
+              let buttonKey: Key | null = this.findInMap(map, 0, 54);
+              buttonKey!.process(note, isOn);
             }
+          } else {
+            this.processAll(map, note, isOn);
           }
         } else {//user
           this.processAll(map, note, isOn);
@@ -295,24 +288,20 @@ export class ButtonKeyboardComponent extends DestroyableComponent implements Aft
     let map: Map<number, ButtonKey> = this.getButtonKeysMap(note);
     if (map != null) {
       if (note.isTune) {
-        if (this.infoService.settings.mode == PlayerMode.FINGERING) {//fingering
-          this.processFingering(map, finger, note, isOn, true);
-        } else {//player
-          if (isOn) {
-            if (finger != null) {
-              let key: Key = map.get(Number(finger.button))!;
-              if (key != null) {
-                key.process(note, isOn);
-              } else {
-                this.processAll(map, note, isOn);
-              }
-            } else {
-              let key: Key = this.guessLeftHandKey(map, note);
+        if (isOn) {
+          if (finger != null) {
+            let key: Key = map.get(Number(finger.button))!;
+            if (key != null) {
               key.process(note, isOn);
+            } else {
+              this.processAll(map, note, isOn);
             }
           } else {
-            this.processAll(map, note, isOn);
+            let key: Key = this.guessLeftHandKey(map, note);
+            key.process(note, isOn);
           }
+        } else {
+          this.processAll(map, note, isOn);
         }
       } else {//user
         this.processAll(map, note, isOn);
@@ -331,24 +320,20 @@ export class ButtonKeyboardComponent extends DestroyableComponent implements Aft
     let map: Map<number, ButtonKey> = this.getButtonKeysMap(note);
     if (map != null) {
       if (note.isTune) {
-        if (this.infoService.settings.mode == PlayerMode.FINGERING) {//fingering
-          this.processFingering(map, finger, note, isOn, true);
-        } else {//player
-          if (isOn) {
-            if (finger != null) {
-              let key: Key = map.get(Number(finger.button))!;
-              if (key != null) {
-                key.process(note, isOn);
-              } else {
-                this.processAll(map, note, isOn);
-              }
-            } else {
-              let key: Key = this.guessLeftHandKey(map, note);
+        if (isOn) {
+          if (finger != null) {
+            let key: Key = map.get(Number(finger.button))!;
+            if (key != null) {
               key.process(note, isOn);
+            } else {
+              this.processAll(map, note, isOn);
             }
           } else {
-            this.processAll(map, note, isOn);
+            let key: Key = this.guessLeftHandKey(map, note);
+            key.process(note, isOn);
           }
+        } else {
+          this.processAll(map, note, isOn);
         }
       } else {//user
         this.processAll(map, note, isOn);

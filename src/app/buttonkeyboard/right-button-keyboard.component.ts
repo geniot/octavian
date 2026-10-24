@@ -16,8 +16,5 @@ export class RightButtonKeyboardComponent extends ButtonKeyboardComponent implem
   }
 
   ngOnInit() {
-    if (this.fingeringComponent != null) {
-      this.fingeringComponent.rightButtonKeyboardComponent = this;
-    }
   }
 }

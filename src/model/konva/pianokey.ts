@@ -10,7 +10,6 @@ import {RightHandLayout} from "../enums/righthandlayout";
 import {LeftHandLayout} from "../enums/lefthandlayout";
 import {ViewMode} from "../enums/viewmode";
 import {ButtonKeyboardComponent} from "../../app/buttonkeyboard/button-keyboard.component";
-import {PlayerMode} from "../enums/playermode";
 
 export class PianoKey extends Key {
 
@@ -46,28 +45,6 @@ export class PianoKey extends Key {
     this.showNoteName();
 
     this.add(this.finger);
-
-    if (infoService.settings.mode == PlayerMode.FINGERING) {
-      this.overlayRect = new Konva.Rect(config);
-      this.overlayRect.opacity(0);
-      this.add(this.overlayRect);
-      let _this = this;
-      this.overlayRect.on('mousedown', function () {
-        if (_this.isTunePressed) {
-          _this.infoService.fingerInputKey.next(_this);
-        }
-      });
-
-      this.overlayRect.on('mouseenter', function () {
-        if (_this.isTunePressed) {
-          pianoKeyBoard.stage.container().style.cursor = 'pointer';
-        }
-      });
-
-      this.overlayRect.on('mouseleave', function () {
-        pianoKeyBoard.stage.container().style.cursor = 'default';
-      });
-    }
   }
 
   showNoteName(): void {
@@ -130,10 +107,6 @@ export class PianoKey extends Key {
       this.showNoteName();
     } else {
       this.finger.visible(false);
-    }
-    if (this.infoService.settings.mode == PlayerMode.FINGERING) {
-      this.isActive = false;
-      this.isInput = false;
     }
     this.fillShapeColor();
   }

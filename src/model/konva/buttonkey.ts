@@ -6,7 +6,6 @@ import {HandType} from "../enums/handtype";
 import {Finger} from "../finger";
 import {FINGER_PLACEHOLDER, getNoteFinger} from "../constants";
 import {ButtonKeyboardComponent} from "../../app/buttonkeyboard/button-keyboard.component";
-import {PlayerMode} from "../enums/playermode";
 
 export class ButtonKey extends Key {
   overlayCircle!: Konva.Circle;
@@ -41,32 +40,7 @@ export class ButtonKey extends Key {
     if (this.infoService.settings.showNoteNamesOnKeys || this.infoService.settings.showKeyNumbersOnKeys) {
       this.showNoteName();
     }
-
     this.add(this.finger);
-
-    if (infoService.settings.mode == PlayerMode.FINGERING) {
-      this.overlayCircle = new Konva.Circle(config);
-      this.overlayCircle.x(0);
-      this.overlayCircle.y(0);
-      this.overlayCircle.opacity(0);
-      this.add(this.overlayCircle);
-      let _this = this;
-      this.overlayCircle.on('mousedown', function () {
-        if (_this.isTunePressed) {
-          _this.infoService.fingerInputKey.next(_this);
-        }
-      });
-
-      this.overlayCircle.on('mouseenter', function () {
-        if (_this.isTunePressed) {
-          buttonKeyBoard.stage.container().style.cursor = 'pointer';
-        }
-      });
-
-      this.overlayCircle.on('mouseleave', function () {
-        buttonKeyBoard.stage.container().style.cursor = 'default';
-      });
-    }
   }
 
   pressTune(note: Note) {
@@ -75,13 +49,7 @@ export class ButtonKey extends Key {
 
     let finger: Finger = getNoteFinger(note, this.infoService, this.handType, this.infoService.settings.rightHandLayout, this.infoService.settings.leftHandLayout)!;
     if (finger != null && finger.finger != null && finger.finger != FINGER_PLACEHOLDER) {
-      if (this.infoService.settings.mode == PlayerMode.FINGERING) {
-        if (this.isActive) {
-          this.setFinger(finger.finger);
-        }
-      } else {
-        this.setFinger(finger.finger);
-      }
+      this.setFinger(finger.finger);
     }
 
     this.fillShapeColor();
@@ -105,12 +73,6 @@ export class ButtonKey extends Key {
     } else {
       this.finger.visible(false);
     }
-
-    if (this.infoService.settings.mode == PlayerMode.FINGERING) {
-      this.isActive = false;
-      this.isInput = false;
-    }
-
     this.fillShapeColor();
   }
 

@@ -48,7 +48,6 @@ import {ResponseInterceptor} from "../model/responseinterceptor";
 import {CardModule} from "primeng/card";
 import {PlayerProgressbarComponent} from "./playerprogressbar/player-progressbar.component";
 import {StatsDialog} from "./dialogs/statsdialog";
-import {FingeringComponent} from './fingering/fingering.component';
 import {DropdownModule} from "primeng/dropdown";
 import {SplitterModule} from "primeng/splitter";
 import {ListboxModule} from "primeng/listbox";
@@ -99,7 +98,6 @@ import {RangeSelectorComponent} from "./rangeselector/range-selector.component";
     ResendLinkComponent,
     CheckYourEmailComponent,
     ResetPasswordComponent,
-    FingeringComponent,
     HomeButton,
     TuneButton,
     FingeringButton,
