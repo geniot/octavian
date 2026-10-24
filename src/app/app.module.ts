@@ -17,8 +17,6 @@ import {PlayerComponent} from './player/player.component';
 import {SelectButtonModule} from "primeng/selectbutton";
 import {ProgressSpinnerModule} from "primeng/progressspinner";
 import {PlayerWrapperComponent} from './playerwrapper/player-wrapper.component';
-import {BrowserComponent} from "./browser/browser.component";
-import {MenuComponent} from "./menu/menu.component";
 import {ButtonKeyboardComponent} from './buttonkeyboard/button-keyboard.component';
 import {InfoService} from "../services/infoservice";
 import {RadioButtonModule} from "primeng/radiobutton";
@@ -53,28 +51,21 @@ import {StatsService} from "../services/statsservice";
 import {ResultDialog} from "./dialogs/result.dialog";
 import {ConfirmDialogModule} from "primeng/confirmdialog";
 import {ConfirmationService} from "primeng/api";
-import {HomeButton} from "./menu/buttons/home/home.button";
-import {TuneButton} from "./menu/buttons/tune/tune.button";
-import {FingeringButton} from "./menu/buttons/fingering/fingering.button";
-import {SettingsButton} from "./menu/buttons/settings/settings.button";
-import {FullscreenButton} from "./menu/buttons/fullscreen/fullscreen.button";
-import {StatsButton} from "./menu/buttons/stats/stats.button";
-import {SaveButton} from "./menu/buttons/save/save.button";
-import {TextButton} from "./menu/buttons/text/text.button";
 import {InputTextModule} from "primeng/inputtext";
-import {DownloadButton} from "./menu/buttons/download/download.button";
-import {LevelsComponent} from "./menu/levels/levels.component";
 import {CommonModule} from "@angular/common";
 import {MeasureSelectorComponent} from "./measureselector/measure-selector.component";
 import {RangeSelectorComponent} from "./rangeselector/range-selector.component";
+import {HomeButton} from "./menu/buttons/home/home.button";
+import {StatsButton} from "./menu/buttons/stats/stats.button";
+import {SettingsButton} from "./menu/buttons/settings/settings.button";
+import {DownloadButton} from "./menu/buttons/download/download.button";
+import {FullscreenButton} from "./menu/buttons/fullscreen/fullscreen.button";
 
 @NgModule({
   declarations: [
     AppComponent,
     PlayerComponent,
     PlayerWrapperComponent,
-    BrowserComponent,
-    MenuComponent,
     ButtonKeyboardComponent,
     LeftButtonKeyboardComponent,
     RightButtonKeyboardComponent,
@@ -88,18 +79,13 @@ import {RangeSelectorComponent} from "./rangeselector/range-selector.component";
     RightHandLayoutDialog,
     StatsDialog,
     ResultDialog,
-    HomeButton,
-    TuneButton,
-    FingeringButton,
-    SettingsButton,
-    FullscreenButton,
-    StatsButton,
-    SaveButton,
-    TextButton,
-    DownloadButton,
-    LevelsComponent,
     MeasureSelectorComponent,
-    RangeSelectorComponent
+    RangeSelectorComponent,
+    HomeButton,
+    StatsButton,
+    SettingsButton,
+    DownloadButton,
+    FullscreenButton
   ],
   imports: [
     BrowserModule,
