@@ -1,8 +1,7 @@
 import {Component} from "@angular/core";
 import {InfoService} from "../../../../services/infoservice";
-import {Router} from "@angular/router";
 import {TuneService} from "../../../../services/tuneservice";
-import {ICONS_MAP} from "../../../../model/constants";
+import {getParamValueQueryString, ICONS_MAP} from "../../../../model/constants";
 import {environment} from "../../../../environments/environment";
 
 
@@ -12,10 +11,10 @@ import {environment} from "../../../../environments/environment";
 })
 export class DownloadButton {
   downloadSrcSuffix = '';
+  readonly baseApiUrl = environment.BASE_API_URL;
 
   constructor(public infoService: InfoService,
-              public tuneService: TuneService,
-              public router: Router
+              public tuneService: TuneService
   ) {
   }
 
@@ -24,11 +23,12 @@ export class DownloadButton {
   }
 
   onDownload() {
-    const url = environment.BASE_API_URL +
-      "/tune/download/" +
-      this.tuneService.tuneModel.value.tune.id
-
-    window.open(url);
+    const instrument = getParamValueQueryString("instrument");
+    const tune = getParamValueQueryString("tune");
+    if (instrument != null && tune != null) {
+      const url = this.baseApiUrl + instrument + '/' + tune + "/" + tune + ".musicxml";
+      window.open(url);
+    }
   }
 
 }
