@@ -21,7 +21,7 @@ export class CatalogueService extends AnyService {
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
     infoService.loadingProgressMessage.next(messages.message_loading_catalogue);
     this.isLoading = true;
-    this.http.get<CatalogueModel>(this.baseApiUrl + '/menu.json?rnd=' + Date.now()
+    this.http.get<CatalogueModel>(this.baseApiUrl + 'menu.json?rnd=' + Date.now()
     )
       .subscribe(model => {
           this.isLoading = false;
