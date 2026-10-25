@@ -9,13 +9,11 @@ import {TuneModel} from "../model/mds/tunemodel";
 import {BehaviorSubject} from "rxjs";
 import {getParamValueQueryString, tunify} from "../model/constants";
 import {plainToClass} from "class-transformer";
-import {ScoreMetaModel} from "../model/mds/scoremetamodel";
 import {AnyService} from "./anyservice";
 
 @Injectable({providedIn: 'root'})
 export class TuneService extends AnyService {
   tuneModel: BehaviorSubject<TuneModel> = new BehaviorSubject<TuneModel>(new TuneModel());
-  scoreMetaModel: BehaviorSubject<ScoreMetaModel> = new BehaviorSubject<ScoreMetaModel>(new ScoreMetaModel());
   tuneLoadedTrigger: BehaviorSubject<boolean> = new BehaviorSubject(false);
   selectionRemovedTrigger: BehaviorSubject<boolean> = new BehaviorSubject(false);
   audioContext!: AudioContext;
@@ -30,17 +28,6 @@ export class TuneService extends AnyService {
   constructor(public http: HttpClient,
               private injector: Injector) {
     super();
-  }
-
-  loadTune(path: string): void {
-    this.tuneLoadedTrigger.next(false);
-    this.http.get<TuneModel>(environment.BASE_API_URL + path + '/tune.json' + '?rnd=' + Date.now())
-      .subscribe(model => {
-        this.tuneLoadedTrigger.next(true);
-        model = plainToClass(TuneModel, model);
-        tunify(model);
-        this.tuneModel.next(model);
-      });
   }
 
   loadInstrument(onLoadedHandler: Function): void {
@@ -82,12 +69,8 @@ export class TuneService extends AnyService {
    * First loading meta, then parts
    */
   loadScore(): void {
-    let _this = this;
-    let scoreMetaModel = new ScoreMetaModel();
-
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
     const path = getParamValueQueryString("path") || "piano/greensleeves";
-
     if (path.startsWith("piano")) {
       infoService.settings.instrument = Instrument.PIANO;
     } else if (path.startsWith("accordion-piano")) {
@@ -95,43 +78,40 @@ export class TuneService extends AnyService {
     } else {
       infoService.settings.instrument = Instrument.BUTTON_ACCORDION;
     }
-
-
     infoService.loadingProgressMessage.next(messages.message_loading_score);
     this.isLoading = true;
-    this.http.get<ScoreMetaModel>(
-      this.baseApiUrl + path + "/meta.json" + '?rnd=' + Date.now()
-    ).subscribe(model => {
-        _this.isLoading = false;
-        scoreMetaModel = plainToClass(ScoreMetaModel, model);
-        _this.scoreMetaModel.next(scoreMetaModel);
-        if (!scoreMetaModel.hasError) {
-          _this.imageObjs.clear();
-          for (let i = 0; i < scoreMetaModel.parts; i++) {
-            _this.loadImagePart(i, path);
-          }
+
+    this.tuneLoadedTrigger.next(false);
+    this.http.get<TuneModel>(environment.BASE_API_URL + path + '/tune.json' + '?rnd=' + Date.now())
+      .subscribe(model => {
+        model = plainToClass(TuneModel, model);
+        tunify(model);
+        let _this = this;
+        let onImagesLoadedHandler = function () {
+          _this.tuneLoadedTrigger.next(true);
+          _this.tuneModel.next(model);
+          infoService.loadingProgressMessage.next(messages.message_loading_tune);
         }
-      },
-      error => {
-        console.log(error);
-      }
-    );
+        let total = Math.ceil(model.tune.pngWidth / 30000);
+        _this.imageObjs.clear();
+        for (let i = 0; i < total; i++) {
+          _this.loadImagePart(i, path, total, onImagesLoadedHandler);
+        }
+      });
   }
 
-  loadImagePart(part: number, path: string): void {
+  loadImagePart(part: number, path: string, total: number, onLoadedHandler: Function): void {
     let _this = this;
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
     let imageObj = new Image();
     imageObj.onload = function () {
       _this.imageObjs.set(part, imageObj);
-      if (_this.imageObjs.size == _this.scoreMetaModel.value.parts) {
-        infoService.loadingProgressMessage.next(messages.message_loading_tune);
-        _this.loadTune(path);
+      if (_this.imageObjs.size == total) {
+        onLoadedHandler();
       }
     };
     imageObj.onerror = function () {
       console.log('Error loading image');
-      // _this.router.navigate([INSTRUMENTS_ROUTES_MAP.get(infoService.settings.instrument)]);
     };
     infoService.loadingProgressMessage.next(messages.message_loading_score);
     imageObj.src = environment.BASE_API_URL + path + '/tune_' + part + '.png' + '?rnd=' + Date.now();
