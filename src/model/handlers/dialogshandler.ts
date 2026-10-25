@@ -7,6 +7,7 @@ export class DialogsHandler {
   isShowSettingsDialog: boolean = false;
   isShowAboutDialog: boolean = false;
   isShowStatsDialog: boolean = false;
+  isShowMenuDialog: boolean = false;
   isShowResultDialog: boolean = false;
 
   constructor(public infoService: InfoService) {
@@ -15,10 +16,10 @@ export class DialogsHandler {
   hideAllDialogs(): void {
     this.isShowRightHandLayoutDialog = false;
     this.isShowLeftHandLayoutDialog = false;
-
     this.isShowSettingsDialog = false;
     this.isShowAboutDialog = false;
     this.isShowStatsDialog = false;
+    this.isShowMenuDialog = false;
     this.isShowResultDialog = false;
   }
 
@@ -28,6 +29,7 @@ export class DialogsHandler {
       || this.isShowSettingsDialog
       || this.isShowAboutDialog
       || this.isShowStatsDialog
+      || this.isShowMenuDialog
       || this.isShowResultDialog
       ;
   }

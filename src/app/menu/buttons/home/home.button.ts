@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 import {InfoService} from "../../../../services/infoservice";
 import {Router} from "@angular/router";
-import {ICONS_MAP, INSTRUMENTS_ROUTES_MAP} from "../../../../model/constants";
+import {ICONS_MAP} from "../../../../model/constants";
 
 @Component({
   selector: 'home-button',
@@ -16,11 +16,15 @@ export class HomeButton {
   }
 
   getHomeSrc(): string {
-    return ICONS_MAP.get('HOME' + this.homeSrcSuffix.toUpperCase())!;
+    if (this.infoService.dialogsHandler.isShowMenuDialog) {
+      return ICONS_MAP.get('LIST_SELECTED')!;
+    } else {
+      return ICONS_MAP.get('LIST' + this.homeSrcSuffix.toUpperCase())!;
+    }
   }
 
   onHomeClick(): void {
     this.infoService.playerComponent.loopHandler.pause();
-    this.router.navigate([INSTRUMENTS_ROUTES_MAP.get(this.infoService.settings.instrument)]);
+    this.infoService.dialogsHandler.isShowMenuDialog = true;
   }
 }

@@ -1,0 +1,44 @@
+<p-dialog header="Menu"
+          [(visible)]="infoService.dialogsHandler.isShowMenuDialog"
+          [modal]="true"
+          (onShow)="onShow()"
+          (onHide)="onHide()"
+          [draggable]="true"
+          [resizable]="false"
+          [style]="{width: '75vw'}"
+          [contentStyle]="{height: '75vw'}"
+>
+
+  <p-table [value]="stats" [scrollable]="true" styleClass="p-datatable-gridlines p-datatable-striped"
+           scrollHeight="flex">
+    <ng-template pTemplate="header">
+      <tr>
+        <th [style]="{maxWidth:columnWidthCounter+'px'}">#</th>
+        <th style="width:40%">Title</th>
+        <th style="width:40%">Author</th>
+        <th [style]="{maxWidth:columnWidthInstrument+'px'}">Instrument</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-record>
+      <tr>
+        <td>{{ getIndex(record) }}</td>
+        <td>{{ getDate(record.date) }}</td>
+        <td>{{ getTime(record.date) }}</td>
+        <td>{{ getTime(record.date) }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  <ng-template pTemplate="footer">
+    <div style="padding:5px;border: 0px solid black;width:100%;height:100%;overflow: hidden"
+         fxLayout="row nowrap"
+         fxLayoutAlign="space-between center">
+      <div style="padding:0;border: 0px solid red;height:100%;width:100%;overflow: hidden;">
+      </div>
+      <div style="margin-top:10px;">
+        <p-button icon="pi pi-check" (click)="this.infoService.dialogsHandler.isShowMenuDialog=false" label="Ok"
+                  styleClass="p-button-text"></p-button>
+      </div>
+    </div>
+  </ng-template>
+</p-dialog>

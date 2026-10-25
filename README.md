@@ -26,3 +26,4 @@ http:localhost:8787
 - [ ] finish the converter
 - [ ] add about the app button
 - [ ] add 'add' button that opens the converter
+- [ ] preload instruments on startup

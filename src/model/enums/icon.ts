@@ -61,6 +61,7 @@ export enum Icon {
   HOME = "HOME",
   HOME_OVER = "HOME_OVER",
   HOME_DOWN = "HOME_DOWN",
+  HOME_SELECTED = "HOME_SELECTED",
 
   SAVE_ON = "SAVE_ON",
   SAVE_ON_OVER = "SAVE_ON_OVER",

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 808 808">
+  <defs>
+    <style>
+      .cls-1{fill:#025f94;stroke:#ffffff;stroke-width:23;stroke-miterlimit:10}
+      .cls-2{fill:#ffffff}
+    </style>
+  </defs>
+  <title>home.svg</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path id="circle10171" d="M755.16 409.06 C755.16 603 597.94 760.22 404 760.22 C210.06 760.22 52.84 603 52.84 409.06 C52.84 215.12 210.06 57.9 404 57.9 C597.94 57.9 755.16 215.12 755.16 409.06 Z" class="cls-1"/>
+    <g id="g48309">
+      <path id="polygon48305" d="M498.318 273.918 L592.635 344.875 L404 344.875 L215.365 344.875 L309.682 273.918 L404 202.973 Z" class="cls-2"/>
+      <path id="polygon48307" d="M445.385 477.593 L362.615 477.593 L362.615 605.027 L275.106 605.027 L275.106 361.427 L532.894 361.427 L532.894 605.027 L445.385 605.027 Z" class="cls-2"/>
+    </g>
+  </g>
+</svg>

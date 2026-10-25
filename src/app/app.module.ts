@@ -40,7 +40,7 @@ import {ContextMenuModule} from "primeng/contextmenu";
 import {ResponseInterceptor} from "../model/responseinterceptor";
 import {CardModule} from "primeng/card";
 import {PlayerProgressbarComponent} from "./playerprogressbar/player-progressbar.component";
-import {StatsDialog} from "./dialogs/statsdialog";
+import {StatsDialog} from "./dialogs/stats.dialog";
 import {DropdownModule} from "primeng/dropdown";
 import {SplitterModule} from "primeng/splitter";
 import {ListboxModule} from "primeng/listbox";
@@ -59,6 +59,7 @@ import {StatsButton} from "./menu/buttons/stats/stats.button";
 import {SettingsButton} from "./menu/buttons/settings/settings.button";
 import {DownloadButton} from "./menu/buttons/download/download.button";
 import {FullscreenButton} from "./menu/buttons/fullscreen/fullscreen.button";
+import {MenuDialog} from "./dialogs/menu.dialog";
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import {FullscreenButton} from "./menu/buttons/fullscreen/fullscreen.button";
     LeftHandLayoutDialog,
     RightHandLayoutDialog,
     StatsDialog,
+    MenuDialog,
     ResultDialog,
     MeasureSelectorComponent,
     RangeSelectorComponent,
