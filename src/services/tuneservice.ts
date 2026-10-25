@@ -88,6 +88,15 @@ export class TuneService extends AnyService {
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
     const path = getParamValueQueryString("path") || "piano/greensleeves";
 
+    if (path.startsWith("piano")) {
+      infoService.settings.instrument = Instrument.PIANO;
+    } else if (path.startsWith("accordion-piano")) {
+      infoService.settings.instrument = Instrument.PIANO_ACCORDION;
+    } else {
+      infoService.settings.instrument = Instrument.BUTTON_ACCORDION;
+    }
+
+
     infoService.loadingProgressMessage.next(messages.message_loading_score);
     this.isLoading = true;
     this.http.get<ScoreMetaModel>(

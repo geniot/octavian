@@ -7,10 +7,16 @@
       "path": "piano/greensleeves"
     },
     {
-      "title": "Greensleeves",
-      "author": "English Traditional",
+      "title": "The Green Grasshopper",
+      "author": "Vladimir Shainsky",
+      "instrument": "button accordion",
+      "path": "accordion-button/green_grasshopper"
+    },
+    {
+      "title": "Little Fir Tree",
+      "author": "Leonid Bekman",
       "instrument": "piano accordion",
-      "path": "piano-accordion/greensleeves"
+      "path": "accordion-piano/little_fir_tree"
     }
   ]
 }

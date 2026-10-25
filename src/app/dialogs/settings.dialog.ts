@@ -1,12 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {Instrument} from "../../model/enums/instrument";
 import {ViewMode} from "../../model/enums/viewmode";
-import {
-  arrayFromMap,
-  INSTRUMENTS_NAMES_MAP,
-  INSTRUMENTS_ROUTES_MAP,
-  SETTINGS_VIEW_MODE_MAP
-} from "../../model/constants";
+import {arrayFromMap, INSTRUMENTS_NAMES_MAP, SETTINGS_VIEW_MODE_MAP} from "../../model/constants";
 import {AnyDialog} from "./anydialog";
 
 @Component({
@@ -45,13 +40,6 @@ export class SettingsDialog extends AnyDialog implements OnInit {
 
   onInstrumentChange() {
     this.infoService.settings.instrument = this.selectedAccordionTypeOption;
-
-    let path: string = INSTRUMENTS_ROUTES_MAP.get(this.infoService.settings.instrument) +
-      '/' + this.tuneService.tuneModel.value.tune.ownerId +
-      '/' + this.tuneService.tuneModel.value.tune.id;
-
-    this.router.navigate([path], {state: {data: this.router.url}});
-
     this.infoService.settingsChangedTrigger.next(true);
     this.infoService.playerInitTrigger.next(true);
   }
