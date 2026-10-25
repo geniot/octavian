@@ -46,7 +46,6 @@ import {TuneService} from "../services/tuneservice";
 import {TuneModel} from "./mds/tunemodel";
 import {Settings} from "./settings";
 import {PlayerMode} from "./enums/playermode";
-import {Tune} from "./tune";
 import {HttpParams} from "@angular/common/http";
 
 export const SELECTION_HANDLE_FILL_COLOR: string = '#ffffff';
@@ -860,16 +859,6 @@ export const getHandScore = (performance: string, ratio: number): number => {
   }
   return handScore > 0 ? handScore : 0;
 }
-
-export const compareTunesFunc = (obj1: [string, Tune], obj2: [string, Tune]): number => {
-  let o1: string = obj1[0];
-  let o2: string = obj2[0];
-  if (o1 == o2) {
-    return 0;
-  }
-  return obj1[1].positionNum - obj2[1].positionNum;
-}
-
 
 export const getParamValueQueryString = (paramName: string): string | null => {
   const url = window.location.href;

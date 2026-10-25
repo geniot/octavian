@@ -1,10 +1,7 @@
 {
   "tune": {
-    "id": 100,
-    "ownerId": 25,
     "title": "Greensleeves",
     "author": "English Traditional",
-    "instrument": "PIANO",
     "pngWidth": 10534,
     "pngHeight": 458,
     "selectionRanges": "158,1853,2619,3599,4273,5256,5930,948",
