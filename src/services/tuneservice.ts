@@ -32,9 +32,9 @@ export class TuneService extends AnyService {
     super();
   }
 
-  loadTune(instrument: string, tune: string): void {
+  loadTune(path: string): void {
     this.tuneLoadedTrigger.next(false);
-    this.http.get<TuneModel>(environment.BASE_API_URL + instrument + '/' + tune + '/' + tune + '.json' + '?rnd=' + Date.now())
+    this.http.get<TuneModel>(environment.BASE_API_URL + path + '/tune.json' + '?rnd=' + Date.now())
       .subscribe(model => {
         this.tuneLoadedTrigger.next(true);
         model = plainToClass(TuneModel, model);
@@ -86,14 +86,12 @@ export class TuneService extends AnyService {
     let scoreMetaModel = new ScoreMetaModel();
 
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
-    const instrument = getParamValueQueryString("instrument") || "piano";
-    const tune = getParamValueQueryString("tune") || "greensleeves";
+    const path = getParamValueQueryString("path") || "piano/greensleeves";
 
     infoService.loadingProgressMessage.next(messages.message_loading_score);
-
     this.isLoading = true;
     this.http.get<ScoreMetaModel>(
-      this.baseApiUrl + instrument + '/' + tune + "/meta.json"
+      this.baseApiUrl + path + "/meta.json"
     ).subscribe(model => {
         _this.isLoading = false;
         scoreMetaModel = plainToClass(ScoreMetaModel, model);
@@ -101,7 +99,7 @@ export class TuneService extends AnyService {
         if (!scoreMetaModel.hasError) {
           _this.imageObjs.clear();
           for (let i = 0; i < scoreMetaModel.parts; i++) {
-            _this.loadImagePart(i, instrument, tune);
+            _this.loadImagePart(i, path);
           }
         }
       },
@@ -112,7 +110,7 @@ export class TuneService extends AnyService {
     );
   }
 
-  loadImagePart(part: number, instrument: string, tune: string): void {
+  loadImagePart(part: number, path: string): void {
     let _this = this;
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
     let imageObj = new Image();
@@ -120,7 +118,7 @@ export class TuneService extends AnyService {
       _this.imageObjs.set(part, imageObj);
       if (_this.imageObjs.size == _this.scoreMetaModel.value.parts) {
         infoService.loadingProgressMessage.next(messages.message_loading_tune);
-        _this.loadTune(instrument, tune);
+        _this.loadTune(path);
       }
     };
     imageObj.onerror = function () {
@@ -128,7 +126,7 @@ export class TuneService extends AnyService {
       // _this.router.navigate([INSTRUMENTS_ROUTES_MAP.get(infoService.settings.instrument)]);
     };
     infoService.loadingProgressMessage.next(messages.message_loading_score);
-    imageObj.src = environment.BASE_API_URL + instrument + '/' + tune + '/' + tune + '_' + part + '.png' + '?rnd=' + Date.now();
+    imageObj.src = environment.BASE_API_URL + path + '/tune_' + part + '.png' + '?rnd=' + Date.now();
   }
 
   getAudioContext(): AudioContext {

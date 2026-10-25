@@ -1,0 +1,16 @@
+{
+  "menuItems": [
+    {
+      "title": "Greensleeves",
+      "author": "English Traditional",
+      "instrument": "piano",
+      "path": "piano/greensleeves"
+    },
+    {
+      "title": "Greensleeves",
+      "author": "English Traditional",
+      "instrument": "piano accordion",
+      "path": "piano-accordion/greensleeves"
+    }
+  ]
+}

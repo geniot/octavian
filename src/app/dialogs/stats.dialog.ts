@@ -2,6 +2,7 @@ import {Component} from "@angular/core";
 import {AnyDialog} from "./anydialog";
 import {StatsRecord} from "../../model/statsrecord";
 import {getParamValueQueryString, getScore} from "../../model/constants";
+import {instrument} from "soundfont-player";
 
 @Component({
   selector: 'stats-dialog',
@@ -20,9 +21,8 @@ export class StatsDialog extends AnyDialog {
   ngOnInit(): void {
     this.subscriptions.push(this.statsService.statsModel.asObservable().subscribe(
       m => {
-        const instrument = getParamValueQueryString("instrument");
-        const tune = getParamValueQueryString("tune");
-        this.stats = this.statsService.statsModel.value.records.get(instrument + ":" + tune)!;
+        const path = getParamValueQueryString("path");
+        this.stats = this.statsService.statsModel.value.records.get(instrument + ":" + path)!;
       }));
     //for debugging
     // this.infoService.dialogsHandler.isShowStatsDialog = true;

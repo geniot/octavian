@@ -9,7 +9,8 @@
           [contentStyle]="{height: '75vw'}"
 >
 
-  <p-table [value]="stats" [scrollable]="true" styleClass="p-datatable-gridlines p-datatable-striped"
+  <p-table *ngIf="!catalogueService.isLoading" [value]="menuItems" [scrollable]="true"
+           styleClass="p-datatable-gridlines p-datatable-striped"
            scrollHeight="flex">
     <ng-template pTemplate="header">
       <tr>
@@ -22,9 +23,9 @@
     <ng-template pTemplate="body" let-record>
       <tr>
         <td>{{ getIndex(record) }}</td>
-        <td>{{ getDate(record.date) }}</td>
-        <td>{{ getTime(record.date) }}</td>
-        <td>{{ getTime(record.date) }}</td>
+        <td><a style="color:blue;" href="index.html?path={{record.path}}">{{ record.title }}</a></td>
+        <td>{{ record.author }}</td>
+        <td>{{ record.instrument }}</td>
       </tr>
     </ng-template>
   </p-table>

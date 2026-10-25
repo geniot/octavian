@@ -1,25 +1,21 @@
 import {Component} from "@angular/core";
 import {AnyDialog} from "./anydialog";
-import {StatsRecord} from "../../model/statsrecord";
-import {getParamValueQueryString} from "../../model/constants";
+import {MenuItem} from "../../model/menuitem";
 
 @Component({
   selector: 'menu-dialog',
   templateUrl: './menu.dialog.html'
 })
 export class MenuDialog extends AnyDialog {
-  stats!: StatsRecord[];
+  menuItems!: MenuItem[];
 
   columnWidthCounter: number = 50;
   columnWidthInstrument: number = 250;
-  transparency: number = 0.3;
 
   ngOnInit(): void {
-    this.subscriptions.push(this.statsService.statsModel.asObservable().subscribe(
+    this.subscriptions.push(this.catalogueService.catalogueModel.asObservable().subscribe(
       m => {
-        const instrument = getParamValueQueryString("instrument");
-        const tune = getParamValueQueryString("tune");
-        this.stats = this.statsService.statsModel.value.records.get(instrument + ":" + tune)!;
+        this.menuItems = m.menuItems
       }));
     //for debugging
     // this.infoService.dialogsHandler.isShowMenuDialog = true;
@@ -27,13 +23,13 @@ export class MenuDialog extends AnyDialog {
 
   override onShow() {
     super.onShow();
-    this.stats = [];
-    this.statsService.loadStats();
+    this.menuItems = [];
+    this.catalogueService.loadCatalogue();
   }
 
   override onHide() {
     super.onHide();
-    this.stats = [];
+    this.menuItems = [];
   }
 
   getDate(date: string): string {
@@ -47,9 +43,9 @@ export class MenuDialog extends AnyDialog {
   }
 
 
-  getIndex(record: StatsRecord): string {
-    for (let i = 0; i < this.stats.length; i++) {
-      if (this.stats[i] == record) {
+  getIndex(record: MenuItem): string {
+    for (let i = 0; i < this.menuItems.length; i++) {
+      if (this.menuItems[i] == record) {
         return String(i + 1);
       }
     }

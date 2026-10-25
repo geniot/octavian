@@ -16,8 +16,7 @@ http:localhost:8787
 
 ### TODO
 
-- [ ] load menu, navigate to tunes
-- [ ] load empty, open the menu on empty
+- [x] load menu, navigate to tunes
 - [ ] test stats
 - [x] enable download of musicxml
 - [ ] add all tunes from the previous version
