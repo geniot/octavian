@@ -17,6 +17,12 @@
       "author": "Leonid Bekman",
       "instrument": "piano accordion",
       "path": "accordion-piano/little_fir_tree"
+    },
+    {
+      "title": "Yablochko",
+      "author": "Russian Folk Song",
+      "instrument": "button accordion",
+      "path": "accordion-button/yablochko"
     }
   ]
 }

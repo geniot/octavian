@@ -100,7 +100,7 @@ export class TuneService extends AnyService {
     infoService.loadingProgressMessage.next(messages.message_loading_score);
     this.isLoading = true;
     this.http.get<ScoreMetaModel>(
-      this.baseApiUrl + path + "/meta.json"
+      this.baseApiUrl + path + "/meta.json" + '?rnd=' + Date.now()
     ).subscribe(model => {
         _this.isLoading = false;
         scoreMetaModel = plainToClass(ScoreMetaModel, model);
@@ -114,7 +114,6 @@ export class TuneService extends AnyService {
       },
       error => {
         console.log(error);
-        // this.router.navigate([INSTRUMENTS_ROUTES_MAP.get(infoService.settings.instrument)]);
       }
     );
   }
