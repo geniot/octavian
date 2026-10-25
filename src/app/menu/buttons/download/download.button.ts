@@ -23,12 +23,9 @@ export class DownloadButton {
   }
 
   onDownload() {
-    const instrument = getParamValueQueryString("instrument");
-    const tune = getParamValueQueryString("tune");
-    if (instrument != null && tune != null) {
-      const url = this.baseApiUrl + instrument + '/' + tune + "/" + tune + ".musicxml";
-      window.open(url);
-    }
+    const path = getParamValueQueryString("path") || "piano/greensleeves";
+    const url = this.baseApiUrl + path + '/tune.musicxml' + '?rnd=' + Date.now()
+    window.open(url);
   }
 
 }
