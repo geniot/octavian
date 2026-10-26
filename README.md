@@ -16,13 +16,9 @@ http:localhost:8787
 
 ### TODO
 
-- [x] load menu, navigate to tunes
 - [ ] test stats
-- [x] enable download of musicxml
 - [ ] add all tunes from the previous version
-- [ ] refactor to load without meta.json
-- [ ] simplify the tune model
 - [ ] finish the converter
 - [ ] add about the app button
 - [ ] add 'add' button that opens the converter
-- [ ] preload instruments on startup
+- [ ] sort menu items

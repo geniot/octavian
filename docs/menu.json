@@ -1,11 +1,32 @@
 {
   "menuItems": [
     {
+      "title": "Arabesque",
+      "author": "Friedrich Burgmüller",
+      "instrument": "piano",
+      "path": "piano/arabesque_etude_no_2_op_100"
+    },
+    {
+      "title": "Autumn Leaves",
+      "author": "Joseph Kosma",
+      "instrument": "piano",
+      "path": "piano/autumn_leaves"
+    },
+    {
+      "title": "A Whole New World",
+      "author": "Alan Menken",
+      "instrument": "piano",
+      "path": "piano/a_whole_new_world"
+    },
+    {
       "title": "Greensleeves",
       "author": "English Traditional",
       "instrument": "piano",
       "path": "piano/greensleeves"
     },
+
+
+
     {
       "title": "The Green Grasshopper",
       "author": "Vladimir Shainsky",
