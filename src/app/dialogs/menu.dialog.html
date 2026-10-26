@@ -9,26 +9,20 @@
           [contentStyle]="{height: '75vw'}"
 >
 
-  <p-table *ngIf="!catalogueService.isLoading" [value]="menuItems" [scrollable]="true"
-           styleClass="p-datatable-gridlines p-datatable-striped"
-           scrollHeight="flex">
-    <ng-template pTemplate="header">
-      <tr>
-        <th [style]="{maxWidth:columnWidthCounter+'px'}">#</th>
-        <th style="width:40%">Title</th>
-        <th style="width:40%">Author</th>
-        <th [style]="{maxWidth:columnWidthInstrument+'px'}">Instrument</th>
-      </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-record>
-      <tr>
-        <td>{{ getIndex(record) }}</td>
-        <td><a style="color:blue;" href="index.html?path={{record.path}}">{{ record.title }}</a></td>
-        <td>{{ record.author }}</td>
-        <td>{{ record.instrument }}</td>
-      </tr>
-    </ng-template>
-  </p-table>
+  <p-tabView (onChange)="onTabChange($event)">
+    <p-tabPanel [selected]="selectedInstrument==0" header="Piano">
+      <ng-template [ngTemplateOutletContext]="{items:filterByInstrument('piano')}"
+                   [ngTemplateOutlet]="TableContentsTemplate"></ng-template>
+    </p-tabPanel>
+    <p-tabPanel [selected]="selectedInstrument==1" header="Button Accordion">
+      <ng-template [ngTemplateOutletContext]="{items:filterByInstrument('button accordion')}"
+                   [ngTemplateOutlet]="TableContentsTemplate"></ng-template>
+    </p-tabPanel>
+    <p-tabPanel [selected]="selectedInstrument==2" header="Piano Accordion">
+      <ng-template [ngTemplateOutletContext]="{items:filterByInstrument('piano accordion')}"
+                   [ngTemplateOutlet]="TableContentsTemplate"></ng-template>
+    </p-tabPanel>
+  </p-tabView>
 
   <ng-template pTemplate="footer">
     <div style="padding:5px;border: 0px solid black;width:100%;height:100%;overflow: hidden"
@@ -43,3 +37,24 @@
     </div>
   </ng-template>
 </p-dialog>
+
+<ng-template let-items='items' #TableContentsTemplate>
+  <p-table *ngIf="!catalogueService.isLoading" [value]="items" [scrollable]="true"
+           styleClass="p-datatable-gridlines p-datatable-striped"
+           scrollHeight="flex">
+    <ng-template pTemplate="header">
+      <tr>
+        <th [style]="{maxWidth:columnWidthCounter+'px'}">#</th>
+        <th style="width:50%">Title</th>
+        <th style="width:50%">Author</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-record>
+      <tr>
+        <td>{{ record.index }}</td>
+        <td><a style="color:blue;" href="index.html?path={{record.path}}">{{ record.title }}</a></td>
+        <td>{{ record.author }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</ng-template>

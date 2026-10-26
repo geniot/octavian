@@ -1,22 +1,29 @@
 import {Component} from "@angular/core";
 import {AnyDialog} from "./anydialog";
 import {MenuItem} from "../../model/menuitem";
+import {PlayerMode} from "../../model/enums/playermode";
+import {TabViewChangeEvent} from "primeng/tabview";
 
 @Component({
   selector: 'menu-dialog',
   templateUrl: './menu.dialog.html'
 })
 export class MenuDialog extends AnyDialog {
-  menuItems!: MenuItem[];
-
+  readonly statsLocalStorageName: string = "octavian-MenuDialogStorageName";
+  menuItems: MenuItem[] = [];
+  selectedInstrument: number = 0;
   columnWidthCounter: number = 50;
-  columnWidthInstrument: number = 250;
 
   ngOnInit(): void {
     this.subscriptions.push(this.catalogueService.catalogueModel.asObservable().subscribe(
       m => {
         this.menuItems = m.menuItems
       }));
+    if (localStorage.getItem(this.statsLocalStorageName)) {
+      this.selectedInstrument = JSON.parse(localStorage.getItem(this.statsLocalStorageName)!);
+    } else {
+      this.selectedInstrument = 0;
+    }
     //for debugging
     // this.infoService.dialogsHandler.isShowMenuDialog = true;
   }
@@ -32,23 +39,24 @@ export class MenuDialog extends AnyDialog {
     this.menuItems = [];
   }
 
-  getDate(date: string): string {
-    let splits = date.split("T")[0].split("-");
-    return splits[2] + "-" + splits[1] + "-" + splits[0];
-  }
+  protected readonly PlayerMode = PlayerMode;
 
-  getTime(date: string): string {
-    let time: string = date.split("T")[1].split(".")[0];
-    return time.substring(0, time.lastIndexOf(":"));
-  }
-
-
-  getIndex(record: MenuItem): string {
-    for (let i = 0; i < this.menuItems.length; i++) {
-      if (this.menuItems[i] == record) {
-        return String(i + 1);
-      }
+  protected filterByInstrument(instrument: string): MenuItem[] {
+    let filteredItems: MenuItem[] = [];
+    if (this.menuItems != undefined) {
+      let index = 0;
+      this.menuItems.forEach((element) => {
+        if (element.instrument == instrument) {
+          element.index = ++index;
+          filteredItems.push(element);
+        }
+      });
     }
-    return "";
+    return filteredItems;
+  }
+
+  protected onTabChange($event: TabViewChangeEvent) {
+    this.selectedInstrument = $event.index;
+    localStorage.setItem(this.statsLocalStorageName, JSON.stringify(this.selectedInstrument));
   }
 }

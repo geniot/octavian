@@ -98,6 +98,7 @@ import {MenuDialog} from "./dialogs/menu.dialog";
     SplitButtonModule,
     BrowserAnimationsModule,
     KnobModule,
+    TabViewModule,
     ToggleButtonModule,
     FlexLayoutModule,
     SelectButtonModule,
