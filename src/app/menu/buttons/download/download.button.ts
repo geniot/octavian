@@ -24,7 +24,8 @@ export class DownloadButton {
 
   onDownload() {
     const path = getParamValueQueryString("path") || "piano/greensleeves";
-    const url = this.baseApiUrl + path + '/tune.musicxml' + '?rnd=' + Date.now()
+    const tag = path.substring(path.lastIndexOf('/') + 1);
+    const url = this.baseApiUrl + path + '/' + tag + '.musicxml' + '?rnd=' + Date.now()
     window.open(url);
   }
 

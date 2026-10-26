@@ -71,6 +71,7 @@ export class TuneService extends AnyService {
   loadScore(): void {
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
     const path = getParamValueQueryString("path") || "piano/greensleeves";
+    const tag = path.substring(path.lastIndexOf('/') + 1);
     if (path.startsWith("piano")) {
       infoService.settings.instrument = Instrument.PIANO;
     } else if (path.startsWith("accordion-piano")) {
@@ -82,7 +83,7 @@ export class TuneService extends AnyService {
     this.isLoading = true;
 
     this.tuneLoadedTrigger.next(false);
-    this.http.get<TuneModel>(environment.BASE_API_URL + path + '/tune.json' + '?rnd=' + Date.now())
+    this.http.get<TuneModel>(environment.BASE_API_URL + path + '/' + tag + '.json' + '?rnd=' + Date.now())
       .subscribe(model => {
         model = plainToClass(TuneModel, model);
         tunify(model);
@@ -95,12 +96,12 @@ export class TuneService extends AnyService {
         let total = Math.ceil(model.tune.pngWidth / 30000);
         _this.imageObjs.clear();
         for (let i = 0; i < total; i++) {
-          _this.loadImagePart(i, path, total, onImagesLoadedHandler);
+          _this.loadImagePart(i, path, tag, total, onImagesLoadedHandler);
         }
       });
   }
 
-  loadImagePart(part: number, path: string, total: number, onLoadedHandler: Function): void {
+  loadImagePart(part: number, path: string, tag: string, total: number, onLoadedHandler: Function): void {
     let _this = this;
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
     let imageObj = new Image();
@@ -114,7 +115,7 @@ export class TuneService extends AnyService {
       console.log('Error loading image');
     };
     infoService.loadingProgressMessage.next(messages.message_loading_score);
-    imageObj.src = environment.BASE_API_URL + path + '/tune_' + part + '.png' + '?rnd=' + Date.now();
+    imageObj.src = environment.BASE_API_URL + path + '/' + tag + '_' + part + '.png' + '?rnd=' + Date.now();
   }
 
   getAudioContext(): AudioContext {
