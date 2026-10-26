@@ -37,6 +37,18 @@
       "path": "piano/greensleeves"
     },
     {
+      "title": "Hijo de la luna",
+      "author": "Mecano",
+      "instrument": "piano",
+      "path": "piano/hijo_de_la_luna"
+    },
+    {
+      "title": "No Woman No Cry",
+      "author": "Bob Marley",
+      "instrument": "piano",
+      "path": "piano/no_woman_no_cry"
+    },
+    {
       "title": "Scarborough Fair",
       "author": "English Traditional",
       "instrument": "piano",
