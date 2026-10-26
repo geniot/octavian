@@ -19,14 +19,29 @@
       "path": "piano/a_whole_new_world"
     },
     {
+      "title": "Brahms' Lullaby",
+      "author": "Johannes Brahms",
+      "instrument": "piano",
+      "path": "piano/brahms_lullaby"
+    },
+    {
+      "title": "Castle in the Sky",
+      "author": "Joe Hisaishi",
+      "instrument": "piano",
+      "path": "piano/castle_in_the_sky"
+    },
+    {
       "title": "Greensleeves",
       "author": "English Traditional",
       "instrument": "piano",
       "path": "piano/greensleeves"
     },
-
-
-
+    {
+      "title": "Scarborough Fair",
+      "author": "English Traditional",
+      "instrument": "piano",
+      "path": "piano/scarborough_fair"
+    },
     {
       "title": "The Green Grasshopper",
       "author": "Vladimir Shainsky",
