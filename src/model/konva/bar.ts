@@ -8,7 +8,7 @@ import {HandType} from "../enums/handtype";
 import {DestroyableComponent} from "../destroyablecomponent";
 import {NoteType} from "../enums/notetype";
 import {TuneService} from "../../services/tuneservice";
-import {Tune} from "../tune";
+import {TuneModel} from "../mds/tunemodel";
 
 export class Bar extends DestroyableComponent {
   pointsIndexes!: Array<number>;
@@ -24,7 +24,7 @@ export class Bar extends DestroyableComponent {
               barNumber: number,
               points: Array<number>) {
     super();
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     this.barNumber = barNumber;
     this.pointsIndexes = points;
 
@@ -97,7 +97,7 @@ export class Bar extends DestroyableComponent {
   }
 
   hasFalsePresses(handType: HandType): boolean {
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     for (let i = 0; i < this.pointsIndexes.length; i++) {
       let point: Point = tune.points[this.pointsIndexes[i]];
       if (handType == HandType.RIGHT_HAND && point.rightHandFalsePressesCount > 0) {
@@ -111,7 +111,7 @@ export class Bar extends DestroyableComponent {
   }
 
   isYellow(handType: HandType): boolean {
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     for (let pointIndex of this.pointsIndexes) {
       let point: Point = tune.points[pointIndex];
       if (point.notesOn != null) {
@@ -165,7 +165,7 @@ export class Bar extends DestroyableComponent {
    * Returns true if at least one note has pressedAt defined.
    */
   isPlayed() {
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     for (let pointIndex of this.pointsIndexes) {
       let point: Point = tune.points[pointIndex];
       if (point.notesOn != null) {
@@ -192,7 +192,7 @@ export class Bar extends DestroyableComponent {
   }
 
   isAllPlayed() {
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     for (let pointIndex of this.pointsIndexes) {
       let point: Point = tune.points[pointIndex];
       if (point.notesOn != null) {
@@ -219,7 +219,7 @@ export class Bar extends DestroyableComponent {
   }
 
   clearPlayedHistory() {
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     for (let pointIndex of this.pointsIndexes) {
       let point: Point = tune.points[pointIndex];
       if (point.notesOn != null) {
@@ -234,7 +234,7 @@ export class Bar extends DestroyableComponent {
   }
 
   debug(): void {
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     let txt: string = '';
     let leftErrors: number = 0;
     let rightErrors: number = 0;

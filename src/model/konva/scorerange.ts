@@ -182,7 +182,7 @@ export class ScoreRange extends DestroyableComponent {
         return this.selectionRanges[i].toOffset;
       }
     }
-    return this.tuneService.tuneModel.value.tune.sheetWidth;
+    return this.tuneService.tuneModel.value.sheetWidth;
   }
 
   unselectAll(): void {
@@ -197,7 +197,7 @@ export class ScoreRange extends DestroyableComponent {
 
   onResized(newHeight: number, newWidth: number) {
 
-    let sheetWidth = this.tuneService.tuneModel.value.tune.sheetWidth;
+    let sheetWidth = this.tuneService.tuneModel.value.sheetWidth;
     let ratio = newWidth / sheetWidth;
     let measureWidth = this.toOffset - this.fromOffset;
 

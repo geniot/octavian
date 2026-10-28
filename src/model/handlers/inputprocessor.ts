@@ -108,7 +108,7 @@ export class InputProcessor {
    */
   checkNext(pressedNote: Note): void {
     let instrument: Instrument = this.infoService.settings.instrument;
-    let points: Point[] = this.tuneService.tuneModel.value.tune.points;
+    let points: Point[] = this.tuneService.tuneModel.value.points;
     let pointer: number = this.infoService.playerComponent.waitPointer;
     let thisPoint: Point = points[pointer];
 

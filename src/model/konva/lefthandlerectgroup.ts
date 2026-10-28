@@ -11,7 +11,7 @@ import {
 } from "../constants";
 import {SelectionGroup} from "./selectiongroup";
 import {TuneService} from "../../services/tuneservice";
-import {Tune} from "../tune";
+import {TuneModel} from "../mds/tunemodel";
 
 export class LeftHandleRectGroup extends HandleRectGroup {
   lastValidLeftHandleX: number;
@@ -25,14 +25,14 @@ export class LeftHandleRectGroup extends HandleRectGroup {
     super(playerComponent, {
         id: "leftHandleRectGroup",
         x: -SELECTION_HANDLE_WIDTH / 2,
-        y: (tuneService.tuneModel.value.tune.sheetHeight - SELECTION_HANDLE_HEIGHT) / 2,
+        y: (tuneService.tuneModel.value.sheetHeight - SELECTION_HANDLE_HEIGHT) / 2,
         draggable: true,
       },
       infoService,
       tuneService
     );
 
-    let tune:Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     this.lastValidLeftHandleX = (-tune.playHeadWidth / 2) * playerComponent.scaleFactor;
 
     let _this = this;

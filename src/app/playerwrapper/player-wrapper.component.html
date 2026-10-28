@@ -66,38 +66,12 @@
 </div>
 
 <!--LOADING SPINNER-->
-<div *ngIf="!tuneService.tuneLoadedTrigger.value && !tuneService.tuneModel.value.hasError"
+<div *ngIf="!tuneService.tuneLoadedTrigger.value"
      style="width:100%;height:100%;"
      fxLayoutAlign="center center"
      fxLayout="column">
   <p-progressSpinner></p-progressSpinner>
   <div style="text-transform: uppercase;">{{ infoService.loadingProgressMessage.value }}</div>
-</div>
-
-<!--ERROR-->
-<div
-  *ngIf="tuneService.tuneModel.value.hasError && tuneService.tuneModel.value.message!=null"
-  style="width:100%;height:100%;" fxLayout="row nowrap">
-  <div fxFlex="1 1 auto"
-       style="padding:0;border-right: 0px solid black;background-color: lightgrey">
-  </div>
-  <div fxFlex="0 1 500px" fxLayoutAlign="center center" style="padding:10px;border: 0px solid black"
-       fxLayout="column nowrap">
-    <div
-      class="flash"
-      [style]="{backgroundColor:'pink'}"
-      [innerHTML]="this.sanitizer.bypassSecurityTrustHtml(tuneService.tuneModel.value.message==null?'':tuneService.tuneModel.value.message)">
-    </div>
-
-    <p style="margin-block-start: 0;width:100%">
-      <a (click)="this.infoService.onHomeClick()" style="cursor: pointer"><img style="vertical-align: top" height="15"
-                                                                               src="assets/back_arrow.svg" role="img">
-        BACK</a>
-    </p>
-  </div>
-  <div fxFlex="1 1 auto"
-       style="padding:0;border-right: 0px solid black;background-color: lightgrey">
-  </div>
 </div>
 
 <!--TEMPLATES-->
@@ -106,8 +80,8 @@
     <div
       [style.zoom]="toolbarZoom"
       style="text-align: center;height:100%;width:100%;">
-      <p style="font-size: 3em;margin:0">{{ tuneService.tuneModel.value.tune.title }}</p>
-      <p style="font-size: 2em;line-height: 0;color: gray;">{{ tuneService.tuneModel.value.tune.author }}</p>
+      <p style="font-size: 3em;margin:0">{{ tuneService.tuneModel.value.title }}</p>
+      <p style="font-size: 2em;line-height: 0;color: gray;">{{ tuneService.tuneModel.value.author }}</p>
     </div>
   </div>
 </ng-template>

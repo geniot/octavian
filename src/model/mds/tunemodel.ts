@@ -1,10 +1,16 @@
 import {Type} from "class-transformer";
-import {Tune} from "../tune";
+import {Point} from "../point";
 
 export class TuneModel {
-  @Type(() => Tune)
-  tune!: Tune;
-
-  message!: string | null;
-  hasError: boolean = false;
+  title: string = "";
+  author: string = "";
+  @Type(() => Point)
+  points!: Point[];
+  sheetWidth!: number;
+  sheetHeight!: number;
+  pngWidth!: number;
+  pngHeight!: number;
+  playHeadWidth: number = 18;
+  barOffsets!: number[];
+  selectionRanges!: number[];
 }

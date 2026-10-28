@@ -314,7 +314,7 @@ export const contains = (arr: Route[], route: string): boolean => {
 }
 
 export const isTuneLoaded = (model: TuneModel): boolean => {
-  return model.tune != null && model.tune.points != null;
+  return model != null && model.points != null;
 }
 
 export const setPointerCursor = (group: Konva.Group, playerComponent: PlayerComponent): void => {
@@ -560,9 +560,9 @@ export const defaultize = (settings: Settings): void => {
   }
 }
 export const tunify = (m: TuneModel): void => {
-  if (m.tune != null && m.tune.points != null) {
-    for (let i = 0; i < m.tune.points.length; i++) {
-      let point: Point = m.tune.points[i];
+  if (m != null && m.points != null) {
+    for (let i = 0; i < m.points.length; i++) {
+      let point: Point = m.points[i];
       if (point.notesOn != null) {
         tunifyNotes(point.notesOn);
       }

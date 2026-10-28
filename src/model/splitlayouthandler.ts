@@ -115,7 +115,7 @@ export abstract class SplitLayoutHandler extends AnyDialog implements OnInit {
       && !this.infoService.dialogsHandler.isAnyDialogOpen()) {
       let isNext: boolean = event.key == 'ArrowRight';
       let nextPointer: number = getNextPointer(
-        this.tuneService.tuneModel.value.tune.points,
+        this.tuneService.tuneModel.value.points,
         this.infoService.playerComponent.waitPointer + (isNext ? 1 : -1),
         true,
         false,

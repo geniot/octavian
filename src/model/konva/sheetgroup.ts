@@ -8,9 +8,9 @@ import {DestroyableComponent} from "../destroyablecomponent";
 import {NoteChecker} from "./notechecker";
 import {PlayerMode} from "../enums/playermode";
 import {TuneService} from "../../services/tuneservice";
-import {Tune} from "../tune";
 import {StatsService} from "../../services/statsservice";
 import {ScoreImageGroup} from "./scoreimagegroup";
+import {TuneModel} from "../mds/tunemodel";
 
 export class SheetGroup extends DestroyableComponent {
   //cover screens to hide a little bit upper or lower part of the score
@@ -40,8 +40,8 @@ export class SheetGroup extends DestroyableComponent {
     this.on('dragmove', () => {
       infoService.progressValue.next(0);
 
-      let leftLimitRelative: number = tuneService.tuneModel.value.tune.points[0].offsetX + tuneService.tuneModel.value.tune.playHeadWidth / 2;
-      let rightLimitRelative: number = tuneService.tuneModel.value.tune.sheetWidth - tuneService.tuneModel.value.tune.playHeadWidth / 2;
+      let leftLimitRelative: number = tuneService.tuneModel.value.points[0].offsetX + tuneService.tuneModel.value.playHeadWidth / 2;
+      let rightLimitRelative: number = tuneService.tuneModel.value.sheetWidth - tuneService.tuneModel.value.playHeadWidth / 2;
 
       let leftLimitAbsolute: number = this.playerComponent.relativeToAbsolute(leftLimitRelative);
       let rightLimitAbsolute: number = this.playerComponent.relativeToAbsolute(rightLimitRelative);
@@ -123,7 +123,7 @@ export class SheetGroup extends DestroyableComponent {
 
   onResized() {
     this.updateX(this.infoService.sliderValue.value.value);
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
 
     this.width(tune.sheetWidth * this.playerComponent.scaleFactor);
     this.height(tune.sheetHeight * this.playerComponent.scaleFactor);

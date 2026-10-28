@@ -37,11 +37,11 @@ export class MeasureSelectorComponent extends DestroyableComponent implements Af
     this.tooltipLayer = new Konva.Layer();
 
     this.selectionRanges = [];
-    let measuresCount = this.tuneService.tuneModel.value.tune.barOffsets.length;
+    let measuresCount = this.tuneService.tuneModel.value.barOffsets.length;
     for (let i = 0; i < measuresCount; i++) {
 
-      let fromOffset = this.tuneService.tuneModel.value.tune.barOffsets[i];
-      let toOffset = i == measuresCount - 1 ? this.tuneService.tuneModel.value.tune.sheetWidth : this.tuneService.tuneModel.value.tune.barOffsets[i + 1];
+      let fromOffset = this.tuneService.tuneModel.value.barOffsets[i];
+      let toOffset = i == measuresCount - 1 ? this.tuneService.tuneModel.value.sheetWidth : this.tuneService.tuneModel.value.barOffsets[i + 1];
       let selectionRange = new ScoreRange(RangeSelectionMode.GOTO_MEASURE, this.selectionRanges, this.tuneService, this.infoService, this.stage, this.tooltipLayer, i, fromOffset, toOffset, String(i + 1));
 
       this.selectionRanges.push(selectionRange);

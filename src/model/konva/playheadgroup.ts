@@ -17,12 +17,12 @@ export class PlayHeadGroup extends Konva.Rect {
 
       this.x(
         this.playerComponent.stage.width() / 2
-        - this.tuneService.tuneModel.value.tune.playHeadWidth * this.playerComponent.scaleFactor / 2
+        - this.tuneService.tuneModel.value.playHeadWidth * this.playerComponent.scaleFactor / 2
         - this.playerComponent.sheetGroup.x()
       );
 
-      this.width(this.tuneService.tuneModel.value.tune.playHeadWidth * this.playerComponent.scaleFactor);
-      this.height(this.tuneService.tuneModel.value.tune.sheetHeight * this.playerComponent.scaleFactor);
+      this.width(this.tuneService.tuneModel.value.playHeadWidth * this.playerComponent.scaleFactor);
+      this.height(this.tuneService.tuneModel.value.sheetHeight * this.playerComponent.scaleFactor);
 
     }
   }

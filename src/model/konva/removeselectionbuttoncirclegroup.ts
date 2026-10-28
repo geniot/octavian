@@ -18,7 +18,7 @@ export class RemoveSelectionButtonCircleGroup extends DestroyableComponent {
 
     super({
         x: selectionWidth / 2,
-        y: (tuneService.tuneModel.value.tune.sheetHeight / 2),
+        y: (tuneService.tuneModel.value.sheetHeight / 2),
       }
     );
     this.selectionButtonCircle = new Konva.Circle({

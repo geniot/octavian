@@ -31,7 +31,7 @@ export class HandleRectGroup extends DestroyableComponent {
   }
 
   onResized(handleRect: Konva.Rect, handleSymbol: Konva.Path) {
-    this.y((this.tuneService.tuneModel.value.tune.sheetHeight - SELECTION_HANDLE_HEIGHT) / 2 * this.playerComponent.scaleFactor);
+    this.y((this.tuneService.tuneModel.value.sheetHeight - SELECTION_HANDLE_HEIGHT) / 2 * this.playerComponent.scaleFactor);
     handleRect.width(SELECTION_HANDLE_WIDTH * this.playerComponent.scaleFactor);
     handleRect.height(SELECTION_HANDLE_HEIGHT * this.playerComponent.scaleFactor);
     handleSymbol.scaleX(this.playerComponent.scaleFactor);

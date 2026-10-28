@@ -5,7 +5,7 @@ import {SELECTION_AREA_FILL, SELECTION_INIT, setPointerCursor} from "../constant
 import {DestroyableComponent} from "../destroyablecomponent";
 import {PlayerMode} from "../enums/playermode";
 import {TuneService} from "../../services/tuneservice";
-import {Tune} from "../tune";
+import {TuneModel} from "../mds/tunemodel";
 
 
 export class SelectButtonCircleGroup extends DestroyableComponent {
@@ -29,7 +29,7 @@ export class SelectButtonCircleGroup extends DestroyableComponent {
     this.selectionButtonCircle = new Konva.Circle({
       x: 0,
       y: 0,
-      radius: this.tuneService.tuneModel.value.tune.playHeadWidth,
+      radius: this.tuneService.tuneModel.value.playHeadWidth,
       fill: '#ffffff',
       strokeWidth: 1,
       stroke: SELECTION_AREA_FILL,
@@ -56,7 +56,7 @@ export class SelectButtonCircleGroup extends DestroyableComponent {
     });
 
     this.on('click', function () {
-      let tune: Tune = this.tuneService.tuneModel.value.tune;
+      let tune: TuneModel = this.tuneService.tuneModel.value;
       let selectionFrom = this.playerComponent.absoluteToRelative(this.playerComponent.sheetGroup.x()) - tune.playHeadWidth / 2;
       let selectionWidth = SELECTION_INIT;
       playerComponent.createSelection(selectionFrom, selectionWidth);

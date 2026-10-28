@@ -4,7 +4,7 @@ import {DestroyableComponent} from "../../model/destroyablecomponent";
 import {ChangeEvent} from "../../model/changeevent";
 import {PlayerMode} from "../../model/enums/playermode";
 import {TuneService} from "../../services/tuneservice";
-import {Tune} from "../../model/tune";
+import {TuneModel} from "../../model/mds/tunemodel";
 
 @Component({
   selector: 'app-player-slider',
@@ -26,7 +26,7 @@ export class PlayerSliderComponent extends DestroyableComponent implements OnIni
   ngOnInit(): void {
     this.subscriptions.push(this.tuneService.tuneModel.asObservable().subscribe(
       model => {
-        let tune: Tune = this.tuneService.tuneModel.value.tune;
+        let tune: TuneModel = this.tuneService.tuneModel.value;
         this.infoService.sliderMin = tune.points[0].offsetX + tune.playHeadWidth / 2;
         this.infoService.sliderMax = tune.sheetWidth - tune.playHeadWidth / 2;
         this.infoService.sliderValue.next(new ChangeEvent(this.infoService.sliderMin, this));

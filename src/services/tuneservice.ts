@@ -93,7 +93,7 @@ export class TuneService extends AnyService {
           _this.tuneModel.next(model);
           infoService.loadingProgressMessage.next(messages.message_loading_tune);
         }
-        let total = Math.ceil(model.tune.pngWidth / 30000);
+        let total = Math.ceil(model.pngWidth / 30000);
         _this.imageObjs.clear();
         for (let i = 0; i < total; i++) {
           _this.loadImagePart(i, path, tag, total, onImagesLoadedHandler);

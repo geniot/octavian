@@ -111,15 +111,15 @@ export class InfoService extends AnyService {
       this.fastBackward();
     } else {
       const tuneService: TuneService = this.injector.get<TuneService>(TuneService);
-      let measureOffset = tuneService.tuneModel.value.tune.barOffsets[measureIndex];
+      let measureOffset = tuneService.tuneModel.value.barOffsets[measureIndex];
       this.gotoOffset(measureOffset);
     }
   }
 
   gotoOffset(offset: number): void {
     const tuneService: TuneService = this.injector.get<TuneService>(TuneService);
-    offset += tuneService.tuneModel.value.tune.playHeadWidth / 2;
-    let measurePercent = offset * 100 / tuneService.tuneModel.value.tune.sheetWidth;
+    offset += tuneService.tuneModel.value.playHeadWidth / 2;
+    let measurePercent = offset * 100 / tuneService.tuneModel.value.sheetWidth;
     this.progressValue.next(measurePercent);
     this.sliderValue.next(new ChangeEvent(offset, this));
     this.onSlideEnd();

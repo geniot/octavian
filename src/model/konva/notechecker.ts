@@ -24,7 +24,7 @@ export class NoteChecker extends DestroyableComponent {
     this.subscriptions.push(this.infoService.trashTrigger.asObservable().subscribe(
       trashTrigger => {
         if (trashTrigger.valueOf()) {
-          for (let i = 1; i <= this.tuneService.tuneModel.value.tune.barOffsets.length; i++) {
+          for (let i = 1; i <= this.tuneService.tuneModel.value.barOffsets.length; i++) {
             let bar: Bar = this.barMap.get(i)!
             if (bar != null) {
               bar.clear();
@@ -38,8 +38,8 @@ export class NoteChecker extends DestroyableComponent {
           this.barMap.get(key)!.remove();
         }
         this.barMap.clear();
-        for (let i = 1; i <= model.tune.barOffsets.length; i++) {
-          let barPoints: Array<number> = getBarPoints(model.tune.points, i);
+        for (let i = 1; i <= model.barOffsets.length; i++) {
+          let barPoints: Array<number> = getBarPoints(model.points, i);
           let bar: Bar = new Bar(this.infoService, this.tuneService, i, barPoints);
           this.add(bar);
           this.barMap.set(i, bar);
@@ -50,9 +50,9 @@ export class NoteChecker extends DestroyableComponent {
       if (!note.isTune && note.noteValue > -1) {
         if (this.infoService.settings.mode == PlayerMode.WAIT) {
 
-          let points: Point[] = this.tuneService.tuneModel.value.tune.points;
+          let points: Point[] = this.tuneService.tuneModel.value.points;
           let waitPointer: number = this.infoService.playerComponent.waitPointer;
-          let barPointer: number = waitPointer < 0 ? this.tuneService.tuneModel.value.tune.barOffsets.length : points[waitPointer].bar;
+          let barPointer: number = waitPointer < 0 ? this.tuneService.tuneModel.value.barOffsets.length : points[waitPointer].bar;
 
           for (let i: number = barPointer; i >= 1; i--) {
             let bar: Bar = this.barMap.get(i)!;

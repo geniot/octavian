@@ -10,8 +10,8 @@ import {SelectionGroup} from "../../model/konva/selectiongroup";
 import {debounceTime} from "rxjs/operators";
 import {PlayerMode} from "../../model/enums/playermode";
 import {TuneService} from "../../services/tuneservice";
-import {Tune} from "../../model/tune";
 import {StatsService} from "../../services/statsservice";
+import {TuneModel} from "../../model/mds/tunemodel";
 import Layer = Konva.Layer;
 
 @Component({
@@ -48,7 +48,7 @@ export class PlayerComponent extends DestroyableComponent implements AfterViewIn
   }
 
   ngAfterViewInit(): void {
-    this.scaleFactor = this.containerDiv.nativeElement.getBoundingClientRect().height / this.tuneService.tuneModel.value.tune.sheetHeight;
+    this.scaleFactor = this.containerDiv.nativeElement.getBoundingClientRect().height / this.tuneService.tuneModel.value.sheetHeight;
     this.stage = new Konva.Stage({
       container: 'container',
       width: this.containerDiv.nativeElement.getBoundingClientRect().width,
@@ -141,7 +141,7 @@ export class PlayerComponent extends DestroyableComponent implements AfterViewIn
   }
 
   getSheetOffset(): number {
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     let sheetOffsetRelative: number = Math.round(this.absoluteToRelative(this.sheetGroup.x()) - tune.playHeadWidth / 2);
     sheetOffsetRelative = sheetOffsetRelative < tune.points[0].offsetX ? tune.points[0].offsetX : sheetOffsetRelative;
     return sheetOffsetRelative;
@@ -149,7 +149,7 @@ export class PlayerComponent extends DestroyableComponent implements AfterViewIn
 
 
   updatePointer(): void {
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     let sheetOffsetRelative: number = this.getSheetOffset();
 
     let pointer: number = binarySearch(tune.points, sheetOffsetRelative);
@@ -182,7 +182,7 @@ export class PlayerComponent extends DestroyableComponent implements AfterViewIn
     if (!event.isFirst) {
       this.loopHandler.pause();
 
-      this.scaleFactor = this.containerDiv.nativeElement.getBoundingClientRect().height / this.tuneService.tuneModel.value.tune.sheetHeight;
+      this.scaleFactor = this.containerDiv.nativeElement.getBoundingClientRect().height / this.tuneService.tuneModel.value.sheetHeight;
 
       this.stage.width(this.containerDiv.nativeElement.getBoundingClientRect().width);
       this.stage.height(this.containerDiv.nativeElement.getBoundingClientRect().height);

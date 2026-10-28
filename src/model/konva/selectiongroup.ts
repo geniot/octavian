@@ -7,7 +7,7 @@ import {InfoService} from "../../services/infoservice";
 import {PlayerComponent} from "../../app/player/player.component";
 import {DestroyableComponent} from "../destroyablecomponent";
 import {TuneService} from "../../services/tuneservice";
-import {Tune} from "../tune";
+import {TuneModel} from "../mds/tunemodel";
 
 export class SelectionGroup extends DestroyableComponent {
   removeSelectionButtonCircleGroup!: RemoveSelectionButtonCircleGroup;
@@ -23,7 +23,7 @@ export class SelectionGroup extends DestroyableComponent {
   ) {
     super();
 
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     //adjusting fromX if we are at the end of the sheet
     if (this.selectionFrom > tune.sheetWidth - selectionWidth - tune.playHeadWidth) {
       this.selectionFrom = tune.sheetWidth - selectionWidth;

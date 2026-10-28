@@ -7,7 +7,7 @@ import Konva from "konva";
 import {ChangeEvent} from "../changeevent";
 import {PlayerMode} from "../enums/playermode";
 import {TuneService} from "../../services/tuneservice";
-import {Tune} from "../tune";
+import {TuneModel} from "../mds/tunemodel";
 
 /**
  * This is the heart of the player.
@@ -22,7 +22,7 @@ export class LoopHandler {
 
   playLoop(isAutoPlay: boolean): void {
     if (!this.infoService.pausedTrigger.value) {
-      let tune: Tune = this.tuneService.tuneModel.value.tune;
+      let tune: TuneModel = this.tuneService.tuneModel.value;
       let points: Point[] = tune.points;
       let thisPoint: Point = points[this.playerComponent.playPointer];
 
@@ -113,7 +113,7 @@ export class LoopHandler {
   }
 
   onLoopFinish(): void {
-    let points: Point[] = this.tuneService.tuneModel.value.tune.points;
+    let points: Point[] = this.tuneService.tuneModel.value.points;
     this.onTweenUpdate();
     this.replayTween?.pause();
     if (this.playerComponent.playPointer < points.length - 1) {
@@ -125,7 +125,7 @@ export class LoopHandler {
   }
 
   onTweenUpdate(): void {
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     let offset: number = this.playerComponent.absoluteToRelative(this.playerComponent.sheetGroup.x());
     this.infoService.sliderValue.next(new ChangeEvent(offset, this));
     if (this.infoService.settings.mode == PlayerMode.WAIT) {
@@ -136,7 +136,7 @@ export class LoopHandler {
   }
 
   getPointDuration(pointer: number): number {
-    let points: Point[] = this.tuneService.tuneModel.value.tune.points;
+    let points: Point[] = this.tuneService.tuneModel.value.points;
     let thisPointTimestamp: number = points[pointer].timestamp;
     let nextPointTimestamp: number = pointer < points.length - 1 ? points[pointer + 1].timestamp : points[points.length - 1].timestamp + 35;
     return nextPointTimestamp - thisPointTimestamp;
@@ -144,16 +144,16 @@ export class LoopHandler {
 
   scrollToSelectionStart(): void {
     this.infoService.unsetKeysTrigger.next(true);
-    let nextSheetOffset: number = this.playerComponent.selectionGroup.calcSelectionFrom() + this.tuneService.tuneModel.value.tune.playHeadWidth / 2;
+    let nextSheetOffset: number = this.playerComponent.selectionGroup.calcSelectionFrom() + this.tuneService.tuneModel.value.playHeadWidth / 2;
     this.scrollToSheetOffset(nextSheetOffset);
   }
 
   scrollToWaitPointer(): void {
     this.infoService.unsetKeysTrigger.next(true);
     this.infoService.progressValue.next(0);
-    let points: Point[] = this.tuneService.tuneModel.value.tune.points;
+    let points: Point[] = this.tuneService.tuneModel.value.points;
     let nextPointerOffset: number = points[this.playerComponent.waitPointer].offsetX;
-    let nextSheetOffset = nextPointerOffset + this.tuneService.tuneModel.value.tune.playHeadWidth / 2;
+    let nextSheetOffset = nextPointerOffset + this.tuneService.tuneModel.value.playHeadWidth / 2;
     this.scrollToSheetOffset(nextSheetOffset);
   }
 
@@ -220,7 +220,7 @@ export class LoopHandler {
     let selectionStart: number = this.playerComponent.selectionGroup.calcSelectionFrom();
     let selectionEnd: number = this.playerComponent.selectionGroup.calcSelectionTo();
     let headerAt: number = this.playerComponent.getSheetOffset();
-    let noise: number = this.tuneService.tuneModel.value.tune.playHeadWidth * 3;
+    let noise: number = this.tuneService.tuneModel.value.playHeadWidth * 3;
     return headerAt >= selectionStart - noise && headerAt <= selectionEnd + noise;
   }
 

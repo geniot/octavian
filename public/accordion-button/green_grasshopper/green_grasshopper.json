@@ -1,2242 +1,2240 @@
 {
-  "tune": {
-    "title": "The Green Grasshopper",
-    "author": "Vladimir Shainsky",
-    "pngWidth": 9254,
-    "pngHeight": 542,
-    "barOffsets": [
-      19,
-      208,
-      488,
-      829,
-      1159,
-      1439,
-      1719,
-      2060,
-      2391,
-      2671,
-      2976,
-      3282,
-      3615,
-      3895,
-      4201,
-      4506,
-      4840
-    ],
-    "points": [
-      {
-        "offsetX": 128,
-        "bar": 1,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          }
-        ]
-      },
-      {
-        "timestamp": 298,
-        "offsetX": 226,
-        "bar": 2,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          }
-        ]
-      },
-      {
-        "timestamp": 299,
-        "offsetX": 227,
-        "bar": 2,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 597,
-        "offsetX": 291,
-        "bar": 2,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 598,
-        "offsetX": 292,
-        "bar": 2,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 896,
-        "offsetX": 356,
-        "bar": 2,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 897,
-        "offsetX": 357,
-        "bar": 2,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 1195,
-        "offsetX": 421,
-        "bar": 2,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 1196,
-        "offsetX": 422,
-        "bar": 2,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 1494,
-        "offsetX": 517,
-        "bar": 3,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 1495,
-        "offsetX": 518,
-        "bar": 3,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 47,
-            "noteName": "B2"
-          }
-        ]
-      },
-      {
-        "timestamp": 1793,
-        "offsetX": 594,
-        "bar": 3,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 47,
-            "noteName": "B2"
-          }
-        ]
-      },
-      {
-        "timestamp": 1794,
-        "offsetX": 595,
-        "bar": 3,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 2092,
-        "offsetX": 672,
-        "bar": 3,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 2093,
-        "offsetX": 673,
-        "bar": 3,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 2391,
-        "offsetX": 749,
-        "bar": 3,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 2392,
-        "offsetX": 750,
-        "bar": 3,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 2690,
-        "offsetX": 847,
-        "bar": 4,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 2691,
-        "offsetX": 848,
-        "bar": 4,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 47,
-            "noteName": "B2"
-          }
-        ]
-      },
-      {
-        "timestamp": 2989,
-        "offsetX": 925,
-        "bar": 4,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 47,
-            "noteName": "B2"
-          }
-        ]
-      },
-      {
-        "timestamp": 2990,
-        "offsetX": 926,
-        "bar": 4,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 3288,
-        "offsetX": 1002,
-        "bar": 4,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 3289,
-        "offsetX": 1003,
-        "bar": 4,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 3587,
-        "offsetX": 1080,
-        "bar": 4,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 3588,
-        "offsetX": 1081,
-        "bar": 4,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 3886,
-        "offsetX": 1177,
-        "bar": 5,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 3887,
-        "offsetX": 1178,
-        "bar": 5,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 4185,
-        "offsetX": 1242,
-        "bar": 5,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 4186,
-        "offsetX": 1243,
-        "bar": 5,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 4484,
-        "offsetX": 1307,
-        "bar": 5,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 4485,
-        "offsetX": 1308,
-        "bar": 5,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 4783,
-        "offsetX": 1372,
-        "bar": 5,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 4784,
-        "offsetX": 1373,
-        "bar": 5,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 5082,
-        "offsetX": 1457,
-        "bar": 6,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 5083,
-        "offsetX": 1458,
-        "bar": 6,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 5381,
-        "offsetX": 1522,
-        "bar": 6,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 5382,
-        "offsetX": 1523,
-        "bar": 6,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 5680,
-        "offsetX": 1587,
-        "bar": 6,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 5681,
-        "offsetX": 1588,
-        "bar": 6,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 5979,
-        "offsetX": 1652,
-        "bar": 6,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 5980,
-        "offsetX": 1653,
-        "bar": 6,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 6278,
-        "offsetX": 1748,
-        "bar": 7,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 6279,
-        "offsetX": 1749,
-        "bar": 7,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 47,
-            "noteName": "B2"
-          }
-        ]
-      },
-      {
-        "timestamp": 6577,
-        "offsetX": 1826,
-        "bar": 7,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 47,
-            "noteName": "B2"
-          }
-        ]
-      },
-      {
-        "timestamp": 6578,
-        "offsetX": 1827,
-        "bar": 7,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 6876,
-        "offsetX": 1903,
-        "bar": 7,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 6877,
-        "offsetX": 1904,
-        "bar": 7,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 7175,
-        "offsetX": 1981,
-        "bar": 7,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 7176,
-        "offsetX": 1982,
-        "bar": 7,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 7474,
-        "offsetX": 2079,
-        "bar": 8,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 7475,
-        "offsetX": 2080,
-        "bar": 8,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 47,
-            "noteName": "B2"
-          }
-        ]
-      },
-      {
-        "timestamp": 7773,
-        "offsetX": 2156,
-        "bar": 8,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 47,
-            "noteName": "B2"
-          }
-        ]
-      },
-      {
-        "timestamp": 7774,
-        "offsetX": 2157,
-        "bar": 8,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 8072,
-        "offsetX": 2233,
-        "bar": 8,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 8073,
-        "offsetX": 2234,
-        "bar": 8,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 8371,
-        "offsetX": 2311,
-        "bar": 8,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 64,
-            "noteName": "E4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 8372,
-        "offsetX": 2312,
-        "bar": 8,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 8670,
-        "offsetX": 2409,
-        "bar": 9,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 8671,
-        "offsetX": 2410,
-        "bar": 9,
-        "notesOn": [
-          {
-            "duration": 598,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 8969,
-        "offsetX": 2474,
-        "bar": 9,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 8970,
-        "offsetX": 2475,
-        "bar": 9,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 9268,
-        "offsetX": 2539,
-        "bar": 9,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 9269,
-        "offsetX": 2540,
-        "bar": 9,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 9567,
-        "offsetX": 2604,
-        "bar": 9,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 9568,
-        "offsetX": 2605,
-        "bar": 9,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 9866,
-        "offsetX": 2694,
-        "bar": 10,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 9867,
-        "offsetX": 2695,
-        "bar": 10,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "G2 D3 B3",
-            "chordName": "G"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 43,
-            "noteName": "G2"
-          }
-        ]
-      },
-      {
-        "timestamp": 10165,
-        "offsetX": 2760,
-        "bar": 10,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "G2 D3 B3",
-            "chordName": "G"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 43,
-            "noteName": "G2"
-          }
-        ]
-      },
-      {
-        "timestamp": 10166,
-        "offsetX": 2761,
-        "bar": 10,
-        "notesOn": [
-          {
-            "duration": 149,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 10314,
-        "offsetX": 2801,
-        "bar": 10,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 10315,
-        "offsetX": 2802,
-        "bar": 10,
-        "notesOn": [
-          {
-            "duration": 149,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 10463,
-        "offsetX": 2842,
-        "bar": 10,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 10464,
-        "offsetX": 2843,
-        "bar": 10,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 10762,
-        "offsetX": 2908,
-        "bar": 10,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 10763,
-        "offsetX": 2909,
-        "bar": 10,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "G2 D3 B3",
-            "chordName": "G"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 43,
-            "noteName": "G2"
-          }
-        ]
-      },
-      {
-        "timestamp": 11061,
-        "offsetX": 2999,
-        "bar": 11,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "G2 D3 B3",
-            "chordName": "G"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 43,
-            "noteName": "G2"
-          }
-        ]
-      },
-      {
-        "timestamp": 11062,
-        "offsetX": 3000,
-        "bar": 11,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "G3 C4 E4",
-            "chordName": "C"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 48,
-            "noteName": "C3"
-          }
-        ]
-      },
-      {
-        "timestamp": 11360,
-        "offsetX": 3065,
-        "bar": 11,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "G3 C4 E4",
-            "chordName": "C"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 48,
-            "noteName": "C3"
-          }
-        ]
-      },
-      {
-        "timestamp": 11361,
-        "offsetX": 3066,
-        "bar": 11,
-        "notesOn": [
-          {
-            "duration": 149,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 11509,
-        "offsetX": 3106,
-        "bar": 11,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 11510,
-        "offsetX": 3107,
-        "bar": 11,
-        "notesOn": [
-          {
-            "duration": 149,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 11658,
-        "offsetX": 3148,
-        "bar": 11,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 11659,
-        "offsetX": 3149,
-        "bar": 11,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 11957,
-        "offsetX": 3214,
-        "bar": 11,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 11958,
-        "offsetX": 3215,
-        "bar": 11,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 12256,
-        "offsetX": 3300,
-        "bar": 12,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 12257,
-        "offsetX": 3301,
-        "bar": 12,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 12555,
-        "offsetX": 3378,
-        "bar": 12,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 12556,
-        "offsetX": 3379,
-        "bar": 12,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 12854,
-        "offsetX": 3456,
-        "bar": 12,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 12855,
-        "offsetX": 3457,
-        "bar": 12,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 13153,
-        "offsetX": 3535,
-        "bar": 12,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 13154,
-        "offsetX": 3536,
-        "bar": 12,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 13452,
-        "offsetX": 3633,
-        "bar": 13,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 13453,
-        "offsetX": 3634,
-        "bar": 13,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 13751,
-        "offsetX": 3698,
-        "bar": 13,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 13752,
-        "offsetX": 3699,
-        "bar": 13,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 14050,
-        "offsetX": 3763,
-        "bar": 13,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          }
-        ]
-      },
-      {
-        "timestamp": 14051,
-        "offsetX": 3764,
-        "bar": 13,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 14349,
-        "offsetX": 3828,
-        "bar": 13,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 14350,
-        "offsetX": 3829,
-        "bar": 13,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          }
-        ]
-      },
-      {
-        "timestamp": 14648,
-        "offsetX": 3918,
-        "bar": 14,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          }
-        ]
-      },
-      {
-        "timestamp": 14649,
-        "offsetX": 3919,
-        "bar": 14,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "G2 D3 B3",
-            "chordName": "G"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 43,
-            "noteName": "G2"
-          }
-        ]
-      },
-      {
-        "timestamp": 14947,
-        "offsetX": 3984,
-        "bar": 14,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "G2 D3 B3",
-            "chordName": "G"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 43,
-            "noteName": "G2"
-          }
-        ]
-      },
-      {
-        "timestamp": 14948,
-        "offsetX": 3985,
-        "bar": 14,
-        "notesOn": [
-          {
-            "duration": 149,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 15096,
-        "offsetX": 4026,
-        "bar": 14,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 15097,
-        "offsetX": 4027,
-        "bar": 14,
-        "notesOn": [
-          {
-            "duration": 149,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 15245,
-        "offsetX": 4067,
-        "bar": 14,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 15246,
-        "offsetX": 4068,
-        "bar": 14,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 15544,
-        "offsetX": 4133,
-        "bar": 14,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 15545,
-        "offsetX": 4134,
-        "bar": 14,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "G2 D3 B3",
-            "chordName": "G"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 43,
-            "noteName": "G2"
-          }
-        ]
-      },
-      {
-        "timestamp": 15843,
-        "offsetX": 4224,
-        "bar": 15,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "G2 D3 B3",
-            "chordName": "G"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 43,
-            "noteName": "G2"
-          }
-        ]
-      },
-      {
-        "timestamp": 15844,
-        "offsetX": 4225,
-        "bar": 15,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "G3 C4 E4",
-            "chordName": "C"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 48,
-            "noteName": "C3"
-          }
-        ]
-      },
-      {
-        "timestamp": 16142,
-        "offsetX": 4290,
-        "bar": 15,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "G3 C4 E4",
-            "chordName": "C"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 48,
-            "noteName": "C3"
-          }
-        ]
-      },
-      {
-        "timestamp": 16143,
-        "offsetX": 4291,
-        "bar": 15,
-        "notesOn": [
-          {
-            "duration": 149,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 16291,
-        "offsetX": 4331,
-        "bar": 15,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 16292,
-        "offsetX": 4332,
-        "bar": 15,
-        "notesOn": [
-          {
-            "duration": 149,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 16440,
-        "offsetX": 4372,
-        "bar": 15,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 16441,
-        "offsetX": 4373,
-        "bar": 15,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 16739,
-        "offsetX": 4438,
-        "bar": 15,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 16740,
-        "offsetX": 4439,
-        "bar": 15,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 17038,
-        "offsetX": 4525,
-        "bar": 16,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 17039,
-        "offsetX": 4526,
-        "bar": 16,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 17337,
-        "offsetX": 4603,
-        "bar": 16,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 17338,
-        "offsetX": 4604,
-        "bar": 16,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 17636,
-        "offsetX": 4681,
-        "bar": 16,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 17637,
-        "offsetX": 4682,
-        "bar": 16,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 17935,
-        "offsetX": 4760,
-        "bar": 16,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 52,
-            "noteName": "E3"
-          }
-        ]
-      },
-      {
-        "timestamp": 17936,
-        "offsetX": 4761,
-        "bar": 16,
-        "notesOn": [
-          {
-            "duration": 299,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "duration": 299,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 18234,
-        "offsetX": 4863,
-        "bar": 17,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "GA3 D4 E4",
-            "chordName": "E7"
-          }
-        ]
-      },
-      {
-        "timestamp": 18235,
-        "offsetX": 4864,
-        "bar": 17,
-        "notesOn": [
-          {
-            "duration": 599,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "duration": 599,
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          },
-          {
-            "duration": 599,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      },
-      {
-        "timestamp": 18834,
-        "offsetX": 5103,
-        "bar": 17,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          },
-          {
-            "noteType": "LEFT_HAND_CHORD",
-            "noteName": "A3 C4 E4",
-            "chordName": "Am"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 45,
-            "noteName": "A2"
-          }
-        ]
-      }
-    ],
-    "sheetWidth": 5118,
-    "sheetHeight": 300,
-    "playHeadWidth": 17
-  }
+  "title": "The Green Grasshopper",
+  "author": "Vladimir Shainsky",
+  "pngWidth": 9254,
+  "pngHeight": 542,
+  "sheetWidth": 5118,
+  "sheetHeight": 300,
+  "playHeadWidth": 17,
+  "barOffsets": [
+    19,
+    208,
+    488,
+    829,
+    1159,
+    1439,
+    1719,
+    2060,
+    2391,
+    2671,
+    2976,
+    3282,
+    3615,
+    3895,
+    4201,
+    4506,
+    4840
+  ],
+  "points": [
+    {
+      "offsetX": 128,
+      "bar": 1,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        }
+      ]
+    },
+    {
+      "timestamp": 298,
+      "offsetX": 226,
+      "bar": 2,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        }
+      ]
+    },
+    {
+      "timestamp": 299,
+      "offsetX": 227,
+      "bar": 2,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 597,
+      "offsetX": 291,
+      "bar": 2,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 598,
+      "offsetX": 292,
+      "bar": 2,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 896,
+      "offsetX": 356,
+      "bar": 2,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 897,
+      "offsetX": 357,
+      "bar": 2,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 1195,
+      "offsetX": 421,
+      "bar": 2,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 1196,
+      "offsetX": 422,
+      "bar": 2,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 1494,
+      "offsetX": 517,
+      "bar": 3,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 1495,
+      "offsetX": 518,
+      "bar": 3,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 47,
+          "noteName": "B2"
+        }
+      ]
+    },
+    {
+      "timestamp": 1793,
+      "offsetX": 594,
+      "bar": 3,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 47,
+          "noteName": "B2"
+        }
+      ]
+    },
+    {
+      "timestamp": 1794,
+      "offsetX": 595,
+      "bar": 3,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 2092,
+      "offsetX": 672,
+      "bar": 3,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 2093,
+      "offsetX": 673,
+      "bar": 3,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 2391,
+      "offsetX": 749,
+      "bar": 3,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 2392,
+      "offsetX": 750,
+      "bar": 3,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 2690,
+      "offsetX": 847,
+      "bar": 4,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 2691,
+      "offsetX": 848,
+      "bar": 4,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 47,
+          "noteName": "B2"
+        }
+      ]
+    },
+    {
+      "timestamp": 2989,
+      "offsetX": 925,
+      "bar": 4,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 47,
+          "noteName": "B2"
+        }
+      ]
+    },
+    {
+      "timestamp": 2990,
+      "offsetX": 926,
+      "bar": 4,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 3288,
+      "offsetX": 1002,
+      "bar": 4,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 3289,
+      "offsetX": 1003,
+      "bar": 4,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 3587,
+      "offsetX": 1080,
+      "bar": 4,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 3588,
+      "offsetX": 1081,
+      "bar": 4,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 3886,
+      "offsetX": 1177,
+      "bar": 5,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 3887,
+      "offsetX": 1178,
+      "bar": 5,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 4185,
+      "offsetX": 1242,
+      "bar": 5,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 4186,
+      "offsetX": 1243,
+      "bar": 5,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 4484,
+      "offsetX": 1307,
+      "bar": 5,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 4485,
+      "offsetX": 1308,
+      "bar": 5,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 4783,
+      "offsetX": 1372,
+      "bar": 5,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 4784,
+      "offsetX": 1373,
+      "bar": 5,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 5082,
+      "offsetX": 1457,
+      "bar": 6,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 5083,
+      "offsetX": 1458,
+      "bar": 6,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 5381,
+      "offsetX": 1522,
+      "bar": 6,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 5382,
+      "offsetX": 1523,
+      "bar": 6,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 5680,
+      "offsetX": 1587,
+      "bar": 6,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 5681,
+      "offsetX": 1588,
+      "bar": 6,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 5979,
+      "offsetX": 1652,
+      "bar": 6,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 5980,
+      "offsetX": 1653,
+      "bar": 6,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 6278,
+      "offsetX": 1748,
+      "bar": 7,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 6279,
+      "offsetX": 1749,
+      "bar": 7,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 47,
+          "noteName": "B2"
+        }
+      ]
+    },
+    {
+      "timestamp": 6577,
+      "offsetX": 1826,
+      "bar": 7,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 47,
+          "noteName": "B2"
+        }
+      ]
+    },
+    {
+      "timestamp": 6578,
+      "offsetX": 1827,
+      "bar": 7,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 6876,
+      "offsetX": 1903,
+      "bar": 7,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 6877,
+      "offsetX": 1904,
+      "bar": 7,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 7175,
+      "offsetX": 1981,
+      "bar": 7,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 7176,
+      "offsetX": 1982,
+      "bar": 7,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 7474,
+      "offsetX": 2079,
+      "bar": 8,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 7475,
+      "offsetX": 2080,
+      "bar": 8,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 47,
+          "noteName": "B2"
+        }
+      ]
+    },
+    {
+      "timestamp": 7773,
+      "offsetX": 2156,
+      "bar": 8,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 47,
+          "noteName": "B2"
+        }
+      ]
+    },
+    {
+      "timestamp": 7774,
+      "offsetX": 2157,
+      "bar": 8,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 8072,
+      "offsetX": 2233,
+      "bar": 8,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 8073,
+      "offsetX": 2234,
+      "bar": 8,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 8371,
+      "offsetX": 2311,
+      "bar": 8,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 64,
+          "noteName": "E4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 8372,
+      "offsetX": 2312,
+      "bar": 8,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 8670,
+      "offsetX": 2409,
+      "bar": 9,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 8671,
+      "offsetX": 2410,
+      "bar": 9,
+      "notesOn": [
+        {
+          "duration": 598,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 8969,
+      "offsetX": 2474,
+      "bar": 9,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 8970,
+      "offsetX": 2475,
+      "bar": 9,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 9268,
+      "offsetX": 2539,
+      "bar": 9,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 9269,
+      "offsetX": 2540,
+      "bar": 9,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 9567,
+      "offsetX": 2604,
+      "bar": 9,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 9568,
+      "offsetX": 2605,
+      "bar": 9,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 9866,
+      "offsetX": 2694,
+      "bar": 10,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 9867,
+      "offsetX": 2695,
+      "bar": 10,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "G2 D3 B3",
+          "chordName": "G"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 43,
+          "noteName": "G2"
+        }
+      ]
+    },
+    {
+      "timestamp": 10165,
+      "offsetX": 2760,
+      "bar": 10,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "G2 D3 B3",
+          "chordName": "G"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 43,
+          "noteName": "G2"
+        }
+      ]
+    },
+    {
+      "timestamp": 10166,
+      "offsetX": 2761,
+      "bar": 10,
+      "notesOn": [
+        {
+          "duration": 149,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 10314,
+      "offsetX": 2801,
+      "bar": 10,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 10315,
+      "offsetX": 2802,
+      "bar": 10,
+      "notesOn": [
+        {
+          "duration": 149,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 10463,
+      "offsetX": 2842,
+      "bar": 10,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 10464,
+      "offsetX": 2843,
+      "bar": 10,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 10762,
+      "offsetX": 2908,
+      "bar": 10,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 10763,
+      "offsetX": 2909,
+      "bar": 10,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "G2 D3 B3",
+          "chordName": "G"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 43,
+          "noteName": "G2"
+        }
+      ]
+    },
+    {
+      "timestamp": 11061,
+      "offsetX": 2999,
+      "bar": 11,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "G2 D3 B3",
+          "chordName": "G"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 43,
+          "noteName": "G2"
+        }
+      ]
+    },
+    {
+      "timestamp": 11062,
+      "offsetX": 3000,
+      "bar": 11,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "G3 C4 E4",
+          "chordName": "C"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 48,
+          "noteName": "C3"
+        }
+      ]
+    },
+    {
+      "timestamp": 11360,
+      "offsetX": 3065,
+      "bar": 11,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "G3 C4 E4",
+          "chordName": "C"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 48,
+          "noteName": "C3"
+        }
+      ]
+    },
+    {
+      "timestamp": 11361,
+      "offsetX": 3066,
+      "bar": 11,
+      "notesOn": [
+        {
+          "duration": 149,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 11509,
+      "offsetX": 3106,
+      "bar": 11,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 11510,
+      "offsetX": 3107,
+      "bar": 11,
+      "notesOn": [
+        {
+          "duration": 149,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 11658,
+      "offsetX": 3148,
+      "bar": 11,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 11659,
+      "offsetX": 3149,
+      "bar": 11,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 11957,
+      "offsetX": 3214,
+      "bar": 11,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 11958,
+      "offsetX": 3215,
+      "bar": 11,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 12256,
+      "offsetX": 3300,
+      "bar": 12,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 12257,
+      "offsetX": 3301,
+      "bar": 12,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 12555,
+      "offsetX": 3378,
+      "bar": 12,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 12556,
+      "offsetX": 3379,
+      "bar": 12,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 12854,
+      "offsetX": 3456,
+      "bar": 12,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 12855,
+      "offsetX": 3457,
+      "bar": 12,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 13153,
+      "offsetX": 3535,
+      "bar": 12,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 13154,
+      "offsetX": 3536,
+      "bar": 12,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 13452,
+      "offsetX": 3633,
+      "bar": 13,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 13453,
+      "offsetX": 3634,
+      "bar": 13,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 13751,
+      "offsetX": 3698,
+      "bar": 13,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 13752,
+      "offsetX": 3699,
+      "bar": 13,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 14050,
+      "offsetX": 3763,
+      "bar": 13,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        }
+      ]
+    },
+    {
+      "timestamp": 14051,
+      "offsetX": 3764,
+      "bar": 13,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 14349,
+      "offsetX": 3828,
+      "bar": 13,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 14350,
+      "offsetX": 3829,
+      "bar": 13,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        }
+      ]
+    },
+    {
+      "timestamp": 14648,
+      "offsetX": 3918,
+      "bar": 14,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        }
+      ]
+    },
+    {
+      "timestamp": 14649,
+      "offsetX": 3919,
+      "bar": 14,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "G2 D3 B3",
+          "chordName": "G"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 43,
+          "noteName": "G2"
+        }
+      ]
+    },
+    {
+      "timestamp": 14947,
+      "offsetX": 3984,
+      "bar": 14,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "G2 D3 B3",
+          "chordName": "G"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 43,
+          "noteName": "G2"
+        }
+      ]
+    },
+    {
+      "timestamp": 14948,
+      "offsetX": 3985,
+      "bar": 14,
+      "notesOn": [
+        {
+          "duration": 149,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 15096,
+      "offsetX": 4026,
+      "bar": 14,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 15097,
+      "offsetX": 4027,
+      "bar": 14,
+      "notesOn": [
+        {
+          "duration": 149,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 15245,
+      "offsetX": 4067,
+      "bar": 14,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 15246,
+      "offsetX": 4068,
+      "bar": 14,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 15544,
+      "offsetX": 4133,
+      "bar": 14,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 15545,
+      "offsetX": 4134,
+      "bar": 14,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "G2 D3 B3",
+          "chordName": "G"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 43,
+          "noteName": "G2"
+        }
+      ]
+    },
+    {
+      "timestamp": 15843,
+      "offsetX": 4224,
+      "bar": 15,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "G2 D3 B3",
+          "chordName": "G"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 43,
+          "noteName": "G2"
+        }
+      ]
+    },
+    {
+      "timestamp": 15844,
+      "offsetX": 4225,
+      "bar": 15,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "G3 C4 E4",
+          "chordName": "C"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 48,
+          "noteName": "C3"
+        }
+      ]
+    },
+    {
+      "timestamp": 16142,
+      "offsetX": 4290,
+      "bar": 15,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "G3 C4 E4",
+          "chordName": "C"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 48,
+          "noteName": "C3"
+        }
+      ]
+    },
+    {
+      "timestamp": 16143,
+      "offsetX": 4291,
+      "bar": 15,
+      "notesOn": [
+        {
+          "duration": 149,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 16291,
+      "offsetX": 4331,
+      "bar": 15,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 16292,
+      "offsetX": 4332,
+      "bar": 15,
+      "notesOn": [
+        {
+          "duration": 149,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 16440,
+      "offsetX": 4372,
+      "bar": 15,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 16441,
+      "offsetX": 4373,
+      "bar": 15,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 16739,
+      "offsetX": 4438,
+      "bar": 15,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 16740,
+      "offsetX": 4439,
+      "bar": 15,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 17038,
+      "offsetX": 4525,
+      "bar": 16,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 17039,
+      "offsetX": 4526,
+      "bar": 16,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 17337,
+      "offsetX": 4603,
+      "bar": 16,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 17338,
+      "offsetX": 4604,
+      "bar": 16,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 17636,
+      "offsetX": 4681,
+      "bar": 16,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 17637,
+      "offsetX": 4682,
+      "bar": 16,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 17935,
+      "offsetX": 4760,
+      "bar": 16,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 52,
+          "noteName": "E3"
+        }
+      ]
+    },
+    {
+      "timestamp": 17936,
+      "offsetX": 4761,
+      "bar": 16,
+      "notesOn": [
+        {
+          "duration": 299,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "duration": 299,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 18234,
+      "offsetX": 4863,
+      "bar": 17,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "GA3 D4 E4",
+          "chordName": "E7"
+        }
+      ]
+    },
+    {
+      "timestamp": 18235,
+      "offsetX": 4864,
+      "bar": 17,
+      "notesOn": [
+        {
+          "duration": 599,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "duration": 599,
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        },
+        {
+          "duration": 599,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    },
+    {
+      "timestamp": 18834,
+      "offsetX": 5103,
+      "bar": 17,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        },
+        {
+          "noteType": "LEFT_HAND_CHORD",
+          "noteName": "A3 C4 E4",
+          "chordName": "Am"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 45,
+          "noteName": "A2"
+        }
+      ]
+    }
+  ]
 }

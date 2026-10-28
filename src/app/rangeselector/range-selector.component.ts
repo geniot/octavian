@@ -25,13 +25,12 @@ export class RangeSelectorComponent extends MeasureSelectorComponent implements 
     });
 
     this.selectionRanges = [];
-    if (this.tuneService.tuneModel.value.tune.selectionRanges != null) {
-      let splits: string[] = this.tuneService.tuneModel.value.tune.selectionRanges.split(",");
-      splits.forEach((element) => {
+    if (this.tuneService.tuneModel.value.selectionRanges != null) {
+      this.tuneService.tuneModel.value.selectionRanges.forEach((element) => {
         this.selections.add(Number(element));
       });
     } else {
-      this.selections.add(this.tuneService.tuneModel.value.tune.points[0].offsetX);
+      this.selections.add(this.tuneService.tuneModel.value.points[0].offsetX);
     }
     this.updateRanges();
   }
@@ -43,7 +42,7 @@ export class RangeSelectorComponent extends MeasureSelectorComponent implements 
     let selectionsArr = Array.from(this.selections.values()).sort((n1, n2) => n1 - n2);
     for (let i = 0; i < selectionsArr.length; i++) {
       let fromOffset = selectionsArr[i] - 1;
-      let toOffset = (i == selectionsArr.length - 1 ? this.tuneService.tuneModel.value.tune.sheetWidth : Number(selectionsArr[i + 1]));
+      let toOffset = (i == selectionsArr.length - 1 ? this.tuneService.tuneModel.value.sheetWidth : Number(selectionsArr[i + 1]));
       let rangeSelectionMode: RangeSelectionMode = RangeSelectionMode.TOGGLE_SELECT;
       let selectionRange = new ScoreRange(rangeSelectionMode, this.selectionRanges, this.tuneService, this.infoService, this.stage, this.tooltipLayer, i, fromOffset, toOffset, LETTERS[i]);
 
@@ -51,7 +50,7 @@ export class RangeSelectorComponent extends MeasureSelectorComponent implements 
       measuresLayer.add(selectionRange);
     }
     this.stage.add(measuresLayer);
-    this.tuneService.tuneModel.value.tune.selectionRanges = selectionsArr.toString();
+    this.tuneService.tuneModel.value.selectionRanges = selectionsArr;
 
     let _this = this;
     setTimeout(function () {

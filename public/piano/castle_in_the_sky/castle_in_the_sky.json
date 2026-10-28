@@ -1,2024 +1,2031 @@
 {
-  "tune": {
-    "title": "Castle in the Sky",
-    "author": "Joe Hisaishi",
-    "pngWidth": 8771,
-    "pngHeight": 448,
-    "sheetWidth": 5862,
-    "sheetHeight": 300,
-    "playHeadWidth": 24,
-    "selectionRanges": "160,847,1550,2272,2948,3647,4351,5230",
-    "barOffsets": [
-      23,
-      278,
-      632,
-      939,
-      1339,
-      1643,
-      2037,
-      2372,
-      2757,
-      3078,
-      3432,
-      3740,
-      4139,
-      4443,
-      4830,
-      5189,
-      5561
-    ],
-    "points": [
-      {
-        "offsetX": 160,
-        "bar": 1,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 236,
-        "offsetX": 214,
-        "bar": 1,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 249,
-        "offsetX": 218,
-        "bar": 1,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 485,
-        "offsetX": 305,
-        "bar": 2,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5"
-          }
-        ]
-      },
-      {
-        "timestamp": 498,
-        "offsetX": 310,
-        "bar": 2,
-        "notesOn": [
-          {
-            "duration": 711,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          },
-          {
-            "duration": 1895,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 60,
-            "noteName": "C4",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "2"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 1209,
-        "offsetX": 407,
-        "bar": 2,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5"
-          }
-        ]
-      },
-      {
-        "timestamp": 1247,
-        "offsetX": 413,
-        "bar": 2,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 1483,
-        "offsetX": 462,
-        "bar": 2,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5"
-          }
-        ]
-      },
-      {
-        "timestamp": 1496,
-        "offsetX": 465,
-        "bar": 2,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 1969,
-        "offsetX": 542,
-        "bar": 2,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5"
-          }
-        ]
-      },
-      {
-        "timestamp": 1995,
-        "offsetX": 547,
-        "bar": 2,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 79,
-            "noteName": "G5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "5"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 2393,
-        "offsetX": 642,
-        "bar": 3,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 60,
-            "noteName": "C4"
-          }
-        ]
-      },
-      {
-        "timestamp": 2468,
-        "offsetX": 660,
-        "bar": 3,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 79,
-            "noteName": "G5"
-          }
-        ]
-      },
-      {
-        "timestamp": 2494,
-        "offsetX": 667,
-        "bar": 3,
-        "notesOn": [
-          {
-            "duration": 1423,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          },
-          {
-            "duration": 1897,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 58,
-            "noteName": "AB3",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "3"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 3917,
-        "offsetX": 837,
-        "bar": 3,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5"
-          }
-        ]
-      },
-      {
-        "timestamp": 3993,
-        "offsetX": 847,
-        "bar": 3,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 67,
-            "noteName": "G4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 4391,
-        "offsetX": 948,
-        "bar": 4,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 58,
-            "noteName": "AB3"
-          }
-        ]
-      },
-      {
-        "timestamp": 4466,
-        "offsetX": 967,
-        "bar": 4,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 67,
-            "noteName": "G4"
-          }
-        ]
-      },
-      {
-        "timestamp": 4492,
-        "offsetX": 974,
-        "bar": 4,
-        "notesOn": [
-          {
-            "duration": 711,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          },
-          {
-            "duration": 1895,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 56,
-            "noteName": "GA3",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "4"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 5203,
-        "offsetX": 1085,
-        "bar": 4,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 5241,
-        "offsetX": 1091,
-        "bar": 4,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 70,
-            "noteName": "AB4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 5477,
-        "offsetX": 1145,
-        "bar": 4,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 70,
-            "noteName": "AB4"
-          }
-        ]
-      },
-      {
-        "timestamp": 5490,
-        "offsetX": 1149,
-        "bar": 4,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 5963,
-        "offsetX": 1238,
-        "bar": 4,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 5989,
-        "offsetX": 1243,
-        "bar": 4,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "5"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 6387,
-        "offsetX": 1345,
-        "bar": 5,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 56,
-            "noteName": "GA3"
-          }
-        ]
-      },
-      {
-        "timestamp": 6462,
-        "offsetX": 1364,
-        "bar": 5,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5"
-          }
-        ]
-      },
-      {
-        "timestamp": 6488,
-        "offsetX": 1371,
-        "bar": 5,
-        "notesOn": [
-          {
-            "duration": 1423,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 70,
-            "noteName": "AB4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          },
-          {
-            "duration": 1897,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 55,
-            "noteName": "G3",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "5"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 7911,
-        "offsetX": 1540,
-        "bar": 5,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 70,
-            "noteName": "AB4"
-          }
-        ]
-      },
-      {
-        "timestamp": 7987,
-        "offsetX": 1550,
-        "bar": 5,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 67,
-            "noteName": "G4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 8385,
-        "offsetX": 1649,
-        "bar": 6,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 55,
-            "noteName": "G3"
-          }
-        ]
-      },
-      {
-        "timestamp": 8460,
-        "offsetX": 1668,
-        "bar": 6,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 67,
-            "noteName": "G4"
-          }
-        ]
-      },
-      {
-        "timestamp": 8486,
-        "offsetX": 1675,
-        "bar": 6,
-        "notesOn": [
-          {
-            "duration": 711,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          },
-          {
-            "duration": 1895,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 65,
-            "noteName": "F4",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 9197,
-        "offsetX": 1785,
-        "bar": 6,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          }
-        ]
-      },
-      {
-        "timestamp": 9235,
-        "offsetX": 1791,
-        "bar": 6,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 67,
-            "noteName": "G4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 9471,
-        "offsetX": 1845,
-        "bar": 6,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 67,
-            "noteName": "G4"
-          }
-        ]
-      },
-      {
-        "timestamp": 9484,
-        "offsetX": 1849,
-        "bar": 6,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 9957,
-        "offsetX": 1937,
-        "bar": 6,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          }
-        ]
-      },
-      {
-        "timestamp": 9983,
-        "offsetX": 1942,
-        "bar": 6,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "5"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 10381,
-        "offsetX": 2050,
-        "bar": 7,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 65,
-            "noteName": "F4"
-          }
-        ]
-      },
-      {
-        "timestamp": 10456,
-        "offsetX": 2070,
-        "bar": 7,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5"
-          }
-        ]
-      },
-      {
-        "timestamp": 10482,
-        "offsetX": 2078,
-        "bar": 7,
-        "notesOn": [
-          {
-            "duration": 1423,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 67,
-            "noteName": "G4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "1"
-              }
-            }
-          },
-          {
-            "duration": 1897,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 63,
-            "noteName": "DE4",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "2"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 11905,
-        "offsetX": 2262,
-        "bar": 7,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 67,
-            "noteName": "G4"
-          }
-        ]
-      },
-      {
-        "timestamp": 11981,
-        "offsetX": 2272,
-        "bar": 7,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "4"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 12379,
-        "offsetX": 2386,
-        "bar": 8,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 63,
-            "noteName": "DE4"
-          }
-        ]
-      },
-      {
-        "timestamp": 12454,
-        "offsetX": 2407,
-        "bar": 8,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5"
-          }
-        ]
-      },
-      {
-        "timestamp": 12480,
-        "offsetX": 2415,
-        "bar": 8,
-        "notesOn": [
-          {
-            "duration": 711,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          },
-          {
-            "duration": 1895,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 62,
-            "noteName": "D4",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "3"
-              }
-            }
-          },
-          {
-            "duration": 1895,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 66,
-            "noteName": "FG4",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 13191,
-        "offsetX": 2518,
-        "bar": 8,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5"
-          }
-        ]
-      },
-      {
-        "timestamp": 13229,
-        "offsetX": 2524,
-        "bar": 8,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 13465,
-        "offsetX": 2576,
-        "bar": 8,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          }
-        ]
-      },
-      {
-        "timestamp": 13478,
-        "offsetX": 2579,
-        "bar": 8,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 13951,
-        "offsetX": 2662,
-        "bar": 8,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 69,
-            "noteName": "A4"
-          }
-        ]
-      },
-      {
-        "timestamp": 13977,
-        "offsetX": 2667,
-        "bar": 8,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "4"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 14375,
-        "offsetX": 2757,
-        "bar": 8,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 62,
-            "noteName": "D4"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 66,
-            "noteName": "FG4"
-          }
-        ]
-      },
-      {
-        "timestamp": 14450,
-        "offsetX": 2775,
-        "bar": 9,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5"
-          }
-        ]
-      },
-      {
-        "timestamp": 14476,
-        "offsetX": 2781,
-        "bar": 9,
-        "notesOn": [
-          {
-            "duration": 1423,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          },
-          {
-            "duration": 1423,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "4"
-              }
-            }
-          },
-          {
-            "duration": 1896,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 55,
-            "noteName": "G3",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "5"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 15899,
-        "offsetX": 2939,
-        "bar": 9,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          },
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5"
-          }
-        ]
-      },
-      {
-        "timestamp": 15975,
-        "offsetX": 2948,
-        "bar": 9,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 16211,
-        "offsetX": 3008,
-        "bar": 9,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 16224,
-        "offsetX": 3012,
-        "bar": 9,
-        "notesOn": [
-          {
-            "duration": 235,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 16372,
-        "offsetX": 3070,
-        "bar": 9,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 55,
-            "noteName": "G3"
-          }
-        ]
-      },
-      {
-        "timestamp": 16459,
-        "offsetX": 3104,
-        "bar": 10,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5"
-          }
-        ]
-      },
-      {
-        "timestamp": 16472,
-        "offsetX": 3110,
-        "bar": 10,
-        "notesOn": [
-          {
-            "duration": 711,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          },
-          {
-            "duration": 1895,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 60,
-            "noteName": "C4",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 17183,
-        "offsetX": 3207,
-        "bar": 10,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5"
-          }
-        ]
-      },
-      {
-        "timestamp": 17221,
-        "offsetX": 3213,
-        "bar": 10,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 17457,
-        "offsetX": 3262,
-        "bar": 10,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5"
-          }
-        ]
-      },
-      {
-        "timestamp": 17470,
-        "offsetX": 3265,
-        "bar": 10,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 17943,
-        "offsetX": 3343,
-        "bar": 10,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5"
-          }
-        ]
-      },
-      {
-        "timestamp": 17969,
-        "offsetX": 3348,
-        "bar": 10,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 79,
-            "noteName": "G5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "5"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 18367,
-        "offsetX": 3442,
-        "bar": 11,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 60,
-            "noteName": "C4"
-          }
-        ]
-      },
-      {
-        "timestamp": 18442,
-        "offsetX": 3460,
-        "bar": 11,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 79,
-            "noteName": "G5"
-          }
-        ]
-      },
-      {
-        "timestamp": 18468,
-        "offsetX": 3467,
-        "bar": 11,
-        "notesOn": [
-          {
-            "duration": 1423,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          },
-          {
-            "duration": 1897,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 58,
-            "noteName": "AB3",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "2"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 19891,
-        "offsetX": 3637,
-        "bar": 11,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5"
-          }
-        ]
-      },
-      {
-        "timestamp": 19967,
-        "offsetX": 3647,
-        "bar": 11,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 67,
-            "noteName": "G4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 20365,
-        "offsetX": 3749,
-        "bar": 12,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 58,
-            "noteName": "AB3"
-          }
-        ]
-      },
-      {
-        "timestamp": 20440,
-        "offsetX": 3768,
-        "bar": 12,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 67,
-            "noteName": "G4"
-          }
-        ]
-      },
-      {
-        "timestamp": 20466,
-        "offsetX": 3775,
-        "bar": 12,
-        "notesOn": [
-          {
-            "duration": 711,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          },
-          {
-            "duration": 1895,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 56,
-            "noteName": "GA3",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "3"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 21177,
-        "offsetX": 3885,
-        "bar": 12,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 21215,
-        "offsetX": 3891,
-        "bar": 12,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 70,
-            "noteName": "AB4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 21451,
-        "offsetX": 3946,
-        "bar": 12,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 70,
-            "noteName": "AB4"
-          }
-        ]
-      },
-      {
-        "timestamp": 21464,
-        "offsetX": 3950,
-        "bar": 12,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 21937,
-        "offsetX": 4039,
-        "bar": 12,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 21963,
-        "offsetX": 4044,
-        "bar": 12,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "5"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 22361,
-        "offsetX": 4145,
-        "bar": 13,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 56,
-            "noteName": "GA3"
-          }
-        ]
-      },
-      {
-        "timestamp": 22436,
-        "offsetX": 4164,
-        "bar": 13,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5"
-          }
-        ]
-      },
-      {
-        "timestamp": 22462,
-        "offsetX": 4171,
-        "bar": 13,
-        "notesOn": [
-          {
-            "duration": 1423,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 70,
-            "noteName": "AB4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          },
-          {
-            "duration": 1897,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 55,
-            "noteName": "G3",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "4"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 23885,
-        "offsetX": 4341,
-        "bar": 13,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 70,
-            "noteName": "AB4"
-          }
-        ]
-      },
-      {
-        "timestamp": 23961,
-        "offsetX": 4351,
-        "bar": 13,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 67,
-            "noteName": "G4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 24359,
-        "offsetX": 4449,
-        "bar": 14,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 55,
-            "noteName": "G3"
-          }
-        ]
-      },
-      {
-        "timestamp": 24434,
-        "offsetX": 4468,
-        "bar": 14,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 67,
-            "noteName": "G4"
-          }
-        ]
-      },
-      {
-        "timestamp": 24460,
-        "offsetX": 4475,
-        "bar": 14,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          },
-          {
-            "duration": 1895,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 53,
-            "noteName": "F3",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "5"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 24933,
-        "offsetX": 4555,
-        "bar": 14,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          }
-        ]
-      },
-      {
-        "timestamp": 24959,
-        "offsetX": 4560,
-        "bar": 14,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 25195,
-        "offsetX": 4608,
-        "bar": 14,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5"
-          }
-        ]
-      },
-      {
-        "timestamp": 25208,
-        "offsetX": 4611,
-        "bar": 14,
-        "notesOn": [
-          {
-            "duration": 711,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 25919,
-        "offsetX": 4739,
-        "bar": 14,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5"
-          }
-        ]
-      },
-      {
-        "timestamp": 25957,
-        "offsetX": 4746,
-        "bar": 14,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 26355,
-        "offsetX": 4836,
-        "bar": 15,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 53,
-            "noteName": "F3"
-          }
-        ]
-      },
-      {
-        "timestamp": 26430,
-        "offsetX": 4853,
-        "bar": 15,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5"
-          }
-        ]
-      },
-      {
-        "timestamp": 26456,
-        "offsetX": 4859,
-        "bar": 15,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 77,
-            "noteName": "F5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "4"
-              }
-            }
-          },
-          {
-            "duration": 1896,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 60,
-            "noteName": "C4",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 26929,
-        "offsetX": 4946,
-        "bar": 15,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 77,
-            "noteName": "F5"
-          }
-        ]
-      },
-      {
-        "timestamp": 26955,
-        "offsetX": 4951,
-        "bar": 15,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 79,
-            "noteName": "G5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "5"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 27191,
-        "offsetX": 5004,
-        "bar": 15,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 79,
-            "noteName": "G5"
-          }
-        ]
-      },
-      {
-        "timestamp": 27204,
-        "offsetX": 5007,
-        "bar": 15,
-        "notesOn": [
-          {
-            "duration": 1185,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 28352,
-        "offsetX": 5212,
-        "bar": 16,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 60,
-            "noteName": "C4"
-          }
-        ]
-      },
-      {
-        "timestamp": 28389,
-        "offsetX": 5218,
-        "bar": 16,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5"
-          }
-        ]
-      },
-      {
-        "timestamp": 28452,
-        "offsetX": 5230,
-        "bar": 16,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "1"
-              }
-            }
-          },
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "5"
-              }
-            }
-          },
-          {
-            "duration": 946,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 53,
-            "noteName": "F3",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "5"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 28688,
-        "offsetX": 5276,
-        "bar": 16,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 68,
-            "noteName": "GA4"
-          },
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 75,
-            "noteName": "DE5"
-          }
-        ]
-      },
-      {
-        "timestamp": 28701,
-        "offsetX": 5279,
-        "bar": 16,
-        "notesOn": [
-          {
-            "duration": 236,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "4"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 28937,
-        "offsetX": 5324,
-        "bar": 16,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5"
-          }
-        ]
-      },
-      {
-        "timestamp": 28950,
-        "offsetX": 5327,
-        "bar": 16,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 29398,
-        "offsetX": 5396,
-        "bar": 16,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 53,
-            "noteName": "F3"
-          }
-        ]
-      },
-      {
-        "timestamp": 29423,
-        "offsetX": 5399,
-        "bar": 16,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          }
-        ]
-      },
-      {
-        "timestamp": 29449,
-        "offsetX": 5404,
-        "bar": 16,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "4"
-              }
-            }
-          },
-          {
-            "duration": 947,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 55,
-            "noteName": "G3",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "4"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 29922,
-        "offsetX": 5477,
-        "bar": 16,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 74,
-            "noteName": "D5"
-          }
-        ]
-      },
-      {
-        "timestamp": 29948,
-        "offsetX": 5482,
-        "bar": 16,
-        "notesOn": [
-          {
-            "duration": 473,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "2"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 30396,
-        "offsetX": 5578,
-        "bar": 17,
-        "notesOff": [
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 55,
-            "noteName": "G3"
-          }
-        ]
-      },
-      {
-        "timestamp": 30421,
-        "offsetX": 5584,
-        "bar": 17,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 71,
-            "noteName": "B4"
-          }
-        ]
-      },
-      {
-        "timestamp": 30447,
-        "offsetX": 5590,
-        "bar": 17,
-        "notesOn": [
-          {
-            "duration": 1423,
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5",
-            "fingers": {
-              "PIANO_RIGHT_HAND": {
-                "finger": "3"
-              }
-            }
-          },
-          {
-            "duration": 1423,
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 60,
-            "noteName": "C4",
-            "fingers": {
-              "PIANO_LEFT_HAND": {
-                "finger": "1"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "timestamp": 31870,
-        "offsetX": 5854,
-        "bar": 17,
-        "notesOff": [
-          {
-            "noteType": "RIGHT_HAND_NOTE",
-            "noteValue": 72,
-            "noteName": "C5"
-          },
-          {
-            "noteType": "LEFT_HAND_BASS",
-            "noteValue": 60,
-            "noteName": "C4"
-          }
-        ]
-      }
-    ]
-  }
+  "title": "Castle in the Sky",
+  "author": "Joe Hisaishi",
+  "pngWidth": 8771,
+  "pngHeight": 448,
+  "sheetWidth": 5862,
+  "sheetHeight": 300,
+  "playHeadWidth": 24,
+  "selectionRanges": [
+    160,
+    847,
+    1550,
+    2272,
+    2948,
+    3647,
+    4351,
+    5230
+  ],
+  "barOffsets": [
+    23,
+    278,
+    632,
+    939,
+    1339,
+    1643,
+    2037,
+    2372,
+    2757,
+    3078,
+    3432,
+    3740,
+    4139,
+    4443,
+    4830,
+    5189,
+    5561
+  ],
+  "points": [
+    {
+      "offsetX": 160,
+      "bar": 1,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 236,
+      "offsetX": 214,
+      "bar": 1,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 249,
+      "offsetX": 218,
+      "bar": 1,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 485,
+      "offsetX": 305,
+      "bar": 2,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5"
+        }
+      ]
+    },
+    {
+      "timestamp": 498,
+      "offsetX": 310,
+      "bar": 2,
+      "notesOn": [
+        {
+          "duration": 711,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        },
+        {
+          "duration": 1895,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 60,
+          "noteName": "C4",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 1209,
+      "offsetX": 407,
+      "bar": 2,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5"
+        }
+      ]
+    },
+    {
+      "timestamp": 1247,
+      "offsetX": 413,
+      "bar": 2,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 1483,
+      "offsetX": 462,
+      "bar": 2,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5"
+        }
+      ]
+    },
+    {
+      "timestamp": 1496,
+      "offsetX": 465,
+      "bar": 2,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 1969,
+      "offsetX": 542,
+      "bar": 2,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5"
+        }
+      ]
+    },
+    {
+      "timestamp": 1995,
+      "offsetX": 547,
+      "bar": 2,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 79,
+          "noteName": "G5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 2393,
+      "offsetX": 642,
+      "bar": 3,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 60,
+          "noteName": "C4"
+        }
+      ]
+    },
+    {
+      "timestamp": 2468,
+      "offsetX": 660,
+      "bar": 3,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 79,
+          "noteName": "G5"
+        }
+      ]
+    },
+    {
+      "timestamp": 2494,
+      "offsetX": 667,
+      "bar": 3,
+      "notesOn": [
+        {
+          "duration": 1423,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        },
+        {
+          "duration": 1897,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 58,
+          "noteName": "AB3",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 3917,
+      "offsetX": 837,
+      "bar": 3,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5"
+        }
+      ]
+    },
+    {
+      "timestamp": 3993,
+      "offsetX": 847,
+      "bar": 3,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 67,
+          "noteName": "G4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 4391,
+      "offsetX": 948,
+      "bar": 4,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 58,
+          "noteName": "AB3"
+        }
+      ]
+    },
+    {
+      "timestamp": 4466,
+      "offsetX": 967,
+      "bar": 4,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 67,
+          "noteName": "G4"
+        }
+      ]
+    },
+    {
+      "timestamp": 4492,
+      "offsetX": 974,
+      "bar": 4,
+      "notesOn": [
+        {
+          "duration": 711,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        },
+        {
+          "duration": 1895,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 56,
+          "noteName": "GA3",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 5203,
+      "offsetX": 1085,
+      "bar": 4,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 5241,
+      "offsetX": 1091,
+      "bar": 4,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 70,
+          "noteName": "AB4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 5477,
+      "offsetX": 1145,
+      "bar": 4,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 70,
+          "noteName": "AB4"
+        }
+      ]
+    },
+    {
+      "timestamp": 5490,
+      "offsetX": 1149,
+      "bar": 4,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 5963,
+      "offsetX": 1238,
+      "bar": 4,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 5989,
+      "offsetX": 1243,
+      "bar": 4,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 6387,
+      "offsetX": 1345,
+      "bar": 5,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 56,
+          "noteName": "GA3"
+        }
+      ]
+    },
+    {
+      "timestamp": 6462,
+      "offsetX": 1364,
+      "bar": 5,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5"
+        }
+      ]
+    },
+    {
+      "timestamp": 6488,
+      "offsetX": 1371,
+      "bar": 5,
+      "notesOn": [
+        {
+          "duration": 1423,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 70,
+          "noteName": "AB4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        },
+        {
+          "duration": 1897,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 55,
+          "noteName": "G3",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 7911,
+      "offsetX": 1540,
+      "bar": 5,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 70,
+          "noteName": "AB4"
+        }
+      ]
+    },
+    {
+      "timestamp": 7987,
+      "offsetX": 1550,
+      "bar": 5,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 67,
+          "noteName": "G4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 8385,
+      "offsetX": 1649,
+      "bar": 6,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 55,
+          "noteName": "G3"
+        }
+      ]
+    },
+    {
+      "timestamp": 8460,
+      "offsetX": 1668,
+      "bar": 6,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 67,
+          "noteName": "G4"
+        }
+      ]
+    },
+    {
+      "timestamp": 8486,
+      "offsetX": 1675,
+      "bar": 6,
+      "notesOn": [
+        {
+          "duration": 711,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        },
+        {
+          "duration": 1895,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 65,
+          "noteName": "F4",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 9197,
+      "offsetX": 1785,
+      "bar": 6,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        }
+      ]
+    },
+    {
+      "timestamp": 9235,
+      "offsetX": 1791,
+      "bar": 6,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 67,
+          "noteName": "G4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 9471,
+      "offsetX": 1845,
+      "bar": 6,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 67,
+          "noteName": "G4"
+        }
+      ]
+    },
+    {
+      "timestamp": 9484,
+      "offsetX": 1849,
+      "bar": 6,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 9957,
+      "offsetX": 1937,
+      "bar": 6,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        }
+      ]
+    },
+    {
+      "timestamp": 9983,
+      "offsetX": 1942,
+      "bar": 6,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 10381,
+      "offsetX": 2050,
+      "bar": 7,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 65,
+          "noteName": "F4"
+        }
+      ]
+    },
+    {
+      "timestamp": 10456,
+      "offsetX": 2070,
+      "bar": 7,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5"
+        }
+      ]
+    },
+    {
+      "timestamp": 10482,
+      "offsetX": 2078,
+      "bar": 7,
+      "notesOn": [
+        {
+          "duration": 1423,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 67,
+          "noteName": "G4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "1"
+            }
+          }
+        },
+        {
+          "duration": 1897,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 63,
+          "noteName": "DE4",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 11905,
+      "offsetX": 2262,
+      "bar": 7,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 67,
+          "noteName": "G4"
+        }
+      ]
+    },
+    {
+      "timestamp": 11981,
+      "offsetX": 2272,
+      "bar": 7,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 12379,
+      "offsetX": 2386,
+      "bar": 8,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 63,
+          "noteName": "DE4"
+        }
+      ]
+    },
+    {
+      "timestamp": 12454,
+      "offsetX": 2407,
+      "bar": 8,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5"
+        }
+      ]
+    },
+    {
+      "timestamp": 12480,
+      "offsetX": 2415,
+      "bar": 8,
+      "notesOn": [
+        {
+          "duration": 711,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        },
+        {
+          "duration": 1895,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 62,
+          "noteName": "D4",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "3"
+            }
+          }
+        },
+        {
+          "duration": 1895,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 66,
+          "noteName": "FG4",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 13191,
+      "offsetX": 2518,
+      "bar": 8,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5"
+        }
+      ]
+    },
+    {
+      "timestamp": 13229,
+      "offsetX": 2524,
+      "bar": 8,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 13465,
+      "offsetX": 2576,
+      "bar": 8,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        }
+      ]
+    },
+    {
+      "timestamp": 13478,
+      "offsetX": 2579,
+      "bar": 8,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 13951,
+      "offsetX": 2662,
+      "bar": 8,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 69,
+          "noteName": "A4"
+        }
+      ]
+    },
+    {
+      "timestamp": 13977,
+      "offsetX": 2667,
+      "bar": 8,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 14375,
+      "offsetX": 2757,
+      "bar": 8,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 62,
+          "noteName": "D4"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 66,
+          "noteName": "FG4"
+        }
+      ]
+    },
+    {
+      "timestamp": 14450,
+      "offsetX": 2775,
+      "bar": 9,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5"
+        }
+      ]
+    },
+    {
+      "timestamp": 14476,
+      "offsetX": 2781,
+      "bar": 9,
+      "notesOn": [
+        {
+          "duration": 1423,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        },
+        {
+          "duration": 1423,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "4"
+            }
+          }
+        },
+        {
+          "duration": 1896,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 55,
+          "noteName": "G3",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 15899,
+      "offsetX": 2939,
+      "bar": 9,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        },
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5"
+        }
+      ]
+    },
+    {
+      "timestamp": 15975,
+      "offsetX": 2948,
+      "bar": 9,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 16211,
+      "offsetX": 3008,
+      "bar": 9,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 16224,
+      "offsetX": 3012,
+      "bar": 9,
+      "notesOn": [
+        {
+          "duration": 235,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 16372,
+      "offsetX": 3070,
+      "bar": 9,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 55,
+          "noteName": "G3"
+        }
+      ]
+    },
+    {
+      "timestamp": 16459,
+      "offsetX": 3104,
+      "bar": 10,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5"
+        }
+      ]
+    },
+    {
+      "timestamp": 16472,
+      "offsetX": 3110,
+      "bar": 10,
+      "notesOn": [
+        {
+          "duration": 711,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        },
+        {
+          "duration": 1895,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 60,
+          "noteName": "C4",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 17183,
+      "offsetX": 3207,
+      "bar": 10,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5"
+        }
+      ]
+    },
+    {
+      "timestamp": 17221,
+      "offsetX": 3213,
+      "bar": 10,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 17457,
+      "offsetX": 3262,
+      "bar": 10,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5"
+        }
+      ]
+    },
+    {
+      "timestamp": 17470,
+      "offsetX": 3265,
+      "bar": 10,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 17943,
+      "offsetX": 3343,
+      "bar": 10,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5"
+        }
+      ]
+    },
+    {
+      "timestamp": 17969,
+      "offsetX": 3348,
+      "bar": 10,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 79,
+          "noteName": "G5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 18367,
+      "offsetX": 3442,
+      "bar": 11,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 60,
+          "noteName": "C4"
+        }
+      ]
+    },
+    {
+      "timestamp": 18442,
+      "offsetX": 3460,
+      "bar": 11,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 79,
+          "noteName": "G5"
+        }
+      ]
+    },
+    {
+      "timestamp": 18468,
+      "offsetX": 3467,
+      "bar": 11,
+      "notesOn": [
+        {
+          "duration": 1423,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        },
+        {
+          "duration": 1897,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 58,
+          "noteName": "AB3",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 19891,
+      "offsetX": 3637,
+      "bar": 11,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5"
+        }
+      ]
+    },
+    {
+      "timestamp": 19967,
+      "offsetX": 3647,
+      "bar": 11,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 67,
+          "noteName": "G4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 20365,
+      "offsetX": 3749,
+      "bar": 12,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 58,
+          "noteName": "AB3"
+        }
+      ]
+    },
+    {
+      "timestamp": 20440,
+      "offsetX": 3768,
+      "bar": 12,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 67,
+          "noteName": "G4"
+        }
+      ]
+    },
+    {
+      "timestamp": 20466,
+      "offsetX": 3775,
+      "bar": 12,
+      "notesOn": [
+        {
+          "duration": 711,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        },
+        {
+          "duration": 1895,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 56,
+          "noteName": "GA3",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 21177,
+      "offsetX": 3885,
+      "bar": 12,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 21215,
+      "offsetX": 3891,
+      "bar": 12,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 70,
+          "noteName": "AB4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 21451,
+      "offsetX": 3946,
+      "bar": 12,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 70,
+          "noteName": "AB4"
+        }
+      ]
+    },
+    {
+      "timestamp": 21464,
+      "offsetX": 3950,
+      "bar": 12,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 21937,
+      "offsetX": 4039,
+      "bar": 12,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 21963,
+      "offsetX": 4044,
+      "bar": 12,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 22361,
+      "offsetX": 4145,
+      "bar": 13,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 56,
+          "noteName": "GA3"
+        }
+      ]
+    },
+    {
+      "timestamp": 22436,
+      "offsetX": 4164,
+      "bar": 13,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5"
+        }
+      ]
+    },
+    {
+      "timestamp": 22462,
+      "offsetX": 4171,
+      "bar": 13,
+      "notesOn": [
+        {
+          "duration": 1423,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 70,
+          "noteName": "AB4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        },
+        {
+          "duration": 1897,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 55,
+          "noteName": "G3",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 23885,
+      "offsetX": 4341,
+      "bar": 13,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 70,
+          "noteName": "AB4"
+        }
+      ]
+    },
+    {
+      "timestamp": 23961,
+      "offsetX": 4351,
+      "bar": 13,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 67,
+          "noteName": "G4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 24359,
+      "offsetX": 4449,
+      "bar": 14,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 55,
+          "noteName": "G3"
+        }
+      ]
+    },
+    {
+      "timestamp": 24434,
+      "offsetX": 4468,
+      "bar": 14,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 67,
+          "noteName": "G4"
+        }
+      ]
+    },
+    {
+      "timestamp": 24460,
+      "offsetX": 4475,
+      "bar": 14,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        },
+        {
+          "duration": 1895,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 53,
+          "noteName": "F3",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 24933,
+      "offsetX": 4555,
+      "bar": 14,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        }
+      ]
+    },
+    {
+      "timestamp": 24959,
+      "offsetX": 4560,
+      "bar": 14,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 25195,
+      "offsetX": 4608,
+      "bar": 14,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5"
+        }
+      ]
+    },
+    {
+      "timestamp": 25208,
+      "offsetX": 4611,
+      "bar": 14,
+      "notesOn": [
+        {
+          "duration": 711,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 25919,
+      "offsetX": 4739,
+      "bar": 14,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5"
+        }
+      ]
+    },
+    {
+      "timestamp": 25957,
+      "offsetX": 4746,
+      "bar": 14,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 26355,
+      "offsetX": 4836,
+      "bar": 15,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 53,
+          "noteName": "F3"
+        }
+      ]
+    },
+    {
+      "timestamp": 26430,
+      "offsetX": 4853,
+      "bar": 15,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5"
+        }
+      ]
+    },
+    {
+      "timestamp": 26456,
+      "offsetX": 4859,
+      "bar": 15,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 77,
+          "noteName": "F5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "4"
+            }
+          }
+        },
+        {
+          "duration": 1896,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 60,
+          "noteName": "C4",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 26929,
+      "offsetX": 4946,
+      "bar": 15,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 77,
+          "noteName": "F5"
+        }
+      ]
+    },
+    {
+      "timestamp": 26955,
+      "offsetX": 4951,
+      "bar": 15,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 79,
+          "noteName": "G5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 27191,
+      "offsetX": 5004,
+      "bar": 15,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 79,
+          "noteName": "G5"
+        }
+      ]
+    },
+    {
+      "timestamp": 27204,
+      "offsetX": 5007,
+      "bar": 15,
+      "notesOn": [
+        {
+          "duration": 1185,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 28352,
+      "offsetX": 5212,
+      "bar": 16,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 60,
+          "noteName": "C4"
+        }
+      ]
+    },
+    {
+      "timestamp": 28389,
+      "offsetX": 5218,
+      "bar": 16,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5"
+        }
+      ]
+    },
+    {
+      "timestamp": 28452,
+      "offsetX": 5230,
+      "bar": 16,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "1"
+            }
+          }
+        },
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "5"
+            }
+          }
+        },
+        {
+          "duration": 946,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 53,
+          "noteName": "F3",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 28688,
+      "offsetX": 5276,
+      "bar": 16,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 68,
+          "noteName": "GA4"
+        },
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 75,
+          "noteName": "DE5"
+        }
+      ]
+    },
+    {
+      "timestamp": 28701,
+      "offsetX": 5279,
+      "bar": 16,
+      "notesOn": [
+        {
+          "duration": 236,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 28937,
+      "offsetX": 5324,
+      "bar": 16,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5"
+        }
+      ]
+    },
+    {
+      "timestamp": 28950,
+      "offsetX": 5327,
+      "bar": 16,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 29398,
+      "offsetX": 5396,
+      "bar": 16,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 53,
+          "noteName": "F3"
+        }
+      ]
+    },
+    {
+      "timestamp": 29423,
+      "offsetX": 5399,
+      "bar": 16,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        }
+      ]
+    },
+    {
+      "timestamp": 29449,
+      "offsetX": 5404,
+      "bar": 16,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "4"
+            }
+          }
+        },
+        {
+          "duration": 947,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 55,
+          "noteName": "G3",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 29922,
+      "offsetX": 5477,
+      "bar": 16,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 74,
+          "noteName": "D5"
+        }
+      ]
+    },
+    {
+      "timestamp": 29948,
+      "offsetX": 5482,
+      "bar": 16,
+      "notesOn": [
+        {
+          "duration": 473,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 30396,
+      "offsetX": 5578,
+      "bar": 17,
+      "notesOff": [
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 55,
+          "noteName": "G3"
+        }
+      ]
+    },
+    {
+      "timestamp": 30421,
+      "offsetX": 5584,
+      "bar": 17,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 71,
+          "noteName": "B4"
+        }
+      ]
+    },
+    {
+      "timestamp": 30447,
+      "offsetX": 5590,
+      "bar": 17,
+      "notesOn": [
+        {
+          "duration": 1423,
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5",
+          "fingers": {
+            "PIANO_RIGHT_HAND": {
+              "finger": "3"
+            }
+          }
+        },
+        {
+          "duration": 1423,
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 60,
+          "noteName": "C4",
+          "fingers": {
+            "PIANO_LEFT_HAND": {
+              "finger": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": 31870,
+      "offsetX": 5854,
+      "bar": 17,
+      "notesOff": [
+        {
+          "noteType": "RIGHT_HAND_NOTE",
+          "noteValue": 72,
+          "noteName": "C5"
+        },
+        {
+          "noteType": "LEFT_HAND_BASS",
+          "noteValue": 60,
+          "noteName": "C4"
+        }
+      ]
+    }
+  ]
 }

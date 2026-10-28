@@ -11,7 +11,7 @@ import {
 } from "../constants";
 import {SelectionGroup} from "./selectiongroup";
 import {TuneService} from "../../services/tuneservice";
-import {Tune} from "../tune";
+import {TuneModel} from "../mds/tunemodel";
 
 export class RightHandleRectGroup extends HandleRectGroup {
   lastValidRightHandleX!: number;
@@ -27,7 +27,7 @@ export class RightHandleRectGroup extends HandleRectGroup {
     super(playerComponent, {
         id: "rightHandleRectGroup",
         x: selectionWidth - SELECTION_HANDLE_WIDTH / 2,
-        y: (tuneService.tuneModel.value.tune.sheetHeight - SELECTION_HANDLE_HEIGHT) / 2,
+        y: (tuneService.tuneModel.value.sheetHeight - SELECTION_HANDLE_HEIGHT) / 2,
         draggable: true,
       },
       infoService,
@@ -54,7 +54,7 @@ export class RightHandleRectGroup extends HandleRectGroup {
       strokeWidth: 3
     });
 
-    let tune: Tune = this.tuneService.tuneModel.value.tune;
+    let tune: TuneModel = this.tuneService.tuneModel.value;
     this.on('dragmove', () => {
       let newX = _this.getAbsolutePosition(playerComponent.sheetGroup).x;
       let newY = (tune.sheetHeight - SELECTION_HANDLE_HEIGHT) / 2 * playerComponent.scaleFactor;

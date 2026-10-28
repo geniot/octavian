@@ -14,13 +14,13 @@ export class ScoreImageGroup extends DestroyableComponent {
     let xOffset = 0;
 
     for (let i = 0; i < this.tuneService.imageObjs.size; i++) {
-      let scaleFactor = this.tuneService.tuneModel.value.tune.pngWidth / this.tuneService.tuneModel.value.tune.sheetWidth;
+      let scaleFactor = this.tuneService.tuneModel.value.pngWidth / this.tuneService.tuneModel.value.sheetWidth;
       let scaledWidth = this.tuneService.imageObjs.get(i)!.width / scaleFactor;
       let image = new Konva.Image({
         image: this.tuneService.imageObjs.get(i)!,
         x: xOffset,
         width: scaledWidth,
-        height: this.tuneService.tuneModel.value.tune.sheetHeight
+        height: this.tuneService.tuneModel.value.sheetHeight
       });
       xOffset += scaledWidth;
       this.images.push(image);
@@ -32,10 +32,10 @@ export class ScoreImageGroup extends DestroyableComponent {
     if (this.playerComponent.sheetGroup != null) {
       let xOffset = 0;
       for (let i = 0; i < this.images.length; i++) {
-        let scaleFactor = this.tuneService.tuneModel.value.tune.pngWidth / this.tuneService.tuneModel.value.tune.sheetWidth;
+        let scaleFactor = this.tuneService.tuneModel.value.pngWidth / this.tuneService.tuneModel.value.sheetWidth;
         let scaledWidth = this.tuneService.imageObjs.get(i)!.width / scaleFactor;
         this.images[i].width(scaledWidth * this.playerComponent.scaleFactor);
-        this.images[i].height(this.tuneService.tuneModel.value.tune.sheetHeight * this.playerComponent.scaleFactor);
+        this.images[i].height(this.tuneService.tuneModel.value.sheetHeight * this.playerComponent.scaleFactor);
         this.images[i].x(xOffset);
         xOffset += scaledWidth * this.playerComponent.scaleFactor;
       }
