@@ -7,7 +7,7 @@ import {HttpClient} from "@angular/common/http";
 import {InfoService} from "./infoservice";
 import {TuneModel} from "../model/mds/tunemodel";
 import {BehaviorSubject} from "rxjs";
-import {getParamValueQueryString, tunify} from "../model/constants";
+import {DEFAULT_TUNE, getParamValueQueryString, tunify} from "../model/constants";
 import {plainToClass} from "class-transformer";
 import {AnyService} from "./anyservice";
 
@@ -70,7 +70,7 @@ export class TuneService extends AnyService {
    */
   loadScore(): void {
     const infoService: InfoService = this.injector.get<InfoService>(InfoService);
-    const path = getParamValueQueryString("path") || "piano/greensleeves";
+    const path = getParamValueQueryString("path") || DEFAULT_TUNE;
     const tag = path.substring(path.lastIndexOf('/') + 1);
     if (path.startsWith("piano")) {
       infoService.settings.instrument = Instrument.PIANO;

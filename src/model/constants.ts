@@ -48,6 +48,7 @@ import {Settings} from "./settings";
 import {PlayerMode} from "./enums/playermode";
 import {HttpParams} from "@angular/common/http";
 
+export const DEFAULT_TUNE: string = "piano/1/greensleeves";
 export const SELECTION_HANDLE_FILL_COLOR: string = '#ffffff';
 export const SELECTION_HANDLE_WIDTH: number = 20;
 export const SELECTION_HANDLE_HEIGHT: number = 40;

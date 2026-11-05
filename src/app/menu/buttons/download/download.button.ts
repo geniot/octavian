@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 import {InfoService} from "../../../../services/infoservice";
 import {TuneService} from "../../../../services/tuneservice";
-import {getParamValueQueryString, ICONS_MAP} from "../../../../model/constants";
+import {DEFAULT_TUNE, getParamValueQueryString, ICONS_MAP} from "../../../../model/constants";
 import {environment} from "../../../../environments/environment";
 
 
@@ -23,7 +23,7 @@ export class DownloadButton {
   }
 
   onDownload() {
-    const path = getParamValueQueryString("path") || "piano/greensleeves";
+    const path = getParamValueQueryString("path") || DEFAULT_TUNE;
     const tag = path.substring(path.lastIndexOf('/') + 1);
     const url = this.baseApiUrl + path + '/' + tag + '.musicxml' + '?rnd=' + Date.now()
     window.open(url);
