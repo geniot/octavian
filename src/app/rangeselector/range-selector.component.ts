@@ -27,10 +27,8 @@ export class RangeSelectorComponent extends MeasureSelectorComponent implements 
     this.selectionRanges = [];
     if (this.tuneService.tuneModel.value.selectionRanges != null) {
       this.tuneService.tuneModel.value.selectionRanges.forEach((element) => {
-        this.selections.add(Number(element));
+        this.selections.add(element);
       });
-    } else {
-      this.selections.add(this.tuneService.tuneModel.value.points[0].offsetX);
     }
     this.updateRanges();
   }
