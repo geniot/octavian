@@ -1,2795 +1,2136 @@
 {
-  "title": "A Whole New World",
-  "author": "Alan Menken",
-  "pngWidth": 11916,
-  "pngHeight": 518,
-  "sheetWidth": 6890,
-  "sheetHeight": 300,
-  "playHeadWidth": 21,
-  "barOffsets": [
-    20,
-    510,
-    860,
-    1252,
-    1602,
-    1994,
-    2260,
-    2666,
-    2995,
-    3450,
-    3824,
-    4164,
-    4537,
-    4984,
-    5296,
-    5634,
-    5922,
-    6259,
-    6622
-  ],
-  "points": [
-    {
-      "offsetX": 186,
-      "bar": 1,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 301,
-      "offsetX": 235,
-      "bar": 1,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 318,
-      "offsetX": 238,
-      "bar": 1,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 619,
-      "offsetX": 287,
-      "bar": 1,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 636,
-      "offsetX": 290,
-      "bar": 1,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 52,
-          "noteName": "E3"
-        }
-      ]
-    },
-    {
-      "timestamp": 937,
-      "offsetX": 339,
-      "bar": 1,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 52,
-          "noteName": "E3"
-        }
-      ]
-    },
-    {
-      "timestamp": 954,
-      "offsetX": 342,
-      "bar": 1,
-      "notesOn": [
-        {
-          "duration": 1514,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 54,
-          "noteName": "FG3"
-        }
-      ]
-    },
-    {
-      "timestamp": 2468,
-      "offsetX": 525,
-      "bar": 2,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 54,
-          "noteName": "FG3"
-        }
-      ]
-    },
-    {
-      "timestamp": 2549,
-      "offsetX": 535,
-      "bar": 2,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 2850,
-      "offsetX": 584,
-      "bar": 2,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 2867,
-      "offsetX": 587,
-      "bar": 2,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 3168,
-      "offsetX": 636,
-      "bar": 2,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 3185,
-      "offsetX": 639,
-      "bar": 2,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 52,
-          "noteName": "E3"
-        }
-      ]
-    },
-    {
-      "timestamp": 3486,
-      "offsetX": 689,
-      "bar": 2,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 52,
-          "noteName": "E3"
-        }
-      ]
-    },
-    {
-      "timestamp": 3503,
-      "offsetX": 692,
-      "bar": 2,
-      "notesOn": [
-        {
-          "duration": 1514,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 54,
-          "noteName": "FG3"
-        }
-      ]
-    },
-    {
-      "timestamp": 5017,
-      "offsetX": 875,
-      "bar": 3,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 54,
-          "noteName": "FG3"
-        }
-      ]
-    },
-    {
-      "timestamp": 5098,
-      "offsetX": 885,
-      "bar": 3,
-      "notesOn": [
-        {
-          "duration": 603,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        },
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 5399,
-      "offsetX": 930,
-      "bar": 3,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 5416,
-      "offsetX": 933,
-      "bar": 3,
-      "notesOn": [
-        {
-          "duration": 300,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 5701,
-      "offsetX": 976,
-      "bar": 3,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 5716,
-      "offsetX": 978,
-      "bar": 3,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 5733,
-      "offsetX": 981,
-      "bar": 3,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        },
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 52,
-          "noteName": "E3"
-        }
-      ]
-    },
-    {
-      "timestamp": 6034,
-      "offsetX": 1026,
-      "bar": 3,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        },
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 52,
-          "noteName": "E3"
-        }
-      ]
-    },
-    {
-      "timestamp": 6051,
-      "offsetX": 1029,
-      "bar": 3,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        },
-        {
-          "duration": 1513,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 54,
-          "noteName": "FG3"
-        }
-      ]
-    },
-    {
-      "timestamp": 6656,
-      "offsetX": 1120,
-      "bar": 3,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        }
-      ]
-    },
-    {
-      "timestamp": 6689,
-      "offsetX": 1126,
-      "bar": 3,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 6990,
-      "offsetX": 1171,
-      "bar": 3,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 7007,
-      "offsetX": 1174,
-      "bar": 3,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 7564,
-      "offsetX": 1264,
-      "bar": 4,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 54,
-          "noteName": "FG3"
-        }
-      ]
-    },
-    {
-      "timestamp": 7611,
-      "offsetX": 1271,
-      "bar": 4,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 7644,
-      "offsetX": 1277,
-      "bar": 4,
-      "notesOn": [
-        {
-          "duration": 1207,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 57,
-          "noteName": "A3"
-        },
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 7945,
-      "offsetX": 1326,
-      "bar": 4,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 7962,
-      "offsetX": 1329,
-      "bar": 4,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 8263,
-      "offsetX": 1378,
-      "bar": 4,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 8280,
-      "offsetX": 1381,
-      "bar": 4,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 52,
-          "noteName": "E3"
-        }
-      ]
-    },
-    {
-      "timestamp": 8581,
-      "offsetX": 1430,
-      "bar": 4,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 52,
-          "noteName": "E3"
-        }
-      ]
-    },
-    {
-      "timestamp": 8598,
-      "offsetX": 1433,
-      "bar": 4,
-      "notesOn": [
-        {
-          "duration": 1513,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 54,
-          "noteName": "FG3"
-        }
-      ]
-    },
-    {
-      "timestamp": 8851,
-      "offsetX": 1463,
-      "bar": 4,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 57,
-          "noteName": "A3"
-        }
-      ]
-    },
-    {
-      "timestamp": 10111,
-      "offsetX": 1617,
-      "bar": 5,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 54,
-          "noteName": "FG3"
-        }
-      ]
-    },
-    {
-      "timestamp": 10192,
-      "offsetX": 1627,
-      "bar": 5,
-      "notesOn": [
-        {
-          "duration": 603,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        },
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 10493,
-      "offsetX": 1672,
-      "bar": 5,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 10510,
-      "offsetX": 1675,
-      "bar": 5,
-      "notesOn": [
-        {
-          "duration": 300,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 10795,
-      "offsetX": 1718,
-      "bar": 5,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 10810,
-      "offsetX": 1720,
-      "bar": 5,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 10827,
-      "offsetX": 1723,
-      "bar": 5,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        },
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 52,
-          "noteName": "E3"
-        }
-      ]
-    },
-    {
-      "timestamp": 11128,
-      "offsetX": 1768,
-      "bar": 5,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        },
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 52,
-          "noteName": "E3"
-        }
-      ]
-    },
-    {
-      "timestamp": 11145,
-      "offsetX": 1771,
-      "bar": 5,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        },
-        {
-          "duration": 1513,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 54,
-          "noteName": "FG3"
-        }
-      ]
-    },
-    {
-      "timestamp": 11750,
-      "offsetX": 1862,
-      "bar": 5,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        }
-      ]
-    },
-    {
-      "timestamp": 11783,
-      "offsetX": 1867,
-      "bar": 5,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 12084,
-      "offsetX": 1913,
-      "bar": 5,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 12101,
-      "offsetX": 1916,
-      "bar": 5,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 12658,
-      "offsetX": 2001,
-      "bar": 6,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 54,
-          "noteName": "FG3"
-        }
-      ]
-    },
-    {
-      "timestamp": 12705,
-      "offsetX": 2008,
-      "bar": 6,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 12738,
-      "offsetX": 2014,
-      "bar": 6,
-      "notesOn": [
-        {
-          "duration": 1211,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        },
-        {
-          "duration": 1211,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 47,
-          "noteName": "B2"
-        },
-        {
-          "duration": 1211,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 55,
-          "noteName": "G3"
-        }
-      ]
-    },
-    {
-      "timestamp": 13949,
-      "offsetX": 2129,
-      "bar": 6,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        },
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 47,
-          "noteName": "B2"
-        },
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 55,
-          "noteName": "G3"
-        }
-      ]
-    },
-    {
-      "timestamp": 14014,
-      "offsetX": 2136,
-      "bar": 6,
-      "notesOn": [
-        {
-          "duration": 1211,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        },
-        {
-          "duration": 1211,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 49,
-          "noteName": "CD3"
-        },
-        {
-          "duration": 1211,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 57,
-          "noteName": "A3"
-        }
-      ]
-    },
-    {
-      "timestamp": 15225,
-      "offsetX": 2277,
-      "bar": 7,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        },
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 49,
-          "noteName": "CD3"
-        },
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 57,
-          "noteName": "A3"
-        }
-      ]
-    },
-    {
-      "timestamp": 15290,
-      "offsetX": 2285,
-      "bar": 7,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 59,
-          "noteName": "B3"
-        },
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        },
-        {
-          "duration": 1209,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 43,
-          "noteName": "G2"
-        }
-      ]
-    },
-    {
-      "timestamp": 15895,
-      "offsetX": 2364,
-      "bar": 7,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 59,
-          "noteName": "B3"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        }
-      ]
-    },
-    {
-      "timestamp": 15928,
-      "offsetX": 2369,
-      "bar": 7,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 63,
-          "noteName": "DE4"
-        }
-      ]
-    },
-    {
-      "timestamp": 16229,
-      "offsetX": 2419,
-      "bar": 7,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 63,
-          "noteName": "DE4"
-        }
-      ]
-    },
-    {
-      "timestamp": 16246,
-      "offsetX": 2422,
-      "bar": 7,
-      "notesOn": [
-        {
-          "duration": 300,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 16499,
-      "offsetX": 2464,
-      "bar": 7,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 43,
-          "noteName": "G2"
-        }
-      ]
-    },
-    {
-      "timestamp": 16546,
-      "offsetX": 2472,
-      "bar": 7,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 16563,
-      "offsetX": 2475,
-      "bar": 7,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 58,
-          "noteName": "AB3"
-        },
-        {
-          "duration": 1209,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 42,
-          "noteName": "FG2"
-        }
-      ]
-    },
-    {
-      "timestamp": 16864,
-      "offsetX": 2525,
-      "bar": 7,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 58,
-          "noteName": "AB3"
-        }
-      ]
-    },
-    {
-      "timestamp": 16881,
-      "offsetX": 2528,
-      "bar": 7,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        }
-      ]
-    },
-    {
-      "timestamp": 17182,
-      "offsetX": 2577,
-      "bar": 7,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        }
-      ]
-    },
-    {
-      "timestamp": 17199,
-      "offsetX": 2580,
-      "bar": 7,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 61,
-          "noteName": "CD4"
-        }
-      ]
-    },
-    {
-      "timestamp": 17772,
-      "offsetX": 2679,
-      "bar": 8,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 42,
-          "noteName": "FG2"
-        }
-      ]
-    },
-    {
-      "timestamp": 17803,
-      "offsetX": 2685,
-      "bar": 8,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 61,
-          "noteName": "CD4"
-        }
-      ]
-    },
-    {
-      "timestamp": 17836,
-      "offsetX": 2691,
-      "bar": 8,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 59,
-          "noteName": "B3"
-        },
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        },
-        {
-          "duration": 1211,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 47,
-          "noteName": "B2"
-        }
-      ]
-    },
-    {
-      "timestamp": 18441,
-      "offsetX": 2762,
-      "bar": 8,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 59,
-          "noteName": "B3"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        }
-      ]
-    },
-    {
-      "timestamp": 18474,
-      "offsetX": 2766,
-      "bar": 8,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 19047,
-      "offsetX": 2834,
-      "bar": 8,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 47,
-          "noteName": "B2"
-        }
-      ]
-    },
-    {
-      "timestamp": 19078,
-      "offsetX": 2838,
-      "bar": 8,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 19111,
-      "offsetX": 2842,
-      "bar": 8,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 57,
-          "noteName": "A3"
-        },
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 61,
-          "noteName": "CD4"
-        },
-        {
-          "duration": 1211,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 19716,
-      "offsetX": 2914,
-      "bar": 8,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 57,
-          "noteName": "A3"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 61,
-          "noteName": "CD4"
-        }
-      ]
-    },
-    {
-      "timestamp": 19749,
-      "offsetX": 2918,
-      "bar": 8,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 20322,
-      "offsetX": 3009,
-      "bar": 9,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 20353,
-      "offsetX": 3014,
-      "bar": 9,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 20386,
-      "offsetX": 3020,
-      "bar": 9,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 55,
-          "noteName": "G3"
-        },
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 59,
-          "noteName": "B3"
-        },
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 43,
-          "noteName": "G2"
-        }
-      ]
-    },
-    {
-      "timestamp": 20687,
-      "offsetX": 3073,
-      "bar": 9,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 55,
-          "noteName": "G3"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 59,
-          "noteName": "B3"
-        },
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 43,
-          "noteName": "G2"
-        }
-      ]
-    },
-    {
-      "timestamp": 20704,
-      "offsetX": 3076,
-      "bar": 9,
-      "notesOn": [
-        {
-          "duration": 603,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 61,
-          "noteName": "CD4"
-        },
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 50,
-          "noteName": "D3"
-        }
-      ]
-    },
-    {
-      "timestamp": 21005,
-      "offsetX": 3129,
-      "bar": 9,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 50,
-          "noteName": "D3"
-        }
-      ]
-    },
-    {
-      "timestamp": 21022,
-      "offsetX": 3133,
-      "bar": 9,
-      "notesOn": [
-        {
-          "duration": 300,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 55,
-          "noteName": "G3"
-        }
-      ]
-    },
-    {
-      "timestamp": 21307,
-      "offsetX": 3183,
-      "bar": 9,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 61,
-          "noteName": "CD4"
-        }
-      ]
-    },
-    {
-      "timestamp": 21322,
-      "offsetX": 3185,
-      "bar": 9,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 55,
-          "noteName": "G3"
-        }
-      ]
-    },
-    {
-      "timestamp": 21339,
-      "offsetX": 3189,
-      "bar": 9,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        },
-        {
-          "duration": 1514,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 57,
-          "noteName": "A3"
-        }
-      ]
-    },
-    {
-      "timestamp": 21944,
-      "offsetX": 3296,
-      "bar": 9,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        }
-      ]
-    },
-    {
-      "timestamp": 21977,
-      "offsetX": 3302,
-      "bar": 9,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 22582,
-      "offsetX": 3387,
-      "bar": 9,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 22615,
-      "offsetX": 3392,
-      "bar": 9,
-      "notesOn": [
-        {
-          "duration": 1512,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 57,
-          "noteName": "A3"
-        }
-      ]
-    },
-    {
-      "timestamp": 22853,
-      "offsetX": 3453,
-      "bar": 10,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 57,
-          "noteName": "A3"
-        }
-      ]
-    },
-    {
-      "timestamp": 22934,
-      "offsetX": 3475,
-      "bar": 10,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 23235,
-      "offsetX": 3520,
-      "bar": 10,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 23252,
-      "offsetX": 3523,
-      "bar": 10,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 23553,
-      "offsetX": 3568,
-      "bar": 10,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 23570,
-      "offsetX": 3571,
-      "bar": 10,
-      "notesOn": [
-        {
-          "duration": 1816,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 50,
-          "noteName": "D3"
-        }
-      ]
-    },
-    {
-      "timestamp": 24127,
-      "offsetX": 3639,
-      "bar": 10,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 57,
-          "noteName": "A3"
-        }
-      ]
-    },
-    {
-      "timestamp": 24208,
-      "offsetX": 3649,
-      "bar": 10,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 24509,
-      "offsetX": 3694,
-      "bar": 10,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 24526,
-      "offsetX": 3697,
-      "bar": 10,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        }
-      ]
-    },
-    {
-      "timestamp": 25131,
-      "offsetX": 3770,
-      "bar": 10,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        }
-      ]
-    },
-    {
-      "timestamp": 25164,
-      "offsetX": 3774,
-      "bar": 10,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 71,
-          "noteName": "B4"
-        }
-      ]
-    },
-    {
-      "timestamp": 25386,
-      "offsetX": 3822,
-      "bar": 10,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 50,
-          "noteName": "D3"
-        }
-      ]
-    },
-    {
-      "timestamp": 25465,
-      "offsetX": 3840,
-      "bar": 11,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 71,
-          "noteName": "B4"
-        }
-      ]
-    },
-    {
-      "timestamp": 25482,
-      "offsetX": 3844,
-      "bar": 11,
-      "notesOn": [
-        {
-          "duration": 2422,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 69,
-          "noteName": "A4"
-        },
-        {
-          "duration": 908,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 26390,
-      "offsetX": 3940,
-      "bar": 11,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 26439,
-      "offsetX": 3946,
-      "bar": 11,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 49,
-          "noteName": "CD3"
-        }
-      ]
-    },
-    {
-      "timestamp": 26740,
-      "offsetX": 3994,
-      "bar": 11,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 49,
-          "noteName": "CD3"
-        }
-      ]
-    },
-    {
-      "timestamp": 26757,
-      "offsetX": 3997,
-      "bar": 11,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 57,
-          "noteName": "A3"
-        }
-      ]
-    },
-    {
-      "timestamp": 27362,
-      "offsetX": 4075,
-      "bar": 11,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 57,
-          "noteName": "A3"
-        }
-      ]
-    },
-    {
-      "timestamp": 27395,
-      "offsetX": 4080,
-      "bar": 11,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 27904,
-      "offsetX": 4167,
-      "bar": 12,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 69,
-          "noteName": "A4"
-        }
-      ]
-    },
-    {
-      "timestamp": 27999,
-      "offsetX": 4183,
-      "bar": 12,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 28032,
-      "offsetX": 4189,
-      "bar": 12,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 28333,
-      "offsetX": 4234,
-      "bar": 12,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 28350,
-      "offsetX": 4237,
-      "bar": 12,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 28651,
-      "offsetX": 4282,
-      "bar": 12,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 28668,
-      "offsetX": 4285,
-      "bar": 12,
-      "notesOn": [
-        {
-          "duration": 1816,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 50,
-          "noteName": "D3"
-        }
-      ]
-    },
-    {
-      "timestamp": 28987,
-      "offsetX": 4333,
-      "bar": 12,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 29288,
-      "offsetX": 4379,
-      "bar": 12,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 29305,
-      "offsetX": 4382,
-      "bar": 12,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        }
-      ]
-    },
-    {
-      "timestamp": 29910,
-      "offsetX": 4455,
-      "bar": 12,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        }
-      ]
-    },
-    {
-      "timestamp": 29943,
-      "offsetX": 4459,
-      "bar": 12,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 71,
-          "noteName": "B4"
-        }
-      ]
-    },
-    {
-      "timestamp": 30484,
-      "offsetX": 4546,
-      "bar": 13,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 50,
-          "noteName": "D3"
-        }
-      ]
-    },
-    {
-      "timestamp": 30547,
-      "offsetX": 4556,
-      "bar": 13,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 71,
-          "noteName": "B4"
-        }
-      ]
-    },
-    {
-      "timestamp": 30580,
-      "offsetX": 4562,
-      "bar": 13,
-      "notesOn": [
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 61,
-          "noteName": "CD4"
-        },
-        {
-          "duration": 301,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 69,
-          "noteName": "A4"
-        },
-        {
-          "duration": 907,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 30881,
-      "offsetX": 4614,
-      "bar": 13,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 61,
-          "noteName": "CD4"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 69,
-          "noteName": "A4"
-        }
-      ]
-    },
-    {
-      "timestamp": 30898,
-      "offsetX": 4617,
-      "bar": 13,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        }
-      ]
-    },
-    {
-      "timestamp": 31487,
-      "offsetX": 4698,
-      "bar": 13,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 31502,
-      "offsetX": 4700,
-      "bar": 13,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        }
-      ]
-    },
-    {
-      "timestamp": 31535,
-      "offsetX": 4705,
-      "bar": 13,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        },
-        {
-          "duration": 907,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 49,
-          "noteName": "CD3"
-        }
-      ]
-    },
-    {
-      "timestamp": 32140,
-      "offsetX": 4810,
-      "bar": 13,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        }
-      ]
-    },
-    {
-      "timestamp": 32173,
-      "offsetX": 4816,
-      "bar": 13,
-      "notesOn": [
-        {
-          "duration": 603,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 32442,
-      "offsetX": 4862,
-      "bar": 13,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 49,
-          "noteName": "CD3"
-        }
-      ]
-    },
-    {
-      "timestamp": 32491,
-      "offsetX": 4871,
-      "bar": 13,
-      "notesOn": [
-        {
-          "duration": 603,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 32776,
-      "offsetX": 4920,
-      "bar": 13,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 32809,
-      "offsetX": 4926,
-      "bar": 13,
-      "notesOn": [
-        {
-          "duration": 1513,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 33094,
-      "offsetX": 4996,
-      "bar": 14,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 33127,
-      "offsetX": 5005,
-      "bar": 14,
-      "notesOn": [
-        {
-          "duration": 2420,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 50,
-          "noteName": "D3"
-        },
-        {
-          "duration": 2420,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 57,
-          "noteName": "A3"
-        }
-      ]
-    },
-    {
-      "timestamp": 34322,
-      "offsetX": 5112,
-      "bar": 14,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 34403,
-      "offsetX": 5120,
-      "bar": 14,
-      "notesOn": [
-        {
-          "duration": 402,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 34805,
-      "offsetX": 5174,
-      "bar": 14,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 34827,
-      "offsetX": 5178,
-      "bar": 14,
-      "notesOn": [
-        {
-          "duration": 402,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        }
-      ]
-    },
-    {
-      "timestamp": 35229,
-      "offsetX": 5232,
-      "bar": 14,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        }
-      ]
-    },
-    {
-      "timestamp": 35251,
-      "offsetX": 5236,
-      "bar": 14,
-      "notesOn": [
-        {
-          "duration": 402,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 69,
-          "noteName": "A4"
-        }
-      ]
-    },
-    {
-      "timestamp": 35547,
-      "offsetX": 5291,
-      "bar": 14,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 50,
-          "noteName": "D3"
-        },
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 57,
-          "noteName": "A3"
-        }
-      ]
-    },
-    {
-      "timestamp": 35653,
-      "offsetX": 5311,
-      "bar": 15,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 69,
-          "noteName": "A4"
-        }
-      ]
-    },
-    {
-      "timestamp": 35675,
-      "offsetX": 5316,
-      "bar": 15,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        },
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 73,
-          "noteName": "CD5"
-        },
-        {
-          "duration": 1211,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 43,
-          "noteName": "G2"
-        }
-      ]
-    },
-    {
-      "timestamp": 36280,
-      "offsetX": 5392,
-      "bar": 15,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 73,
-          "noteName": "CD5"
-        }
-      ]
-    },
-    {
-      "timestamp": 36313,
-      "offsetX": 5397,
-      "bar": 15,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 71,
-          "noteName": "B4"
-        }
-      ]
-    },
-    {
-      "timestamp": 36886,
-      "offsetX": 5468,
-      "bar": 15,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 43,
-          "noteName": "G2"
-        }
-      ]
-    },
-    {
-      "timestamp": 36917,
-      "offsetX": 5472,
-      "bar": 15,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 71,
-          "noteName": "B4"
-        }
-      ]
-    },
-    {
-      "timestamp": 36950,
-      "offsetX": 5477,
-      "bar": 15,
-      "notesOn": [
-        {
-          "duration": 908,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        },
-        {
-          "duration": 908,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 69,
-          "noteName": "A4"
-        },
-        {
-          "duration": 1210,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 50,
-          "noteName": "D3"
-        }
-      ]
-    },
-    {
-      "timestamp": 37858,
-      "offsetX": 5570,
-      "bar": 15,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 69,
-          "noteName": "A4"
-        }
-      ]
-    },
-    {
-      "timestamp": 37907,
-      "offsetX": 5576,
-      "bar": 15,
-      "notesOn": [
-        {
-          "duration": 300,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 38160,
-      "offsetX": 5638,
-      "bar": 16,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 50,
-          "noteName": "D3"
-        }
-      ]
-    },
-    {
-      "timestamp": 38207,
-      "offsetX": 5649,
-      "bar": 16,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 38224,
-      "offsetX": 5654,
-      "bar": 16,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        },
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 73,
-          "noteName": "CD5"
-        },
-        {
-          "duration": 1211,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 55,
-          "noteName": "G3"
-        }
-      ]
-    },
-    {
-      "timestamp": 38829,
-      "offsetX": 5724,
-      "bar": 16,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 73,
-          "noteName": "CD5"
-        }
-      ]
-    },
-    {
-      "timestamp": 38862,
-      "offsetX": 5728,
-      "bar": 16,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 74,
-          "noteName": "D5"
-        }
-      ]
-    },
-    {
-      "timestamp": 39435,
-      "offsetX": 5794,
-      "bar": 16,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 55,
-          "noteName": "G3"
-        }
-      ]
-    },
-    {
-      "timestamp": 39466,
-      "offsetX": 5798,
-      "bar": 16,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 74,
-          "noteName": "D5"
-        }
-      ]
-    },
-    {
-      "timestamp": 39499,
-      "offsetX": 5802,
-      "bar": 16,
-      "notesOn": [
-        {
-          "duration": 1211,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        },
-        {
-          "duration": 1211,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 69,
-          "noteName": "A4"
-        },
-        {
-          "duration": 1211,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 50,
-          "noteName": "D3"
-        }
-      ]
-    },
-    {
-      "timestamp": 40710,
-      "offsetX": 5934,
-      "bar": 17,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 69,
-          "noteName": "A4"
-        },
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 50,
-          "noteName": "D3"
-        }
-      ]
-    },
-    {
-      "timestamp": 40775,
-      "offsetX": 5942,
-      "bar": 17,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        },
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        },
-        {
-          "duration": 1211,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 47,
-          "noteName": "B2"
-        }
-      ]
-    },
-    {
-      "timestamp": 41380,
-      "offsetX": 6016,
-      "bar": 17,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 41413,
-      "offsetX": 6021,
-      "bar": 17,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        }
-      ]
-    },
-    {
-      "timestamp": 41986,
-      "offsetX": 6092,
-      "bar": 17,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 47,
-          "noteName": "B2"
-        }
-      ]
-    },
-    {
-      "timestamp": 42017,
-      "offsetX": 6095,
-      "bar": 17,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        }
-      ]
-    },
-    {
-      "timestamp": 42050,
-      "offsetX": 6100,
-      "bar": 17,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 57,
-          "noteName": "A3"
-        },
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        },
-        {
-          "duration": 1211,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 40,
-          "noteName": "E2"
-        }
-      ]
-    },
-    {
-      "timestamp": 42655,
-      "offsetX": 6173,
-      "bar": 17,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 57,
-          "noteName": "A3"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 42688,
-      "offsetX": 6178,
-      "bar": 17,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 56,
-          "noteName": "GA3"
-        },
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        }
-      ]
-    },
-    {
-      "timestamp": 43261,
-      "offsetX": 6275,
-      "bar": 18,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 40,
-          "noteName": "E2"
-        }
-      ]
-    },
-    {
-      "timestamp": 43292,
-      "offsetX": 6280,
-      "bar": 18,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 56,
-          "noteName": "GA3"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 64,
-          "noteName": "E4"
-        }
-      ]
-    },
-    {
-      "timestamp": 43325,
-      "offsetX": 6286,
-      "bar": 18,
-      "notesOn": [
-        {
-          "duration": 605,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        },
-        {
-          "duration": 1211,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 48,
-          "noteName": "C3"
-        }
-      ]
-    },
-    {
-      "timestamp": 43930,
-      "offsetX": 6367,
-      "bar": 18,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 67,
-          "noteName": "G4"
-        }
-      ]
-    },
-    {
-      "timestamp": 43963,
-      "offsetX": 6372,
-      "bar": 18,
-      "notesOn": [
-        {
-          "duration": 604,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 44536,
-      "offsetX": 6449,
-      "bar": 18,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 48,
-          "noteName": "C3"
-        }
-      ]
-    },
-    {
-      "timestamp": 44567,
-      "offsetX": 6453,
-      "bar": 18,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 66,
-          "noteName": "FG4"
-        }
-      ]
-    },
-    {
-      "timestamp": 44600,
-      "offsetX": 6458,
-      "bar": 18,
-      "notesOn": [
-        {
-          "duration": 908,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 55,
-          "noteName": "G3"
-        },
-        {
-          "duration": 908,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 57,
-          "noteName": "A3"
-        },
-        {
-          "duration": 908,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        },
-        {
-          "duration": 1210,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 45508,
-      "offsetX": 6558,
-      "bar": 18,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 55,
-          "noteName": "G3"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 57,
-          "noteName": "A3"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        }
-      ]
-    },
-    {
-      "timestamp": 45557,
-      "offsetX": 6564,
-      "bar": 18,
-      "notesOn": [
-        {
-          "duration": 300,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 61,
-          "noteName": "CD4"
-        }
-      ]
-    },
-    {
-      "timestamp": 45810,
-      "offsetX": 6630,
-      "bar": 19,
-      "notesOff": [
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 45,
-          "noteName": "A2"
-        }
-      ]
-    },
-    {
-      "timestamp": 45857,
-      "offsetX": 6642,
-      "bar": 19,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 61,
-          "noteName": "CD4"
-        }
-      ]
-    },
-    {
-      "timestamp": 45874,
-      "offsetX": 6647,
-      "bar": 19,
-      "notesOn": [
-        {
-          "duration": 2424,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 54,
-          "noteName": "FG3"
-        },
-        {
-          "duration": 2424,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 57,
-          "noteName": "A3"
-        },
-        {
-          "duration": 2424,
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        },
-        {
-          "duration": 2424,
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    },
-    {
-      "timestamp": 48298,
-      "offsetX": 6885,
-      "bar": 19,
-      "notesOff": [
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 54,
-          "noteName": "FG3"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 57,
-          "noteName": "A3"
-        },
-        {
-          "noteType": "RIGHT_HAND_NOTE",
-          "noteValue": 62,
-          "noteName": "D4"
-        },
-        {
-          "noteType": "LEFT_HAND_BASS",
-          "noteValue": 38,
-          "noteName": "D2"
-        }
-      ]
-    }
-  ]
+  "title" : "A Whole New World",
+  "author" : "Alan Menken",
+  "pngWidth" : 10412,
+  "pngHeight" : 341,
+  "sheetWidth" : 10412,
+  "sheetHeight" : 341,
+  "playHeadWidth" : 23,
+  "selectionRanges" : [ ],
+  "barOffsets" : [ 27, 727, 1264, 1900, 2438, 3074, 3473, 4070, 4590, 5226, 5823, 6334, 6931, 7567, 8071, 8581, 9040, 9559, 10086 ],
+  "points" : [ {
+    "timestamp" : 0,
+    "offsetX" : 210,
+    "bar" : 1,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 298,
+    "offsetX" : 287,
+    "bar" : 1,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 315,
+    "offsetX" : 292,
+    "bar" : 1,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 613,
+    "offsetX" : 369,
+    "bar" : 1,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 631,
+    "offsetX" : 374,
+    "bar" : 1,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 52,
+      "noteName" : "E3"
+    } ]
+  }, {
+    "timestamp" : 929,
+    "offsetX" : 451,
+    "bar" : 1,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 52,
+      "noteName" : "E3"
+    } ]
+  }, {
+    "timestamp" : 947,
+    "offsetX" : 456,
+    "bar" : 1,
+    "notesOn" : [ {
+      "duration" : 1498,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 54,
+      "noteName" : "FG3"
+    } ]
+  }, {
+    "timestamp" : 2445,
+    "offsetX" : 732,
+    "bar" : 2,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 54,
+      "noteName" : "FG3"
+    } ]
+  }, {
+    "timestamp" : 2526,
+    "offsetX" : 747,
+    "bar" : 2,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 2824,
+    "offsetX" : 824,
+    "bar" : 2,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 2842,
+    "offsetX" : 829,
+    "bar" : 2,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 3140,
+    "offsetX" : 906,
+    "bar" : 2,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 3157,
+    "offsetX" : 911,
+    "bar" : 2,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 52,
+      "noteName" : "E3"
+    } ]
+  }, {
+    "timestamp" : 3455,
+    "offsetX" : 988,
+    "bar" : 2,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 52,
+      "noteName" : "E3"
+    } ]
+  }, {
+    "timestamp" : 3473,
+    "offsetX" : 993,
+    "bar" : 2,
+    "notesOn" : [ {
+      "duration" : 1498,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 54,
+      "noteName" : "FG3"
+    } ]
+  }, {
+    "timestamp" : 4971,
+    "offsetX" : 1270,
+    "bar" : 3,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 54,
+      "noteName" : "FG3"
+    } ]
+  }, {
+    "timestamp" : 5052,
+    "offsetX" : 1285,
+    "bar" : 3,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    }, {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 5350,
+    "offsetX" : 1362,
+    "bar" : 3,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 5368,
+    "offsetX" : 1367,
+    "bar" : 3,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 5650,
+    "offsetX" : 1440,
+    "bar" : 3,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 5666,
+    "offsetX" : 1444,
+    "bar" : 3,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 5684,
+    "offsetX" : 1449,
+    "bar" : 3,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    }, {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 52,
+      "noteName" : "E3"
+    } ]
+  }, {
+    "timestamp" : 5982,
+    "offsetX" : 1526,
+    "bar" : 3,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    }, {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 52,
+      "noteName" : "E3"
+    } ]
+  }, {
+    "timestamp" : 6000,
+    "offsetX" : 1531,
+    "bar" : 3,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    }, {
+      "duration" : 1498,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 54,
+      "noteName" : "FG3"
+    } ]
+  }, {
+    "timestamp" : 6598,
+    "offsetX" : 1686,
+    "bar" : 3,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    } ]
+  }, {
+    "timestamp" : 6631,
+    "offsetX" : 1695,
+    "bar" : 3,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 6929,
+    "offsetX" : 1772,
+    "bar" : 3,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 6947,
+    "offsetX" : 1777,
+    "bar" : 3,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 7498,
+    "offsetX" : 1902,
+    "bar" : 4,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 54,
+      "noteName" : "FG3"
+    } ]
+  }, {
+    "timestamp" : 7545,
+    "offsetX" : 1913,
+    "bar" : 4,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 7578,
+    "offsetX" : 1921,
+    "bar" : 4,
+    "notesOn" : [ {
+      "duration" : 1198,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    }, {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 7876,
+    "offsetX" : 1998,
+    "bar" : 4,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 7894,
+    "offsetX" : 2003,
+    "bar" : 4,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 8192,
+    "offsetX" : 2080,
+    "bar" : 4,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 8210,
+    "offsetX" : 2085,
+    "bar" : 4,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 52,
+      "noteName" : "E3"
+    } ]
+  }, {
+    "timestamp" : 8508,
+    "offsetX" : 2162,
+    "bar" : 4,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 52,
+      "noteName" : "E3"
+    } ]
+  }, {
+    "timestamp" : 8526,
+    "offsetX" : 2167,
+    "bar" : 4,
+    "notesOn" : [ {
+      "duration" : 1498,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 54,
+      "noteName" : "FG3"
+    } ]
+  }, {
+    "timestamp" : 8776,
+    "offsetX" : 2213,
+    "bar" : 4,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    } ]
+  }, {
+    "timestamp" : 10024,
+    "offsetX" : 2443,
+    "bar" : 5,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 54,
+      "noteName" : "FG3"
+    } ]
+  }, {
+    "timestamp" : 10105,
+    "offsetX" : 2458,
+    "bar" : 5,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    }, {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 10403,
+    "offsetX" : 2535,
+    "bar" : 5,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 10421,
+    "offsetX" : 2540,
+    "bar" : 5,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 10703,
+    "offsetX" : 2613,
+    "bar" : 5,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 10719,
+    "offsetX" : 2617,
+    "bar" : 5,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 10736,
+    "offsetX" : 2622,
+    "bar" : 5,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    }, {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 52,
+      "noteName" : "E3"
+    } ]
+  }, {
+    "timestamp" : 11034,
+    "offsetX" : 2699,
+    "bar" : 5,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    }, {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 52,
+      "noteName" : "E3"
+    } ]
+  }, {
+    "timestamp" : 11052,
+    "offsetX" : 2704,
+    "bar" : 5,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    }, {
+      "duration" : 1498,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 54,
+      "noteName" : "FG3"
+    } ]
+  }, {
+    "timestamp" : 11650,
+    "offsetX" : 2859,
+    "bar" : 5,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    } ]
+  }, {
+    "timestamp" : 11684,
+    "offsetX" : 2868,
+    "bar" : 5,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 11982,
+    "offsetX" : 2945,
+    "bar" : 5,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 12000,
+    "offsetX" : 2950,
+    "bar" : 5,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 12550,
+    "offsetX" : 3076,
+    "bar" : 6,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 54,
+      "noteName" : "FG3"
+    } ]
+  }, {
+    "timestamp" : 12598,
+    "offsetX" : 3087,
+    "bar" : 6,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 12631,
+    "offsetX" : 3095,
+    "bar" : 6,
+    "notesOn" : [ {
+      "duration" : 1198,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 47,
+      "noteName" : "B2"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 55,
+      "noteName" : "G3"
+    } ]
+  }, {
+    "timestamp" : 13829,
+    "offsetX" : 3275,
+    "bar" : 6,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    }, {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 47,
+      "noteName" : "B2"
+    }, {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 55,
+      "noteName" : "G3"
+    } ]
+  }, {
+    "timestamp" : 13894,
+    "offsetX" : 3285,
+    "bar" : 6,
+    "notesOn" : [ {
+      "duration" : 1198,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 49,
+      "noteName" : "CD3"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    } ]
+  }, {
+    "timestamp" : 15092,
+    "offsetX" : 3483,
+    "bar" : 7,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    }, {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 49,
+      "noteName" : "CD3"
+    }, {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    } ]
+  }, {
+    "timestamp" : 15157,
+    "offsetX" : 3494,
+    "bar" : 7,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 59,
+      "noteName" : "B3"
+    }, {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 43,
+      "noteName" : "G2"
+    } ]
+  }, {
+    "timestamp" : 15755,
+    "offsetX" : 3612,
+    "bar" : 7,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 59,
+      "noteName" : "B3"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    } ]
+  }, {
+    "timestamp" : 15789,
+    "offsetX" : 3619,
+    "bar" : 7,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 63,
+      "noteName" : "DE4"
+    } ]
+  }, {
+    "timestamp" : 16087,
+    "offsetX" : 3696,
+    "bar" : 7,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 63,
+      "noteName" : "DE4"
+    } ]
+  }, {
+    "timestamp" : 16105,
+    "offsetX" : 3701,
+    "bar" : 7,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 16355,
+    "offsetX" : 3765,
+    "bar" : 7,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 43,
+      "noteName" : "G2"
+    } ]
+  }, {
+    "timestamp" : 16403,
+    "offsetX" : 3778,
+    "bar" : 7,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 16421,
+    "offsetX" : 3783,
+    "bar" : 7,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 58,
+      "noteName" : "AB3"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 42,
+      "noteName" : "FG2"
+    } ]
+  }, {
+    "timestamp" : 16719,
+    "offsetX" : 3860,
+    "bar" : 7,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 58,
+      "noteName" : "AB3"
+    } ]
+  }, {
+    "timestamp" : 16736,
+    "offsetX" : 3865,
+    "bar" : 7,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    } ]
+  }, {
+    "timestamp" : 17034,
+    "offsetX" : 3942,
+    "bar" : 7,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    } ]
+  }, {
+    "timestamp" : 17052,
+    "offsetX" : 3947,
+    "bar" : 7,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 61,
+      "noteName" : "CD4"
+    } ]
+  }, {
+    "timestamp" : 17619,
+    "offsetX" : 4076,
+    "bar" : 8,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 42,
+      "noteName" : "FG2"
+    } ]
+  }, {
+    "timestamp" : 17650,
+    "offsetX" : 4083,
+    "bar" : 8,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 61,
+      "noteName" : "CD4"
+    } ]
+  }, {
+    "timestamp" : 17684,
+    "offsetX" : 4091,
+    "bar" : 8,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 59,
+      "noteName" : "B3"
+    }, {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 47,
+      "noteName" : "B2"
+    } ]
+  }, {
+    "timestamp" : 18282,
+    "offsetX" : 4209,
+    "bar" : 8,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 59,
+      "noteName" : "B3"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    } ]
+  }, {
+    "timestamp" : 18315,
+    "offsetX" : 4216,
+    "bar" : 8,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 18882,
+    "offsetX" : 4328,
+    "bar" : 8,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 47,
+      "noteName" : "B2"
+    } ]
+  }, {
+    "timestamp" : 18913,
+    "offsetX" : 4334,
+    "bar" : 8,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 18947,
+    "offsetX" : 4341,
+    "bar" : 8,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    }, {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 61,
+      "noteName" : "CD4"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 19545,
+    "offsetX" : 4459,
+    "bar" : 8,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 61,
+      "noteName" : "CD4"
+    } ]
+  }, {
+    "timestamp" : 19578,
+    "offsetX" : 4466,
+    "bar" : 8,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 20145,
+    "offsetX" : 4595,
+    "bar" : 9,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 20176,
+    "offsetX" : 4602,
+    "bar" : 9,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 20210,
+    "offsetX" : 4610,
+    "bar" : 9,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 55,
+      "noteName" : "G3"
+    }, {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 59,
+      "noteName" : "B3"
+    }, {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 43,
+      "noteName" : "G2"
+    } ]
+  }, {
+    "timestamp" : 20508,
+    "offsetX" : 4687,
+    "bar" : 9,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 55,
+      "noteName" : "G3"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 59,
+      "noteName" : "B3"
+    }, {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 43,
+      "noteName" : "G2"
+    } ]
+  }, {
+    "timestamp" : 20526,
+    "offsetX" : 4692,
+    "bar" : 9,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 61,
+      "noteName" : "CD4"
+    }, {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 50,
+      "noteName" : "D3"
+    } ]
+  }, {
+    "timestamp" : 20824,
+    "offsetX" : 4769,
+    "bar" : 9,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 50,
+      "noteName" : "D3"
+    } ]
+  }, {
+    "timestamp" : 20842,
+    "offsetX" : 4774,
+    "bar" : 9,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 55,
+      "noteName" : "G3"
+    } ]
+  }, {
+    "timestamp" : 21124,
+    "offsetX" : 4847,
+    "bar" : 9,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 61,
+      "noteName" : "CD4"
+    } ]
+  }, {
+    "timestamp" : 21140,
+    "offsetX" : 4851,
+    "bar" : 9,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 55,
+      "noteName" : "G3"
+    } ]
+  }, {
+    "timestamp" : 21157,
+    "offsetX" : 4856,
+    "bar" : 9,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    }, {
+      "duration" : 1263,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    } ]
+  }, {
+    "timestamp" : 21755,
+    "offsetX" : 5011,
+    "bar" : 9,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    } ]
+  }, {
+    "timestamp" : 21789,
+    "offsetX" : 5020,
+    "bar" : 9,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 22387,
+    "offsetX" : 5138,
+    "bar" : 9,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 22420,
+    "offsetX" : 5144,
+    "bar" : 9,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    } ]
+  }, {
+    "timestamp" : 22421,
+    "offsetX" : 5145,
+    "bar" : 9,
+    "notesOn" : [ {
+      "duration" : 1498,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    } ]
+  }, {
+    "timestamp" : 22736,
+    "offsetX" : 5247,
+    "bar" : 10,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 23034,
+    "offsetX" : 5324,
+    "bar" : 10,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 23052,
+    "offsetX" : 5329,
+    "bar" : 10,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 23350,
+    "offsetX" : 5406,
+    "bar" : 10,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 23368,
+    "offsetX" : 5411,
+    "bar" : 10,
+    "notesOn" : [ {
+      "duration" : 1798,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 50,
+      "noteName" : "D3"
+    } ]
+  }, {
+    "timestamp" : 23919,
+    "offsetX" : 5519,
+    "bar" : 10,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    } ]
+  }, {
+    "timestamp" : 24000,
+    "offsetX" : 5536,
+    "bar" : 10,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 24298,
+    "offsetX" : 5613,
+    "bar" : 10,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 24315,
+    "offsetX" : 5618,
+    "bar" : 10,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    } ]
+  }, {
+    "timestamp" : 24913,
+    "offsetX" : 5736,
+    "bar" : 10,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    } ]
+  }, {
+    "timestamp" : 24947,
+    "offsetX" : 5743,
+    "bar" : 10,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 71,
+      "noteName" : "B4"
+    } ]
+  }, {
+    "timestamp" : 25166,
+    "offsetX" : 5812,
+    "bar" : 10,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 50,
+      "noteName" : "D3"
+    } ]
+  }, {
+    "timestamp" : 25245,
+    "offsetX" : 5838,
+    "bar" : 11,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 71,
+      "noteName" : "B4"
+    } ]
+  }, {
+    "timestamp" : 25263,
+    "offsetX" : 5844,
+    "bar" : 11,
+    "notesOn" : [ {
+      "duration" : 2398,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 69,
+      "noteName" : "A4"
+    }, {
+      "duration" : 898,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 26161,
+    "offsetX" : 5994,
+    "bar" : 11,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 26210,
+    "offsetX" : 6003,
+    "bar" : 11,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 49,
+      "noteName" : "CD3"
+    } ]
+  }, {
+    "timestamp" : 26508,
+    "offsetX" : 6080,
+    "bar" : 11,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 49,
+      "noteName" : "CD3"
+    } ]
+  }, {
+    "timestamp" : 26526,
+    "offsetX" : 6085,
+    "bar" : 11,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    } ]
+  }, {
+    "timestamp" : 27124,
+    "offsetX" : 6203,
+    "bar" : 11,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    } ]
+  }, {
+    "timestamp" : 27157,
+    "offsetX" : 6210,
+    "bar" : 11,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 27661,
+    "offsetX" : 6324,
+    "bar" : 11,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 69,
+      "noteName" : "A4"
+    } ]
+  }, {
+    "timestamp" : 27755,
+    "offsetX" : 6346,
+    "bar" : 12,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 27789,
+    "offsetX" : 6354,
+    "bar" : 12,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 28087,
+    "offsetX" : 6431,
+    "bar" : 12,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 28105,
+    "offsetX" : 6436,
+    "bar" : 12,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 28403,
+    "offsetX" : 6513,
+    "bar" : 12,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 28421,
+    "offsetX" : 6518,
+    "bar" : 12,
+    "notesOn" : [ {
+      "duration" : 1798,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 50,
+      "noteName" : "D3"
+    } ]
+  }, {
+    "timestamp" : 28736,
+    "offsetX" : 6600,
+    "bar" : 12,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 29034,
+    "offsetX" : 6677,
+    "bar" : 12,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 29052,
+    "offsetX" : 6682,
+    "bar" : 12,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    } ]
+  }, {
+    "timestamp" : 29650,
+    "offsetX" : 6800,
+    "bar" : 12,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    } ]
+  }, {
+    "timestamp" : 29684,
+    "offsetX" : 6807,
+    "bar" : 12,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 71,
+      "noteName" : "B4"
+    } ]
+  }, {
+    "timestamp" : 30219,
+    "offsetX" : 6929,
+    "bar" : 12,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 50,
+      "noteName" : "D3"
+    } ]
+  }, {
+    "timestamp" : 30282,
+    "offsetX" : 6944,
+    "bar" : 13,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 71,
+      "noteName" : "B4"
+    } ]
+  }, {
+    "timestamp" : 30315,
+    "offsetX" : 6952,
+    "bar" : 13,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 61,
+      "noteName" : "CD4"
+    }, {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 69,
+      "noteName" : "A4"
+    }, {
+      "duration" : 898,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 30613,
+    "offsetX" : 7029,
+    "bar" : 13,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 61,
+      "noteName" : "CD4"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 69,
+      "noteName" : "A4"
+    } ]
+  }, {
+    "timestamp" : 30631,
+    "offsetX" : 7034,
+    "bar" : 13,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    } ]
+  }, {
+    "timestamp" : 31213,
+    "offsetX" : 7149,
+    "bar" : 13,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 31229,
+    "offsetX" : 7152,
+    "bar" : 13,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    } ]
+  }, {
+    "timestamp" : 31263,
+    "offsetX" : 7159,
+    "bar" : 13,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    }, {
+      "duration" : 898,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 49,
+      "noteName" : "CD3"
+    } ]
+  }, {
+    "timestamp" : 31861,
+    "offsetX" : 7314,
+    "bar" : 13,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    } ]
+  }, {
+    "timestamp" : 31894,
+    "offsetX" : 7323,
+    "bar" : 13,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 32161,
+    "offsetX" : 7392,
+    "bar" : 13,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 49,
+      "noteName" : "CD3"
+    } ]
+  }, {
+    "timestamp" : 32210,
+    "offsetX" : 7405,
+    "bar" : 13,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 32492,
+    "offsetX" : 7478,
+    "bar" : 13,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 32526,
+    "offsetX" : 7487,
+    "bar" : 13,
+    "notesOn" : [ {
+      "duration" : 1498,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 32808,
+    "offsetX" : 7577,
+    "bar" : 14,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 32842,
+    "offsetX" : 7588,
+    "bar" : 14,
+    "notesOn" : [ {
+      "duration" : 2398,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 50,
+      "noteName" : "D3"
+    }, {
+      "duration" : 2398,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    } ]
+  }, {
+    "timestamp" : 34024,
+    "offsetX" : 7765,
+    "bar" : 14,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 34105,
+    "offsetX" : 7778,
+    "bar" : 14,
+    "notesOn" : [ {
+      "duration" : 398,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 34503,
+    "offsetX" : 7870,
+    "bar" : 14,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 34526,
+    "offsetX" : 7876,
+    "bar" : 14,
+    "notesOn" : [ {
+      "duration" : 398,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    } ]
+  }, {
+    "timestamp" : 34924,
+    "offsetX" : 7968,
+    "bar" : 14,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    } ]
+  }, {
+    "timestamp" : 34947,
+    "offsetX" : 7974,
+    "bar" : 14,
+    "notesOn" : [ {
+      "duration" : 398,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 69,
+      "noteName" : "A4"
+    } ]
+  }, {
+    "timestamp" : 35240,
+    "offsetX" : 8055,
+    "bar" : 14,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 50,
+      "noteName" : "D3"
+    }, {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    } ]
+  }, {
+    "timestamp" : 35345,
+    "offsetX" : 8084,
+    "bar" : 15,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 69,
+      "noteName" : "A4"
+    } ]
+  }, {
+    "timestamp" : 35368,
+    "offsetX" : 8091,
+    "bar" : 15,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    }, {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 73,
+      "noteName" : "CD5"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 43,
+      "noteName" : "G2"
+    } ]
+  }, {
+    "timestamp" : 35966,
+    "offsetX" : 8209,
+    "bar" : 15,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 73,
+      "noteName" : "CD5"
+    } ]
+  }, {
+    "timestamp" : 36000,
+    "offsetX" : 8216,
+    "bar" : 15,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 71,
+      "noteName" : "B4"
+    } ]
+  }, {
+    "timestamp" : 36566,
+    "offsetX" : 8328,
+    "bar" : 15,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 43,
+      "noteName" : "G2"
+    } ]
+  }, {
+    "timestamp" : 36598,
+    "offsetX" : 8334,
+    "bar" : 15,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 71,
+      "noteName" : "B4"
+    } ]
+  }, {
+    "timestamp" : 36631,
+    "offsetX" : 8341,
+    "bar" : 15,
+    "notesOn" : [ {
+      "duration" : 898,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    }, {
+      "duration" : 898,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 69,
+      "noteName" : "A4"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 50,
+      "noteName" : "D3"
+    } ]
+  }, {
+    "timestamp" : 37529,
+    "offsetX" : 8491,
+    "bar" : 15,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 69,
+      "noteName" : "A4"
+    } ]
+  }, {
+    "timestamp" : 37578,
+    "offsetX" : 8500,
+    "bar" : 15,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 37829,
+    "offsetX" : 8581,
+    "bar" : 15,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 50,
+      "noteName" : "D3"
+    } ]
+  }, {
+    "timestamp" : 37876,
+    "offsetX" : 8596,
+    "bar" : 16,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 37894,
+    "offsetX" : 8602,
+    "bar" : 16,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    }, {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 73,
+      "noteName" : "CD5"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 55,
+      "noteName" : "G3"
+    } ]
+  }, {
+    "timestamp" : 38492,
+    "offsetX" : 8720,
+    "bar" : 16,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 73,
+      "noteName" : "CD5"
+    } ]
+  }, {
+    "timestamp" : 38526,
+    "offsetX" : 8727,
+    "bar" : 16,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 74,
+      "noteName" : "D5"
+    } ]
+  }, {
+    "timestamp" : 39092,
+    "offsetX" : 8839,
+    "bar" : 16,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 55,
+      "noteName" : "G3"
+    } ]
+  }, {
+    "timestamp" : 39124,
+    "offsetX" : 8845,
+    "bar" : 16,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 74,
+      "noteName" : "D5"
+    } ]
+  }, {
+    "timestamp" : 39157,
+    "offsetX" : 8852,
+    "bar" : 16,
+    "notesOn" : [ {
+      "duration" : 1198,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    }, {
+      "duration" : 1198,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 69,
+      "noteName" : "A4"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 50,
+      "noteName" : "D3"
+    } ]
+  }, {
+    "timestamp" : 40355,
+    "offsetX" : 9050,
+    "bar" : 17,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 69,
+      "noteName" : "A4"
+    }, {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 50,
+      "noteName" : "D3"
+    } ]
+  }, {
+    "timestamp" : 40421,
+    "offsetX" : 9061,
+    "bar" : 17,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    }, {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 47,
+      "noteName" : "B2"
+    } ]
+  }, {
+    "timestamp" : 41019,
+    "offsetX" : 9179,
+    "bar" : 17,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 41052,
+    "offsetX" : 9186,
+    "bar" : 17,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    } ]
+  }, {
+    "timestamp" : 41619,
+    "offsetX" : 9298,
+    "bar" : 17,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 47,
+      "noteName" : "B2"
+    } ]
+  }, {
+    "timestamp" : 41650,
+    "offsetX" : 9304,
+    "bar" : 17,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    } ]
+  }, {
+    "timestamp" : 41684,
+    "offsetX" : 9311,
+    "bar" : 17,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    }, {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 40,
+      "noteName" : "E2"
+    } ]
+  }, {
+    "timestamp" : 42282,
+    "offsetX" : 9429,
+    "bar" : 17,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 42315,
+    "offsetX" : 9436,
+    "bar" : 17,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 56,
+      "noteName" : "GA3"
+    }, {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    } ]
+  }, {
+    "timestamp" : 42882,
+    "offsetX" : 9579,
+    "bar" : 18,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 40,
+      "noteName" : "E2"
+    } ]
+  }, {
+    "timestamp" : 42913,
+    "offsetX" : 9587,
+    "bar" : 18,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 56,
+      "noteName" : "GA3"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 64,
+      "noteName" : "E4"
+    } ]
+  }, {
+    "timestamp" : 42947,
+    "offsetX" : 9596,
+    "bar" : 18,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 48,
+      "noteName" : "C3"
+    } ]
+  }, {
+    "timestamp" : 43545,
+    "offsetX" : 9714,
+    "bar" : 18,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 67,
+      "noteName" : "G4"
+    } ]
+  }, {
+    "timestamp" : 43578,
+    "offsetX" : 9721,
+    "bar" : 18,
+    "notesOn" : [ {
+      "duration" : 598,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 44145,
+    "offsetX" : 9833,
+    "bar" : 18,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 48,
+      "noteName" : "C3"
+    } ]
+  }, {
+    "timestamp" : 44176,
+    "offsetX" : 9839,
+    "bar" : 18,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 66,
+      "noteName" : "FG4"
+    } ]
+  }, {
+    "timestamp" : 44210,
+    "offsetX" : 9846,
+    "bar" : 18,
+    "notesOn" : [ {
+      "duration" : 898,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 55,
+      "noteName" : "G3"
+    }, {
+      "duration" : 898,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    }, {
+      "duration" : 898,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    }, {
+      "duration" : 1198,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 45108,
+    "offsetX" : 9996,
+    "bar" : 18,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 55,
+      "noteName" : "G3"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    } ]
+  }, {
+    "timestamp" : 45157,
+    "offsetX" : 10005,
+    "bar" : 18,
+    "notesOn" : [ {
+      "duration" : 298,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 61,
+      "noteName" : "CD4"
+    } ]
+  }, {
+    "timestamp" : 45408,
+    "offsetX" : 10085,
+    "bar" : 18,
+    "notesOff" : [ {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 45,
+      "noteName" : "A2"
+    } ]
+  }, {
+    "timestamp" : 45455,
+    "offsetX" : 10100,
+    "bar" : 19,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 61,
+      "noteName" : "CD4"
+    } ]
+  }, {
+    "timestamp" : 45473,
+    "offsetX" : 10106,
+    "bar" : 19,
+    "notesOn" : [ {
+      "duration" : 2398,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 54,
+      "noteName" : "FG3"
+    }, {
+      "duration" : 2398,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    }, {
+      "duration" : 2398,
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    }, {
+      "duration" : 2398,
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  }, {
+    "timestamp" : 47871,
+    "offsetX" : 10407,
+    "bar" : 19,
+    "notesOff" : [ {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 54,
+      "noteName" : "FG3"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 57,
+      "noteName" : "A3"
+    }, {
+      "noteType" : "RIGHT_HAND_NOTE",
+      "noteValue" : 62,
+      "noteName" : "D4"
+    }, {
+      "noteType" : "LEFT_HAND_BASS",
+      "noteValue" : 38,
+      "noteName" : "D2"
+    } ]
+  } ]
 }
