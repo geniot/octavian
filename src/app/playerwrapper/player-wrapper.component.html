@@ -14,14 +14,14 @@
         <as-split-area *ngIf="config.columns[0].visible" [size]="config.columns[3].size">
           <div #centerDiv (onResize)="onCenterResized($event)" style="width:100%;height:100%;overflow:hidden"
                fxLayout="column nowrap">
+            <ng-template [ngTemplateOutlet]="ProgressBarTemplate"></ng-template>
             <ng-template [ngTemplateOutlet]="ToolbarTemplate"></ng-template>
             <div fxFlex="1 1 50%"
                  fxLayoutAlign="center center"
                  fxLayout="column nowrap"
                  style="border: 0px solid black; width:100%;height:100%;">
               <ng-template [ngTemplateOutlet]="SplashTemplate"></ng-template>
-              <ng-template [ngTemplateOutletContext]="{padding:5}"
-                           [ngTemplateOutlet]="ProgressBarTemplate"></ng-template>
+
             </div>
           </div>
         </as-split-area>
@@ -46,13 +46,13 @@
     <as-split-area *ngIf="pianoConfig.columns[0].visible" [size]="pianoConfig.columns[0].size">
       <div #centerDiv (onResize)="onCenterResized($event)" style="width:100%;height:100%;overflow:hidden"
            fxLayout="column nowrap">
+        <ng-template [ngTemplateOutlet]="ProgressBarTemplate"></ng-template>
         <ng-template [ngTemplateOutlet]="ToolbarTemplate"></ng-template>
         <div fxFlex="1 1 50%"
              fxLayoutAlign="center center"
              fxLayout="column nowrap"
              style="border: 0px solid black; width:100%;height:100%;">
           <ng-template [ngTemplateOutlet]="SplashTemplate"></ng-template>
-          <ng-template [ngTemplateOutletContext]="{padding:20}" [ngTemplateOutlet]="ProgressBarTemplate"></ng-template>
         </div>
       </div>
     </as-split-area>
@@ -86,11 +86,10 @@
   </div>
 </ng-template>
 
-<ng-template let-padding='padding' #ProgressBarTemplate>
-  <div fxFlex="0 0 30px"
+<ng-template #ProgressBarTemplate>
+  <div fxFlex="0 0 0"
        *ngIf="infoService.settings.mode==PlayerMode.WAIT"
-       [style]="{paddingLeft:padding+'px',paddingRight:padding+'px'}"
-       style="padding-bottom:5px;border: 0px solid black;width:100%;height:100%;">
+       style="border: 0px solid black;width:100%;height:100%;">
     <app-player-progressbar></app-player-progressbar>
   </div>
 </ng-template>
