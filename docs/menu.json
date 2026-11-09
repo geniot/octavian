@@ -55,6 +55,12 @@
       "path": "piano/1/scarborough_fair"
     },
     {
+      "title": "Warsaw Mazurka",
+      "author": "Frédéric Chopin",
+      "instrument": "piano",
+      "path": "piano/1/warsaw_mazurka"
+    },
+    {
       "title": "The Green Grasshopper",
       "author": "Vladimir Shainsky",
       "instrument": "button accordion",
