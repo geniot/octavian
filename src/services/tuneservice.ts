@@ -83,7 +83,7 @@ export class TuneService extends AnyService {
     this.isLoading = true;
 
     this.tuneLoadedTrigger.next(false);
-    this.http.get<TuneModel>(environment.BASE_API_URL + path + '/' + tag + '.json' + '?rnd=' + Date.now())
+    this.http.get<TuneModel>(environment.BASE_API_URL + path + '/' + tag + '.json' + '?rnd=' + Date.now(), {withCredentials: true})
       .subscribe(model => {
         model = plainToClass(TuneModel, model);
         tunify(model);
