@@ -11,6 +11,7 @@ import {TabViewChangeEvent} from "primeng/tabview";
 export class MenuDialog extends AnyDialog {
   readonly statsLocalStorageName: string = "octavian-MenuDialogStorageName";
   menuItems: MenuItem[] = [];
+  instrumentNames: string[] = ['piano', 'accordion-button', 'accordion-piano'];
   selectedInstrument: number = 0;
   columnWidthCounter: number = 50;
 
@@ -31,7 +32,7 @@ export class MenuDialog extends AnyDialog {
   override onShow() {
     super.onShow();
     this.menuItems = [];
-    this.catalogueService.loadCatalogue();
+    this.catalogueService.loadCatalogue(this.instrumentNames[this.selectedInstrument]);
   }
 
   override onHide() {
@@ -58,5 +59,7 @@ export class MenuDialog extends AnyDialog {
   protected onTabChange($event: TabViewChangeEvent) {
     this.selectedInstrument = $event.index;
     localStorage.setItem(this.statsLocalStorageName, JSON.stringify(this.selectedInstrument));
+    this.menuItems = [];
+    this.catalogueService.loadCatalogue(this.instrumentNames[this.selectedInstrument]);
   }
 }

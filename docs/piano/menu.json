@@ -1,6 +1,12 @@
 {
   "menuItems": [
     {
+      "title": "A Whole New World",
+      "author": "Alan Menken",
+      "instrument": "piano",
+      "path": "piano/1/a_whole_new_world"
+    },
+    {
       "title": "Arabesque",
       "author": "Friedrich Burgmüller",
       "instrument": "piano",
@@ -11,12 +17,6 @@
       "author": "Joseph Kosma",
       "instrument": "piano",
       "path": "piano/1/autumn_leaves"
-    },
-    {
-      "title": "A Whole New World",
-      "author": "Alan Menken",
-      "instrument": "piano",
-      "path": "piano/1/a_whole_new_world"
     },
     {
       "title": "Brahms' Lullaby",
@@ -59,24 +59,6 @@
       "author": "Frédéric Chopin",
       "instrument": "piano",
       "path": "piano/1/warsaw_mazurka"
-    },
-    {
-      "title": "The Green Grasshopper",
-      "author": "Vladimir Shainsky",
-      "instrument": "button accordion",
-      "path": "accordion-button/green_grasshopper"
-    },
-    {
-      "title": "Little Fir Tree",
-      "author": "Leonid Bekman",
-      "instrument": "piano accordion",
-      "path": "accordion-piano/little_fir_tree"
-    },
-    {
-      "title": "Yablochko",
-      "author": "Russian Folk Song",
-      "instrument": "button accordion",
-      "path": "accordion-button/yablochko"
     }
   ]
 }
