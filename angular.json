@@ -23,10 +23,9 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/piano",
+              "src/accordion-piano",
+              "src/accordion-button"
             ],
             "styles": [
               "node_modules/primeicons/primeicons.css",
